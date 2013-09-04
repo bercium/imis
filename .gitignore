@@ -1,0 +1,10 @@
+#Netbeans project
+/nbproject/private/
+
+#VIM swap files
+*.swp
+
+#Eclipse
+.buildpath
+.project
+.settings
