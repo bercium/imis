@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 04, 2013 at 11:34 AM
+-- Generation Time: Sep 04, 2013 at 11:55 AM
 -- Server version: 5.5.12
 -- PHP Version: 5.4.4
 
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=152 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=153 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -264,7 +264,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (148, '_site_transient_theme_roots', 'a:2:{s:14:"twentythirteen";s:7:"/themes";s:12:"twentytwelve";s:7:"/themes";}', 'yes'),
 (149, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1378285913;s:7:"checked";a:3:{s:19:"akismet/akismet.php";s:5:"2.5.9";s:9:"hello.php";s:3:"1.6";s:43:"user-access-manager/user-access-manager.php";s:7:"1.2.4.3";}s:8:"response";a:0:{}}', 'yes'),
 (150, 'uamAdminOptions', 'a:32:{s:15:"hide_post_title";s:5:"false";s:10:"post_title";s:10:"No rights!";s:12:"post_content";s:43:"Sorry you have no rights to view this post!";s:9:"hide_post";s:4:"true";s:17:"hide_post_comment";s:5:"false";s:20:"post_comment_content";s:33:"Sorry no rights to view comments!";s:20:"post_comments_locked";s:5:"false";s:15:"hide_page_title";s:5:"false";s:10:"page_title";s:10:"No rights!";s:12:"page_content";s:43:"Sorry you have no rights to view this page!";s:9:"hide_page";s:4:"true";s:17:"hide_page_comment";s:5:"false";s:20:"page_comment_content";s:33:"Sorry no rights to view comments!";s:20:"page_comments_locked";s:5:"false";s:8:"redirect";s:5:"false";s:20:"redirect_custom_page";s:1:"2";s:19:"redirect_custom_url";s:0:"";s:14:"lock_recursive";s:4:"true";s:25:"authors_has_access_to_own";s:4:"true";s:31:"authors_can_add_posts_to_groups";s:5:"false";s:9:"lock_file";s:5:"false";s:14:"file_pass_type";s:6:"random";s:15:"lock_file_types";s:3:"all";s:13:"download_type";s:5:"fopen";s:17:"locked_file_types";s:14:"zip,rar,tar,gz";s:21:"not_locked_file_types";s:16:"gif,jpg,jpeg,png";s:15:"blog_admin_hint";s:4:"true";s:20:"blog_admin_hint_text";s:3:"[L]";s:21:"hide_empty_categories";s:4:"true";s:12:"protect_feed";s:4:"true";s:29:"show_post_content_before_more";s:5:"false";s:16:"full_access_role";s:13:"administrator";}', 'yes'),
-(151, 'uam_db_version', '1.1', 'yes');
+(151, 'uam_db_version', '1.1', 'yes'),
+(152, 'category_children', 'a:0:{}', 'yes');
 
 -- --------------------------------------------------------
 
@@ -542,7 +543,7 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1, 'admin', '$P$BWPzKtr83X1UC8WJKzrBIqJAfdnpmg.', 'admin', 'admin@imis.si', '', '2013-09-04 08:38:29', '', 0, 'admin'),
+(1, 'admin', '$P$Bym7n/8rPwGXN1e0XbqDJkAgVPiwo40', 'admin', 'admin@imis.si', '', '2013-09-04 08:38:29', '', 0, 'admin'),
 (2, 'demo', '$P$BP3ubL3csaMk.52Ttg6Jx2AZZ.erik/', 'demo', 'demo@imis.si', '', '2013-09-04 09:20:19', '', 0, 'Demo User'),
 (3, 'update', '$P$BDq5.NQacOIaxgA8p14lF2/IjVElkC.', 'update', 'update@imis.si', '', '2013-09-04 09:29:42', '', 0, 'Update User');
 
