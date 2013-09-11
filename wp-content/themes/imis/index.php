@@ -11,6 +11,7 @@ get_header(); ?>
                 <div class="text-wrap">
                     <!-- REPLACE  wp-php here on: -->
                     <h2>KAJ DELAMO?</h2>
+                    
                  <p>Razvoj programskega produkta IMiS® za skeniranje, arhiviranje, pregledovanje, razvrščanje in iskanje dokumentov, ter povezovanje z aplikacijami. Razvoj programskega produkta IMiS® 
                 za skeniranje, arhiviranje, pregledovanje, razvrščanje in iskanje dokumentov, ter povezovanje z aplikacijami. </p>
                 <!-- wp-php end  -->

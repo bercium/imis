@@ -81,7 +81,6 @@ src:url("Fonts/e9ef705d-e81d-4c12-a636-da03f0d94538.eot?#iefix") format("eot"),u
    ========================================================================== */
 
 
-
 /****** @ home fonts: size, color, type, decoration  ******/
 
 .home .sidebar h2 {	
@@ -92,9 +91,6 @@ src:url("Fonts/e9ef705d-e81d-4c12-a636-da03f0d94538.eot?#iefix") format("eot"),u
  	font-weight: 400 !important;
 
 }
-
-
-
 
 footer .widget-one p {
 	font-size: 12px;
@@ -124,3 +120,15 @@ footer .footer .copyright {
 	letter-spacing: 0.75px;
 }
 
+
+
+/* ==========================================================================
+   @ Subpages styles
+   ========================================================================== */
+
+.page-template-default .sidebar-one ul li a {
+	font-family:"EurostileNextW01-SmBd";
+	font-size: 11px;
+	color: #000000;
+
+}

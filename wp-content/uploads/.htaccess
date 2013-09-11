@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /razvoj/othr/imis/
+RewriteRule ^index\.php$ - [L]
+RewriteRule (.*) /razvoj/othr/imis/index.php?uamfiletype=attachment&uamgetfile=$1 [L]
+</IfModule>
