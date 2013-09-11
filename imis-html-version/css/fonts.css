@@ -124,3 +124,15 @@ footer .footer .copyright {
 	letter-spacing: 0.75px;
 }
 
+
+
+/* ==========================================================================
+   @ Subpages styles
+   ========================================================================== */
+
+.page-template-default .sidebar-one ul li a {
+	font-family:"EurostileNextW01-SmBd";
+	font-size: 11px;
+	color: #000000;
+
+}
