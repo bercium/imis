@@ -1,0 +1,13 @@
+Spodnjo kodo prekopiraj v .htaccess fajl v rootu od najinega projekta.
+Tam potem spremeni /imis/ v pot ki jo imaš ti!
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /imis/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /imis/index.php [L]
+</IfModule>
+ 
