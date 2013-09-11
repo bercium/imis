@@ -6,6 +6,14 @@
 
 get_header(); ?>
 
+<div class="row" ><img src="<?php bloginfo('template_directory'); ?>/img/brisime.jpg"></div>
+
+<?php  // left sidebar / secondary menu menu ?>
+<ul class="clearfix">
+  <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
+</ul>
+
+
 <div id="main" role="main">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <article class="post" id="post-<?php the_ID(); ?>">
@@ -25,6 +33,10 @@ get_header(); ?>
 
 </div>
 
-<?php get_sidebar(); ?>
+<?php 
+// right side sidebar
+dynamic_sidebar();
+//get_sidebar(); ?>
+
 
 <?php get_footer(); ?>
