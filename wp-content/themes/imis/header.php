@@ -27,7 +27,7 @@
     <?php wp_head(); ?>        
         
     </head>
-    <body class="home">
+    <body  <?php body_class(); ?>>
       
 <?php /* ?>    <body <?php body_class(); ?>> <?php */ ?>
       
@@ -51,56 +51,7 @@
                     <ul>
                        <?php wp_list_pages('title_li=' ); ?>
 
-                        <li ><a href="">Domov</a>
-                            <ul>
-                                 <li><a href="">Level long item with</a></li>
-                                 <li><a href="">Level 2</a></li>
-                                 <li><a href="">Level 2</a></li>
-                                 <li><a href="">Level 2</a></li>
-                            </ul> 
-                        </li>
-                        <li class="current-menu-item"><a href="">Rešitve</a>
-                                <ul>
-                                 <li><a href="">Level 2</a>
-                                        <ul>
-                                             <li><a href="">Level 2</a></li>
-                                             <li><a href="">Level 2</a></li>
-                                             <li><a href="">Level 2</a></li>
-                                             <li><a href="">Level 2</a></li>
-                                             <li><a href="">Level 2</a></li>
-                                             <li><a href="">Level 2</a></li>
-                                        </ul> 
-                                 </li>
-                                 <li><a href="">Level 2</a></li>
-                                 <li><a href="">Level 2</a></li>
-                                 <li><a href="">Level 2</a>
-                                            <ul>
-                                             <li><a href="">Level 2</a></li>
-                                             <li><a href="">Level 2</a></li>
-                                             <li><a href="">Level 2</a></li>
-                                             <li><a href="">Level 2</a></li>
-                                             <li><a href="">Level 2</a></li>
-                                             <li><a href="">Level 2</a></li>
-                                        </ul> 
-                                 </li>
-                                 <li><a href="">Level 2</a></li>
-                                 <li><a href="">Level 2</a></li>
-                            </ul> 
-                        </li>
-                        <li><a href="">IMIS moduli</a>
-                                <ul>
-                                 <li><a href="">Level 2</a></li>
-                                 <li><a href="">Level 2</a></li>
-                                 <li><a href="">Level 2</a></li>
-                                 <li><a href="">Level 2</a></li>
-                            </ul> 
-                        </li>
-                        <li><a href="">Podpora</a></li>
-                        <li><a href="">Podjetje</a></li>
-                        <li><a href="">Novice</a></li>
-                        <li><a href="">Iskalnik</a></li>
-                        <li class="menu-item-language menu-item-language-current"><a href="">SLO</a></li>
-                        <li class="menu-item-language"><a href="">ENG</a></li>
+                      
                      </ul>
                      <!-- wp-php end-->
                 </nav>
