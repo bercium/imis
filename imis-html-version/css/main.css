@@ -411,6 +411,80 @@ footer .footer ul li a {
     padding: 10px 6px 6px 6px;  
 }
 
+/* ==========================================================================
+   Subpages styles
+   ========================================================================== */
+
+/****** @ sidebar-one ******/
+
+.page-template-default .sidebar-one {
+    width: 174px;  
+    float: left;
+    min-height:   
+}
+ .page-template-default .sidebar-one .text-wrap {
+    margin: 0;   
+   }
+
+.page-template-default .sidebar-one ul {
+    list-style-type: none;
+    list-style-position: inside; 
+    background: url(../img/sidebar-nav-bg.png) 0 0 repeat-x;   
+    padding-left: 0;
+    margin-top: 0;
+}
+
+
+
+.page-template-default .sidebar-one ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: url(../img/sidebar-nav-bg.png) 0 bottom repeat-x;  
+    display: block;
+    padding: 14px 16px 12px 0;
+    text-align: right;
+
+
+}
+
+.page-template-default .sidebar-one ul li a:hover {
+    color: #faad24;
+
+}
+
+.page-template-default .sidebar-one ul li a.current {
+    background: #b3b3b3;
+}
+
+
+/****** @ main-content ******/
+
+.page-template-default .main-content {
+    border-left: 1px solid #666666;
+    width: 591px;
+    float: left;
+    min-height: 700px;
+    padding-bottom: 47px;
+
+}
+
+.page-template-default .main-content .text-wrap {
+    margin: 0 50px;
+}
+
+
+/****** @ sidebar-two ******/
+
+.page-template-default .sidebar-two {
+    width: 173px;
+    border-left: 1px solid #221f1f;
+    float: right;
+}
+
+.page-template-default .sidebar-two .text-wrap {
+    margin: 0 33px 0 18px;
+}
+
 
 
 /* ==========================================================================
