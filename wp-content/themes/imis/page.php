@@ -8,13 +8,24 @@ get_header(); ?>
 
 <div class="row" ><img src="<?php bloginfo('template_directory'); ?>/img/brisime.jpg"></div>
 
-<?php  // left sidebar / secondary menu menu ?>
-<ul class="clearfix">
-  <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
-</ul>
+
+ <div class="row">
+      <div class="sidebar-one sidebar">
+          <div class="text-wrap">
+              <!-- REPLACE  wp-php here on: -->
+              <img src="img/secondary-logo.png" title="IMIS"  />
+                  <?php  // left sidebar / secondary menu menu ?>
+                  <ul class="clearfix">
+                    <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
+                  </ul>
+          <!-- wp-php end  -->
+          </div>
+      </div>
 
 
-<div id="main" role="main">
+      <div class="main-content">
+          <div class="text-wrap">
+              <!-- REPLACE  wp-php here on: -->
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <article class="post" id="post-<?php the_ID(); ?>">
     <header>
@@ -30,13 +41,21 @@ get_header(); ?>
   <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
   <?php comments_template(); ?>
+              <!-- wp-php end  -->
+          </div>
+      </div>
+      <div class="sidebar-two sidebar">
+        <div class="text-wrap">
+          <!-- REPLACE wp-php here on: -->
+            <?php 
+            // right side sidebar
+            dynamic_sidebar();
+            //get_sidebar(); ?>
 
-</div>
-
-<?php 
-// right side sidebar
-dynamic_sidebar();
-//get_sidebar(); ?>
+          <!-- wp-php end  -->
+          </div>
+      </div>            
+  </div>
 
 
 <?php get_footer(); ?>
