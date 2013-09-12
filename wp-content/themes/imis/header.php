@@ -51,7 +51,19 @@
                     <ul>
                        <?php wp_list_pages('title_li=&depth=2' ); ?>
 
-                      
+                        <li class="page_item page-item-11">
+                          <a href="http://127.0.0.1/imis/">Iskalnik</a>
+                          <ul class="children">
+                            <li class="page_item page-item-2">
+                              <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ) ?>">
+                                <div>
+                                  <input type="text" value="<?php echo get_search_query() ?>" name="s" id="s" />
+                                  <input type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+                                </div>
+                              </form>
+                            </li>
+                          </ul>
+                        </li>
                      </ul>
                      <!-- wp-php end-->
                 </nav>
