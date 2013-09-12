@@ -39,7 +39,7 @@ get_header(); ?>
 
 <?php 
 // right side sidebar
-//dynamic_sidebar();
+dynamic_sidebar();
 //get_sidebar(); ?>
 
 <?php get_footer(); ?>

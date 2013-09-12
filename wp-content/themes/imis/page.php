@@ -41,7 +41,7 @@ get_header(); ?>
   <?php endwhile; endif; ?>
   <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
-  <?php comments_template(); ?>
+  <?php //comments_template(); ?>
               <!-- wp-php end  -->
           </div>
       </div>

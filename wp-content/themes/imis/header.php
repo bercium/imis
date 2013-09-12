@@ -49,7 +49,7 @@
                 <nav class="main-navigation clearfix">
                     <!-- REPLACE wp-php here on: -->
                     <ul>
-                       <?php wp_list_pages('title_li=' ); ?>
+                       <?php wp_list_pages('title_li=&depth=2' ); ?>
 
                       
                      </ul>

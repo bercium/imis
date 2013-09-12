@@ -10,8 +10,6 @@
 get_header(); ?>
 
 
-
-
 <div class="row" ><img src="<?php bloginfo('template_directory'); ?>/img/brisime.jpg"></div>
 
  <div class="row content-wrapper">
@@ -19,10 +17,6 @@ get_header(); ?>
               <!-- REPLACE  wp-php here on: -->
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <article class="post" id="post-<?php the_ID(); ?>">
-    <header>
-      <h2 style="visibility:hidden; position: absolute; height: 0;" ><?php the_title(); ?></h2>
-
-    </header>
   
     <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
 
@@ -32,12 +26,12 @@ get_header(); ?>
   <?php endwhile; endif; ?>
   <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
-  <?php comments_template(); ?>
+  <?php// comments_template(); ?>
               <!-- wp-php end  -->
           </div>
       </div>
                  
-  </div>
-
+  </div>  
+  
 
 <?php get_footer(); ?>
