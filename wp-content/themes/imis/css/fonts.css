@@ -83,14 +83,10 @@ src:url("Fonts/e9ef705d-e81d-4c12-a636-da03f0d94538.eot?#iefix") format("eot"),u
 
 /****** @ home fonts: size, color, type, decoration  ******/
 
-.home .sidebar h2 {	
- 	font-family: EurostileNextW01-SmBd;
- 	font-size: 13px;
- 	color: #faad24;
- 	border-bottom: 1px dotted #faad24;
- 	font-weight: 400 !important;
 
-}
+
+
+/****** @ footer fonts: size, color, type, decoration  ******/
 
 footer .widget-one p {
 	font-size: 12px;
@@ -132,3 +128,46 @@ footer .footer .copyright {
 	color: #000000;
 
 }
+
+
+/* ==========================================================================
+   @ sidebar vstopna styles
+   ========================================================================== */
+
+   .home p,
+   .home  {
+   		font-family:"EurostileNextW01-Regula";
+   		font-size: 12px;
+   		margin-bottom: 24px;
+   		line-height: 14px;
+   }
+
+   .home h1 {
+
+   }
+
+   .home .sidebar h2 {	
+ 	font-family: EurostileNextW01-SmBd;
+ 	font-size: 13px;
+ 	color: #faad24;
+ 	border-bottom: 1px dotted #faad24;
+ 	font-weight: 400 !important;
+ 	margin-bottom: 29px;
+
+}
+
+
+/* ==========================================================================
+   @ sidebar pages styles
+   ========================================================================== */
+
+   .home h3 {
+   	font-family:"EurostileNextW01-SmBd";
+   	font-size: 10px;
+
+   }
+
+   .home h4 {
+
+   }
+
