@@ -134,8 +134,8 @@ footer .footer .copyright {
    @ sidebar vstopna styles
    ========================================================================== */
 
-   .home p,
-   .home  {
+   .home .sidebar p,
+   .home .sidebar  {
    		font-family:"EurostileNextW01-Regula";
    		font-size: 12px;
    		margin-bottom: 24px;
