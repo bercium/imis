@@ -190,11 +190,13 @@ clearfix {
     padding: 5px 8px 2px 6px;
 }
 
-.main-navigation > ul > .current_page_item:first-letter {
+.main-navigation > ul > .current_page_item:first-letter,
+ .main-navigation > ul > .current_page_ancestor:first-letter  {
 border-bottom: 1px solid #faad24;
 } 
 
 .main-navigation > ul > .current_page_item > a,
+.main-navigation > ul > .current_page_ancestor > a,
 .main-navigation > ul  > li > a:hover {
     box-shadow: 0 -10px 10px 4px #1A1A1A inset;
     background: #434343;
@@ -336,15 +338,99 @@ border-bottom: 1px solid #faad24;
 }
 
 
+/* ================================================.==========================
+    @ Subpages styles
+   ========================================================================== */
+
+/****** @ sidebar-one ******/
+
+ .sidebar-one {
+    width: 174px;  
+    float: left;
+    min-height:   
+}
+  .sidebar-one .text-wrap {
+    margin: 0;   
+   }
+
+ .sidebar-one ul {
+    list-style-type: none;
+    list-style-position: inside; 
+    background: url(../img/sidebar-nav-bg.png) 0 0 repeat-x;   
+    padding-left: 0;
+    margin-top: 0;
+}
+
+
+
+ .sidebar-one ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: url(../img/sidebar-nav-bg.png) 0 bottom repeat-x;  
+    display: block;
+    padding: 14px 16px 12px 0;
+    text-align: right;
+}
+
+
+
+ .sidebar-one ul li a:hover {
+    color: #faad24;
+
+}
+
+
+ .sidebar-one ul .current_page_item a {
+    background: #b3b3b3;
+}
+.sidebar-one ul .current_page_item a:hover {
+    color: #000;
+}
+
+
+/****** @ main-content ******/
+
+ .main-content {
+    border-left: 1px solid #666666;
+    width: 591px;
+    float: left;
+    min-height: 700px;
+    padding-bottom: 47px;
+
+}
+
+ .main-content .text-wrap {
+    margin: 0 50px;
+}
+
+
+/****** @ sidebar-two ******/
+
+ .sidebar-two {
+    width: 173px;
+    border-left: 1px solid #221f1f;
+    float: right;
+}
+
+ .sidebar-two .text-wrap {
+    margin: 0 33px 0 18px;
+}
+
+/* ==========================================================================
+  @ home styles
+   ========================================================================== */
+
+
+
 /****** @ home sidebar ******/
 
-.home .sidebar .text-wrap {
+.home-sidebar .text-wrap {
     margin: 37px 34px 0 53px;
     
    }
 
 /****** @ home main-content ******/
-.home .main-content .text-wrap {
+.home-main-content .text-wrap {
     padding: 0 70px;
 }
 
@@ -416,82 +502,6 @@ footer .footer ul li {
 footer .footer ul li a {
     padding: 10px 6px 6px 6px;  
 }
-
-/* ==========================================================================
-    @ Subpages styles
-   ========================================================================== */
-
-/****** @ sidebar-one ******/
-
-.page-template-default .sidebar-one {
-    width: 174px;  
-    float: left;
-    min-height:   
-}
- .page-template-default .sidebar-one .text-wrap {
-    margin: 0;   
-   }
-
-.page-template-default .sidebar-one ul {
-    list-style-type: none;
-    list-style-position: inside; 
-    background: url(../img/sidebar-nav-bg.png) 0 0 repeat-x;   
-    padding-left: 0;
-    margin-top: 0;
-}
-
-
-
-.page-template-default .sidebar-one ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    background: url(../img/sidebar-nav-bg.png) 0 bottom repeat-x;  
-    display: block;
-    padding: 14px 16px 12px 0;
-    text-align: right;
-}
-
-
-
-.page-template-default .sidebar-one ul li a:hover {
-    color: #faad24;
-
-}
-
-
-.page-template-default .sidebar-one ul .current_page_item a {
-    background: #b3b3b3;
-}
-
-
-/****** @ main-content ******/
-
-.page-template-default .main-content {
-    border-left: 1px solid #666666;
-    width: 591px;
-    float: left;
-    min-height: 700px;
-    padding-bottom: 47px;
-
-}
-
-.page-template-default .main-content .text-wrap {
-    margin: 0 50px;
-}
-
-
-/****** @ sidebar-two ******/
-
-.page-template-default .sidebar-two {
-    width: 173px;
-    border-left: 1px solid #221f1f;
-    float: right;
-}
-
-.page-template-default .sidebar-two .text-wrap {
-    margin: 0 33px 0 18px;
-}
-
 
 
 /* ==========================================================================

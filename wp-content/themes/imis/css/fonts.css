@@ -76,17 +76,54 @@ src:url("Fonts/e9ef705d-e81d-4c12-a636-da03f0d94538.eot?#iefix");
 src:url("Fonts/e9ef705d-e81d-4c12-a636-da03f0d94538.eot?#iefix") format("eot"),url("Fonts/cb72719e-4216-4659-891b-f36a9c6e79c0.woff") format("woff"),url("Fonts/0f770563-2f55-43bc-9836-95cf9bdb867d.ttf") format("truetype"),url("Fonts/c6398340-fc54-4743-9c18-84b1c1444ca9.svg#c6398340-fc54-4743-9c18-84b1c1444ca9") format("svg");
 }
 
+body {color: #000000;}
+
+p, h1, h2, h3 {
+    font-family: EurostileNextW01-Regula;  
+}
+
+p {
+   font-size: 12px;
+   margin: 4px 0 20px 0;
+   line-height: 14.5px;
+}
+
+
+ 
+h1, h2, h3, h4, h5, h6 {
+    font-size: 12px;    
+    line-height: 14.5px;      
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+ 
+header h2 {
+   margin-top: 58px;
+   margin-bottom: 15px;
+    font-size: 29px;
+    line-height: 40px;
+
+}
+ 
+/* Won't be used here */
+ 
+h5 {
+    font-size: 14px;
+    line-height: 20px;
+}
+ 
+h6 {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+
 /* ==========================================================================
-  font styles
+  @ footer fonts:
    ========================================================================== */
-
-
-/****** @ home fonts: size, color, type, decoration  ******/
-
-
-
-
-/****** @ footer fonts: size, color, type, decoration  ******/
 
 footer .widget-one p {
 	font-size: 12px;
@@ -119,55 +156,47 @@ footer .footer .copyright {
 
 
 /* ==========================================================================
-   @ Subpages styles
+   @ sidebars
    ========================================================================== */
 
-.page-template-default .sidebar-one ul li a {
-	font-family:"EurostileNextW01-SmBd";
-	font-size: 11px;
-	color: #000000;
+      .sidebar-one ul li a {
+      	font-family:"EurostileNextW01-SmBd";
+      	font-size: 11px;
+      	color: #000000;
 
-}
-
-
-/* ==========================================================================
-   @ sidebar vstopna styles
-   ========================================================================== */
-
-   .home .sidebar p,
-   .home .sidebar  {
-   		font-family:"EurostileNextW01-Regula";
-   		font-size: 12px;
-   		margin-bottom: 24px;
-   		line-height: 14px;
-   }
-
-   .home h1 {
-
-   }
-
-   .home .sidebar h2 {	
- 	font-family: EurostileNextW01-SmBd;
- 	font-size: 13px;
- 	color: #faad24;
- 	border-bottom: 1px dotted #faad24;
- 	font-weight: 400 !important;
- 	margin-bottom: 29px;
-
-}
+      }
 
 
-/* ==========================================================================
-   @ sidebar pages styles
-   ========================================================================== */
 
-   .home h3 {
-   	font-family:"EurostileNextW01-SmBd";
-   	font-size: 10px;
+/****** @ home ******/
+         .home-sidebar p,
+         .home-sidebar  {
+         		font-family:"EurostileNextW01-Regula";
+         		font-size: 12px;
+         		margin-bottom: 24px;
+         		line-height: 14px;
+         }
 
-   }
+       
 
-   .home h4 {
+         .home-sidebar h2 {	
+       	font-family: EurostileNextW01-SmBd;
+       	font-size: 13px;
+       	color: #faad24;
+       	border-bottom: 1px dotted #faad24;
+       	font-weight: 400 !important;
+       	margin-bottom: 29px;
 
-   }
+      }
 
+         
+      .home-sidebar h3,
+      .home-sidebar h4,
+      .home-sidebar h5,
+      .home-sidebar h6  {
+      	font-family:"EurostileNextW01-SmBd";
+      	font-size: 10px;
+
+      }
+
+     

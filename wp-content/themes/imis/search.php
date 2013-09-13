@@ -24,8 +24,7 @@ get_header(); ?>
 
 
       <div class="main-content">
-          <div class="text-wrap">
-            
+          <div class="text-wrap">            
             
 
 
@@ -71,7 +70,7 @@ get_header(); ?>
               
           </div>
       </div>
-      <div class="sidebar-two sidebar">
+      <div class="sidebar-one sidebar">
         <div class="text-wrap">
           <!-- REPLACE wp-php here on: -->
             <?php 
