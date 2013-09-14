@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 14, 2013 at 09:57 AM
+-- Generation Time: Sep 14, 2013 at 11:57 AM
 -- Server version: 5.5.20
 -- PHP Version: 5.3.10
 
@@ -305,7 +305,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=35 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=43 ;
 
 --
 -- Dumping data for table `wp_postmeta`
@@ -313,7 +313,7 @@ CREATE TABLE `wp_postmeta` (
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (1, 2, '_wp_page_template', 'default'),
-(2, 2, '_edit_lock', '1379072282:1'),
+(2, 2, '_edit_lock', '1379152791:1'),
 (3, 7, '_edit_last', '1'),
 (4, 7, '_edit_lock', '1379152428:1'),
 (5, 7, '_wp_page_template', 'default'),
@@ -323,7 +323,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (9, 11, '_wp_page_template', 'vstopna.php'),
 (10, 11, '_cs_replacements', 'a:1:{s:9:"sidebar-1";s:9:"sidebar-1";}'),
 (11, 2, '_edit_last', '1'),
-(12, 2, '_cs_replacements', 'a:1:{s:9:"sidebar-1";s:17:"cs-sidebar-test-1";}'),
+(12, 2, '_cs_replacements', 'a:1:{s:9:"sidebar-1";s:9:"sidebar-1";}'),
 (13, 14, '_menu_item_type', 'post_type'),
 (14, 14, '_menu_item_menu_item_parent', '0'),
 (15, 14, '_menu_item_object_id', '7'),
@@ -343,7 +343,15 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (31, 16, '_edit_last', '1'),
 (32, 16, '_edit_lock', '1379070249:1'),
 (33, 16, '_wp_page_template', 'default'),
-(34, 11, '_post_restored_from', 'a:3:{s:20:"restored_revision_id";i:18;s:16:"restored_by_user";i:1;s:13:"restored_time";i:1378982562;}');
+(34, 11, '_post_restored_from', 'a:3:{s:20:"restored_revision_id";i:18;s:16:"restored_by_user";i:1;s:13:"restored_time";i:1378982562;}'),
+(35, 81, '_edit_last', '1'),
+(36, 81, '_edit_lock', '1379154092:1'),
+(37, 81, '_wp_trash_meta_status', 'draft'),
+(38, 81, '_wp_trash_meta_time', '1379154111'),
+(39, 1, '_edit_lock', '1379154003:1'),
+(40, 83, '_edit_last', '1'),
+(41, 83, '_edit_lock', '1379154036:1'),
+(42, 83, '_wp_page_template', 'default');
 
 -- --------------------------------------------------------
 
@@ -381,7 +389,7 @@ CREATE TABLE `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=80 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=85 ;
 
 --
 -- Dumping data for table `wp_posts`
@@ -389,7 +397,7 @@ CREATE TABLE `wp_posts` (
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (1, 1, '2013-09-04 08:38:30', '2013-09-04 08:38:30', 'Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!', 'Hello world!', '', 'publish', 'open', 'open', '', 'hello-world', '', '', '2013-09-04 08:38:30', '2013-09-04 08:38:30', '', 0, 'http://127.0.0.1/razvoj/othr/imis/?p=1', 0, 'post', '', 1),
-(2, 1, '2013-09-04 08:38:30', '2013-09-04 08:38:30', 'Programske rešitve s področja paketnega skeniranja, arhiviranja in pregledovanja SAP dokumentov ter izmenjave SAP dokumentov in podatkov z drugimi informacijskimi sistemi, pomembno prispevajo k hitrejšemu izvajanju poslovnih operacij, boljši preglednosti dokumentacije in poslovanja ter posledično večji učinkovitosti dela. V nadaljevanju smo pripravili nekaj primerov rešitev, ki izhajajo iz najpogostejših zahtev in potreb SAP uporabnikov.\r\n<h3>INTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOV</h3>\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n<h4>INTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOV</h4>\r\n<h4>INTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOV</h4>\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\n&nbsp;\r\n<h4>INTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOVINTE RNO SKENIRANJE IN ARHIVIRANJ E PREJETIH DOKUMENTOVINTE RNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOVINTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOVINTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOV</h4>\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\n&nbsp;', 'REŠITEV ZA SAP', '', 'publish', 'open', 'open', '', 'sample-page', '', '', '2013-09-13 11:39:54', '2013-09-13 11:39:54', '', 7, 'http://127.0.0.1/razvoj/othr/imis/?page_id=2', 0, 'page', '', 0),
+(2, 1, '2013-09-04 08:38:30', '2013-09-04 08:38:30', 'Programske rešitve s področja paketnega skeniranja, arhiviranja in pregledovanja SAP dokumentov ter izmenjave SAP dokumentov in podatkov z drugimi informacijskimi sistemi, pomembno prispevajo k hitrejšemu izvajanju poslovnih operacij, boljši preglednosti dokumentacije in poslovanja ter posledično večji učinkovitosti dela. V nadaljevanju smo pripravili nekaj primerov rešitev, ki izhajajo iz najpogostejših zahtev in potreb SAP uporabnikov.\r\n<h3>INTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOV</h3>\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n<h4>INTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOV</h4>\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\n&nbsp;\r\n<h4>INTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOVINTE RNO SKENIRANJE IN ARHIVIRANJ E PREJETIH DOKUMENTOVINTE RNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOVINTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOVINTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOV</h4>\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\n&nbsp;', 'REŠITEV ZA SAP', '', 'publish', 'open', 'open', '', 'sample-page', '', '', '2013-09-14 10:01:44', '2013-09-14 10:01:44', '', 7, 'http://127.0.0.1/razvoj/othr/imis/?page_id=2', 0, 'page', '', 0),
 (7, 1, '2013-09-11 08:24:23', '2013-09-11 08:24:23', '', 'REŠITVE', '', 'publish', 'open', 'open', '', 'sample-page-2', '', '', '2013-09-14 09:55:39', '2013-09-14 09:55:39', '', 0, 'http://127.0.0.1/razvoj/othr/imis/?page_id=7', 0, 'page', '', 0),
 (8, 1, '2013-09-11 08:24:23', '2013-09-11 08:24:23', '', 'sample page 2', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2013-09-11 08:24:23', '2013-09-11 08:24:23', '', 7, 'http://127.0.0.1/razvoj/othr/imis/?p=8', 0, 'revision', '', 0),
 (9, 1, '2013-09-11 08:27:47', '2013-09-11 08:27:47', 'some text here\r\n\r\n&nbsp;', 'sample page 2', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2013-09-11 08:27:47', '2013-09-11 08:27:47', '', 7, 'http://127.0.0.1/razvoj/othr/imis/?p=9', 0, 'revision', '', 0),
@@ -464,6 +472,12 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (76, 1, '2013-09-14 09:21:16', '2013-09-14 09:21:16', '', 'Rešitve', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2013-09-14 09:21:16', '2013-09-14 09:21:16', '', 7, 'http://127.0.0.1/razvoj/othr/imis/7-revision-v1/', 0, 'revision', '', 0),
 (78, 1, '2013-09-14 09:28:05', '2013-09-14 09:28:05', '', 'REŠITVE', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2013-09-14 09:28:05', '2013-09-14 09:28:05', '', 7, 'http://127.0.0.1/razvoj/othr/imis/7-revision-v1/', 0, 'revision', '', 0),
 (79, 1, '2013-09-14 09:55:33', '2013-09-14 09:55:33', '', 'REŠITVE', '', 'inherit', 'open', 'open', '', '7-autosave-v1', '', '', '2013-09-14 09:55:33', '2013-09-14 09:55:33', '', 7, 'http://127.0.0.1/razvoj/othr/imis/7-autosave-v1/', 0, 'revision', '', 0);
+INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
+(80, 1, '2013-09-14 10:01:44', '2013-09-14 10:01:44', 'Programske rešitve s področja paketnega skeniranja, arhiviranja in pregledovanja SAP dokumentov ter izmenjave SAP dokumentov in podatkov z drugimi informacijskimi sistemi, pomembno prispevajo k hitrejšemu izvajanju poslovnih operacij, boljši preglednosti dokumentacije in poslovanja ter posledično večji učinkovitosti dela. V nadaljevanju smo pripravili nekaj primerov rešitev, ki izhajajo iz najpogostejših zahtev in potreb SAP uporabnikov.\r\n<h3>INTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOV</h3>\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n<h4>INTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOV</h4>\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\n&nbsp;\r\n<h4>INTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOVINTE RNO SKENIRANJE IN ARHIVIRANJ E PREJETIH DOKUMENTOVINTE RNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOVINTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOVINTERNO SKENIRANJE IN ARHIVIRANJE PREJETIH DOKUMENTOV</h4>\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\nPrejete dokumente opremimo s črtnimi kodami in jih paketno skeniramo. Med avtomatičnim razvrščanjem se skeniranim dokumentom (objektom) ob shranjevanju na arhivski strežnik IMiS®/ARChive Server dodeli ID, podatki iz črtnih kod, metapodatki in ID-ji shranjenih objektov pa se shranijo v SAP zapis. Med arhiviranim objektom in SAP zapisom se vzpostavi povezava preko ArchiveLink protokola. S tem, ko uporabnik odpre SAP dokument, lahko s klikom na priponko pregleduje skenirane dokumente shranjene na arhivskem strežniku, ločeno od SAP sistema.\r\n\r\n&nbsp;', 'REŠITEV ZA SAP', '', 'inherit', 'open', 'open', '', '2-revision-v1', '', '', '2013-09-14 10:01:44', '2013-09-14 10:01:44', '', 2, 'http://127.0.0.1/razvoj/othr/imis/2-revision-v1/', 0, 'revision', '', 0),
+(81, 1, '2013-09-14 10:21:21', '2013-09-14 10:21:21', '', 'test', '', 'trash', 'open', 'open', '', 'test', '', '', '2013-09-14 10:21:51', '2013-09-14 10:21:51', '', 0, 'http://127.0.0.1/razvoj/othr/imis/?p=81', 0, 'post', '', 0),
+(82, 1, '2013-09-14 10:21:51', '2013-09-14 10:21:51', '', 'test', '', 'inherit', 'open', 'open', '', '81-revision-v1', '', '', '2013-09-14 10:21:51', '2013-09-14 10:21:51', '', 81, 'http://127.0.0.1/razvoj/othr/imis/81-revision-v1/', 0, 'revision', '', 0),
+(83, 1, '2013-09-14 10:22:28', '2013-09-14 10:22:28', 'test', 'TEST', '', 'publish', 'open', 'open', '', 'test', '', '', '2013-09-14 10:22:28', '2013-09-14 10:22:28', '', 16, 'http://127.0.0.1/razvoj/othr/imis/?page_id=83', 0, 'page', '', 0),
+(84, 1, '2013-09-14 10:22:28', '2013-09-14 10:22:28', 'test', 'TEST', '', 'inherit', 'open', 'open', '', '83-revision-v1', '', '', '2013-09-14 10:22:28', '2013-09-14 10:22:28', '', 83, 'http://127.0.0.1/razvoj/othr/imis/83-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -512,7 +526,8 @@ CREATE TABLE `wp_term_relationships` (
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
 (1, 1, 0),
 (14, 2, 0),
-(15, 2, 0);
+(15, 2, 0),
+(81, 1, 0);
 
 -- --------------------------------------------------------
 

@@ -387,10 +387,12 @@ border-bottom: 1px solid #faad24;
 }
 
 
- .sidebar-one ul .current_page_item a {
+ .sidebar-one ul .current_page_item a,
+ .sidebar-one ul .current_page_ancestor a {
     background: #b3b3b3;
 }
-.sidebar-one ul .current_page_item a:hover {
+.sidebar-one ul .current_page_item a:hover,
+.sidebar-one ul .current_page_ancestor a:hover {
     color: #000;
 }
 
@@ -475,7 +477,7 @@ footer .footer p a {
     display: inline-block;
 }
 
-footer {overflow: hidden;
+footer {
     margin-bottom: 20px;
 }
 
@@ -493,7 +495,7 @@ footer .widget-one .text-wrap {
 
 footer .footer {
     background: #000;
-    padding: 10px 0;
+    padding: 10px 0 6px 0;
 
 
 }
@@ -515,10 +517,68 @@ footer .footer .mini-navigation {
     margin-right: 11px;
     margin-top: 13px;
 }
+.mini-navigation .about {
+    position: relative;
+
+}
 
 
+            footer .footer .mini-navigation .about  ul   {
+                display: none;
+            }   
 
-footer .footer ul li {
+               
+
+            footer .footer .mini-navigation .about:hover  ul {
+                
+                  background: url("../img/bg-about.png") no-repeat scroll 0 0 transparent;
+    display: block !important;
+    height: 92px;
+    margin: 0;
+    padding: 9px 0 0 15px;
+    position: absolute;
+    right: -80px;
+    top: -87px;
+    width: 138px;
+    z-index: 100;
+                
+            }
+
+            footer .footer .mini-navigation .about ul li {
+                position: relative;             
+                margin-left: 0;
+                list-style-type:  none;
+                display: inline-block;
+                line-height: 14px;     
+                margin-bottom: 6px;          
+                      
+            }
+
+
+               footer .footer  .mini-navigation .about ul li a {
+                    font-size: 11px;
+                    
+                    
+
+                    
+                    border-bottom: 1px solid #6d6d6d;
+                    margin: 0;
+                    padding: 0;
+
+                    
+                }
+
+                footer .footer .mini-navigation .about ul li  span {
+                    font-size: 8px;
+                    display: block;
+                    line-height: 9px;
+                    margin-top: 1px;
+                    text-decoration: none !important;
+                    width: 120px;
+                }
+
+
+footer .footer .mini-navigation > li {
     display: inline-block;
     list-style-position: inside;
     list-style-type: none;
@@ -527,7 +587,7 @@ footer .footer ul li {
 
 }
 
-footer .footer ul li a {
+footer .footer .mini-navigation > li a {
     padding: 10px 6px 6px 6px;  
 }
 
