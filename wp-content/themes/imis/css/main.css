@@ -64,6 +64,7 @@ textarea {
 
 body {
 background: url(../img/body_bg.jpg) center 0 ;
+background-attachment: fixed;
 
 }
 

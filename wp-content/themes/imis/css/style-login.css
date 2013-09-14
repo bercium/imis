@@ -1,0 +1,58 @@
+@font-face{
+font-family:"EurostileNextW01-Regula";
+src:url("Fonts/6bed8cad-cd15-4b82-9ff4-0efd0b173852.eot?#iefix");
+src:url("Fonts/6bed8cad-cd15-4b82-9ff4-0efd0b173852.eot?#iefix") format("eot"),url("Fonts/a4a37370-12ae-4b1e-838e-cc18e6390d9f.woff") format("woff"),url("Fonts/f751566a-35f7-41b7-90df-e4f8fe5dccbf.ttf") format("truetype"),url("Fonts/7745b755-2aae-4a8a-a7c7-b48387a9b37e.svg#7745b755-2aae-4a8a-a7c7-b48387a9b37e") format("svg");
+}
+
+.login {
+font-family: EurostileNextW01-Regula;	
+text-transform: uppercase;
+font-size: 8px;
+
+}
+
+body.login  {
+	background: url(../img/body_bg.jpg) center 0 no-repeat;
+
+}
+
+
+.login p label {
+	font-size: 12px;	
+}
+
+.login #nav {
+	display: none;
+}
+
+
+
+.login h1 a {
+    background: url("../img/imis-logo-login.jpg") no-repeat scroll 0 0 white;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px -1px rgba(200, 200, 200, 0.7);
+    margin-bottom: 5px;
+    margin-left: 7px;
+    width: 313px;
+    height: 50px;
+}
+
+
+.login #nav, .login #backtoblog {
+    margin: 0 0 0 16px;
+    padding: 16px 16px 0;
+    text-shadow: 0 1px 0 #000;
+}
+
+.login #nav a, .login #backtoblog a {
+    color: #FBAE25 !important;
+
+}
+
+.login #nav a:hover, .login #backtoblog a:hover {
+    color: #fff !important;
+
+}
+
+
+
