@@ -206,6 +206,13 @@ border-bottom: 1px solid #faad24;
 .main-navigation > ul  > li:hover {
     
 }
+
+
+.main-navigation .searchform {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
  
 
 /* ie fixes main nav */
@@ -339,7 +346,7 @@ border-bottom: 1px solid #faad24;
 
 
 /* ================================================.==========================
-    @ Subpages styles
+    @ Pages styles
    ========================================================================== */
 
 /****** @ sidebar-one ******/
@@ -409,12 +416,33 @@ border-bottom: 1px solid #faad24;
  .sidebar-two {
     width: 173px;
     border-left: 1px solid #221f1f;
+    border-bottom: 1px solid #221f1f;
     float: right;
+    margin-top: 60px;
+
 }
 
- .sidebar-two .text-wrap {
-    margin: 0 33px 0 18px;
+ .sidebar-two .text-wrap section {
+    padding: 0 25px 4px 17px;
+    border-bottom: 1px dotted #221f1f;
+    margin-bottom: 17px;
 }
+
+.sidebar-two .img-box {
+    border:1px solid #000; 
+    width:103px;
+    height: 103px;
+    border-left: none; 
+    margin-bottom: 17px;
+
+}
+
+        /****** @ sidebar images ******/
+
+        .sidebar-two .img-box {
+            background: url(../img/sidebar-img-macka.jpg)  0 0  no-repeat;
+        }
+
 
 /* ==========================================================================
   @ home styles

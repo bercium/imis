@@ -14,6 +14,7 @@
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/normalize.css") ?>
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/main.css") ?>
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/fonts.css") ?>
+    <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/administrator.css") ?>
     
     <!-- Wordpress Templates require a style.css in theme root directory -->
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."style.css") ?>

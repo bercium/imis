@@ -5,7 +5,7 @@
  */
 
 get_header(); ?>
-
+<div class="">
 <div class="row" ><img src="<?php bloginfo('template_directory'); ?>/img/brisime.jpg"></div>
 
 
@@ -70,7 +70,8 @@ get_header(); ?>
               
           </div>
       </div>
-      <div class="sidebar-one sidebar">
+      <div class="sidebar-two sidebar">
+        <div class="img-box" ></div>
         <div class="text-wrap">
           <!-- REPLACE wp-php here on: -->
             <?php 
@@ -83,5 +84,6 @@ get_header(); ?>
       </div>            
   </div>
 
+</div>
 
 <?php get_footer(); ?>

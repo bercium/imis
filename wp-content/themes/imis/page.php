@@ -46,7 +46,9 @@ get_header(); ?>
           </div>
       </div>
       <div class="sidebar-two sidebar">
+        <div class="img-box" ></div>
         <div class="text-wrap">
+
           <!-- REPLACE wp-php here on: -->
             <?php 
             // right side sidebar

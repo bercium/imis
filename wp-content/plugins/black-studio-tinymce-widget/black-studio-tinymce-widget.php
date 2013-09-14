@@ -20,7 +20,7 @@ class WP_Widget_Black_Studio_TinyMCE extends WP_Widget {
 	function __construct() {
 		$widget_ops = array('classname' => 'widget_black_studio_tinymce', 'description' => __('Arbitrary text or HTML with visual editor', 'black-studio-tinymce-widget'));
 		$control_ops = array('width' => 800, 'height' => 800);
-		parent::__construct('black-studio-tinymce', __('Black Studio TinyMCE', 'black-studio-tinymce-widget'), $widget_ops, $control_ops);
+		parent::__construct('black-studio-tinymce', __('IMIS (bst)', 'black-studio-tinymce-widget'), $widget_ops, $control_ops);
 	}
 
 	function widget( $args, $instance ) {

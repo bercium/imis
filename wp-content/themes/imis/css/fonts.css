@@ -129,8 +129,7 @@ footer .widget-one p {
 	font-size: 12px;
 	font-weight: bold;
 	color: #fff;	
-	line-height: 0;
-	letter-spacing: 1.43px;
+	line-height: 0;	
 }
 
 footer .footer p,
@@ -159,16 +158,44 @@ footer .footer .copyright {
    @ sidebars
    ========================================================================== */
 
+      
+   /****** @ sidebar-one ******/
       .sidebar-one ul li a {
       	font-family:"EurostileNextW01-SmBd";
       	font-size: 11px;
       	color: #000000;
+      }
 
+    /****** @ sidebar-two ******/
+
+
+
+      .sidebar-two p {
+        font-family: EurostileNextW01-Regula;
+        font-size: 10px;
+        line-height: 12px;
+        margin: 4px 0 12px;
       }
 
 
+      .sidebar-two h2.widgettitle {  
+        font-size: 10px;
+        font-family:"EurostileNextW01-SmBd";       
+        margin-bottom: 7px;
+        margin-top: 7px;
+        letter-spacing: 0.04em;
+        }
+
+        .sidebar-two a {
+          color: #000;
+          text-decoration: none;          
+        }
+        .sidebar-two a:hover {
+          color: #faad24;
+        }
 
 /****** @ home ******/
+
          .home-sidebar p,
          .home-sidebar  {
          		font-family:"EurostileNextW01-Regula";
