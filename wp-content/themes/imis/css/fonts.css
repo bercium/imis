@@ -120,6 +120,16 @@ h6 {
 }
 
 
+/****** @ home ******/
+.home .sidebar h2 { 
+  font-family: EurostileNextW01-SmBd;
+  font-size: 13px;
+  color: #faad24;
+  border-bottom: 1px dotted #faad24;
+  font-weight: 400 !important;
+
+}
+
 
 /* ==========================================================================
    @ sidebars

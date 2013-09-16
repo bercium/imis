@@ -462,8 +462,9 @@ border-bottom: 1px solid #faad24;
 
 /****** @ home main-content ******/
 .home-main-content .text-wrap {
-    padding: 0 70px;
+    padding: 60px 70px 0 70px;
 }
+
 
 
 /****** @ footer ******/
