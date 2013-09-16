@@ -140,6 +140,10 @@ clearfix {
     clear: both;
 }
 
+li {
+    list-style: square;
+}
+
 
 /****** @header ******/
 
@@ -181,6 +185,7 @@ clearfix {
     float: left;
     margin-right: 1px;
     margin-bottom: 0px;
+    list-style: none;
 }
 
 .main-navigation > ul > li a {
@@ -210,11 +215,43 @@ border-bottom: 1px solid #faad24;
 
 
 .main-navigation .searchform {
-    padding: 20px;
+    padding: 0 12px 0 27px;
     padding-bottom: 0;
+    margin-top:14px;
 }
 
- 
+
+.main-navigation .searchform input[type=submit] {
+        background: url(../img/ico-search.png)  0 top no-repeat;
+    width: 36px;
+    height: 21px;
+    line-height: 0;    
+    margin: 0;
+    text-indent: 100%; /* css image replacement  http://www.sitepoint.com/new-css-image-replacement-technique/ */
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1px;
+    border: none;
+    color: #1A1A1A;
+    text-indent: -99px;
+}
+
+
+
+
+.main-navigation .searchform input[type=text] {
+    border: none;
+    width: 176px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+
+
+.main-navigation .searchform #searchsubmit:hover {
+    background-position: 0 -21px;
+}
 
 /* ie fixes main nav */
 
@@ -267,18 +304,21 @@ border-bottom: 1px solid #faad24;
     text-transform: uppercase; 
 }
 
-.csstransitions .main-navigation > ul > li > ul {
+.csstransitions .main-navigation > ul > li > ul,
+.hideme {
 
     opacity: 0;
     filter: alpha(opacity=0);
     visibility: hidden;     
-    
+    transition: opacity 0.2s ease-in;
     -webkit-transition: opacity 0.2s ease-in;
     -moz-transition: opacity 0.2s ease-in;
     -o-transition: opacity 0.2s ease-in;
 }
 
-.csstransitions .main-navigation > ul > li:hover > ul {
+.csstransitions .main-navigation > ul > li:hover > ul,
+.showme
+ {
     display: block;
       filter: alpha(opacity=10);
     opacity: 10;    

@@ -29,7 +29,9 @@ get_header(); ?>
 
 
             <?php if (have_posts()) : ?>
-
+              <header>
+                <h2>Najdeni rezultati:</h2>
+              </header>
 
               <nav>
                 <div><?php next_posts_link('&laquo; Older Entries') ?></div>
@@ -58,8 +60,9 @@ get_header(); ?>
               </nav>
 
             <?php else : ?>
-
+            <header>
               <h2>Nothing found. Try a different search?</h2>
+              </header>
               <?php //get_search_form(); ?>
 
             <?php endif; ?>

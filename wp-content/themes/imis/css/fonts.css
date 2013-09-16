@@ -76,7 +76,24 @@ src:url("Fonts/e9ef705d-e81d-4c12-a636-da03f0d94538.eot?#iefix");
 src:url("Fonts/e9ef705d-e81d-4c12-a636-da03f0d94538.eot?#iefix") format("eot"),url("Fonts/cb72719e-4216-4659-891b-f36a9c6e79c0.woff") format("woff"),url("Fonts/0f770563-2f55-43bc-9836-95cf9bdb867d.ttf") format("truetype"),url("Fonts/c6398340-fc54-4743-9c18-84b1c1444ca9.svg#c6398340-fc54-4743-9c18-84b1c1444ca9") format("svg");
 }
 
-body {color: #000000;}
+body {color: #000000;
+font-family: EurostileNextW01-Regula;  
+font-size: 12px;
+}
+
+.main-content a,
+.home-main-content a {
+  color: #000;
+  
+  text-decoration: none;
+}
+
+.main-content a:hover,
+.home-main-content a:hover {
+  color: #faad24;
+  
+  text-decoration: none;
+}
 
 p, h1, h2, h3 {
     font-family: EurostileNextW01-Regula;  
@@ -106,6 +123,12 @@ header h2 {
     line-height: 40px;
 
 }
+
+.main-navigation .searchform input[type=text]  {
+  font-size: 13px;
+  font-family: EurostileNextW01-Regula;  
+}
+
  
 /* Won't be used here */
  
