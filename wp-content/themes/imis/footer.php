@@ -21,7 +21,7 @@
                     <div class="right text-wrap">
                     <!-- REPLACE wp-php here on: -->
                     <ul class="mini-navigation">
-                        <li><a href="#">Mapa strani</a></li>
+                        <li><a href="/sitemap">Mapa strani</a></li>
                         <li class="about"><a href="">O AVTORJIH</a>
                             <ul><li><a href="">EBerce</a><span>PRILAGODITEV VSEBIN IN TEHNIČNA IZVEDBA</span></li>
                                 <li><a href="">Katja Žerko</a><span>OBLIKOVANJE</span></li>
