@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-<div class="row" ><img src="<?php bloginfo('template_directory'); ?>/img/brisime.jpg"></div>
+<div class="vs <?php the_field('slika-v-glavi'); ?>" ></div>
 
 
  <div class="row">

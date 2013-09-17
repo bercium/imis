@@ -173,6 +173,28 @@ li {
     background: url(../img/header-bg.png) 0 bottom repeat-x;
 }
 
+
+.vs {
+    height: 294px;
+    width: 940px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+
+.vs-default,
+.slika-akreditiran {
+    background: url(../img/vs-akreditiran.jpg);
+}
+
+.slika-vecja-preglednost {
+    background: url(../img/vs-vecja-preglednost.jpg);
+}
+
+.slika-arhiviranje {
+    background: url(../img/vs-arhiviranje.jpg);
+}
+
 /****** @main navigation ******/
 
 .main-navigation ul {
