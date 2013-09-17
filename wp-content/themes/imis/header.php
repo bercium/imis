@@ -52,7 +52,7 @@
                     <ul>
                        <?php wp_list_pages('title_li=&depth=2' ); ?>
 
-                        <li class="page_item page-item-11">
+                        <li class="page_item page-item-11 searchbtn">
                           <a ><?php _e('Iskalnik','www.imis.si'); ?></a>
                           <ul class="children">
                             <li class="page_item page-item-2">
@@ -66,7 +66,9 @@
                           </ul>
                         </li>
                      </ul>
+                     <div class="lang-box">
                     <?php simple_language_switcher(); ?>
+                  </div>
                      <!-- wp-php end-->
                 </nav>
                </div>

@@ -5,8 +5,9 @@
  */
 
 get_header(); ?>
-<div class="">
-<div class="row" ><img src="<?php bloginfo('template_directory'); ?>/img/brisime.jpg"></div>
+<div class="vs vs-default <?php the_field('slika-v-glavi'); ?>" ></div>
+
+
 
 
  <div class="row">
@@ -30,7 +31,7 @@ get_header(); ?>
 
             <?php if (have_posts()) : ?>
               <header>
-                <h2>Najdeni rezultati:</h2>
+                <h1>REZULTATI ISKANJA</h1>
               </header>
 
               <nav>
@@ -87,6 +88,6 @@ get_header(); ?>
       </div>            
   </div>
 
-</div>
+
 
 <?php get_footer(); ?>

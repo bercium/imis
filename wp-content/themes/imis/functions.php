@@ -88,7 +88,7 @@ function get_post_top_ancestor_id(){
 }}
 
 function wordpress_breadcrumbs() {
-  $delimiter = '>';
+  $delimiter = '<span class="del"> &gt; </span>';
   $currentBefore = '<span class="current">';
   $currentAfter = '</span>';
   

@@ -25,8 +25,7 @@ get_header(); ?>
       <div class="main-content">
           <div class="text-wrap">
               <details>
-      <summary><h1>Napaka 404</h1></summary>
-      <p><span frown>:(</span></p>
+      <summary><h1 style="font-size: 60px; line-height: 90px; color: #999;">Napaka 404</h1></summary>      
     </details>
           </div>
       </div>

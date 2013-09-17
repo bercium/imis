@@ -182,7 +182,7 @@ clearfix {
 }
 
 .vs {
-    height: 294px;
+    height: 249px;
     width: 940px;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -204,13 +204,21 @@ clearfix {
 #crumbs {
     position: absolute;
     top:-45px;
+    text-transform: uppercase;
     
 }
+
+#crumbs .del {
+    margin: 0 5px;
+}
+
 #crumbs, #crumbs a {
     font-size: 10px;
-    color:#8c8d8b;
-    
+    color:#8c8d8b; 
+}
 
+#crumbs a:hover {
+    color: #faad24;
 }
 
 
@@ -248,11 +256,13 @@ border-bottom: 1px solid #faad24;
 .main-navigation > ul > .current_page_item > a,
 .main-navigation > ul > .current_page_ancestor > a,
 .main-navigation > ul  > li > a:hover,
-.stayhover > a {
+.stayhover > a,
+.searchbtn > a {
     /*box-shadow: 0 -10px 10px 4px #1A1A1A inset;*/
-    background: url(../img/main-nav-bg-hover.png) 0 0 no-repeat !important;
+    background: url(../img/main-nav-bg-hover.png) top center no-repeat !important;
+    
     background-size:100% auto !important;
-    background-color: #1c1c1c !important;    
+    background-color: #1A1A1A !important;    
 }
 
 
@@ -303,7 +313,22 @@ border-bottom: 1px solid #faad24;
     background-color: #fff;
 }
 
+.main-navigation .lang-box {
+    padding-left: 16px;
+    display: block;
+    float: left;
+    height: 18px;
+    width: 80px;    
+    margin-top: 0px;
 
+}
+
+.main-navigation .lang-box a {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #707070;
+    text-decoration: none;
+}
 
 
 /* ie fixes main nav */
@@ -355,7 +380,7 @@ border-bottom: 1px solid #faad24;
     padding: 16px 0 30px 0;
     background: #1a1a1a;    
     text-transform: uppercase; 
-    margin-top: 1px;
+    
 }
 
 .csstransitions .main-navigation > ul > li > ul,
@@ -483,11 +508,12 @@ border-bottom: 1px solid #faad24;
 
 
  .sidebar-one ul .current_page_item a,
- .sidebar-one ul .current_page_item a {
+ .sidebar-one ul .current_page_item a   {
     background: #b3b3b3;
 }
 .sidebar-one ul .current_page_item a:hover,
-.sidebar-one ul .current_page_item a:hover {
+.sidebar-one ul .current_page_item a:hover
+ {
     color: #000;
 }
 
@@ -500,13 +526,15 @@ border-bottom: 1px solid #faad24;
     float: left;
     min-height: 700px;
     padding-bottom: 47px;
-    padding-top: 58px;
+    padding-top: 36px;
+
 
 }
 
  .main-content .text-wrap {
     margin: 0 50px;
     position: relative;
+    overflow: auto;
 }
 
 
@@ -558,7 +586,7 @@ border-bottom: 1px solid #faad24;
 
 /****** @ home main-content ******/
 .home-main-content .text-wrap {
-    padding: 60px 70px 0 70px;
+    padding: 36px 70px 60px 70px;
 }
 
 
@@ -575,9 +603,6 @@ footer .footer p a {
     display: inline-block;
 }
 
-footer {
-    margin-bottom: 20px;
-}
 
 footer .widget-one {
     background: #faad24; 
