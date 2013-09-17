@@ -66,6 +66,7 @@
                           </ul>
                         </li>
                      </ul>
+                    <?php simple_language_switcher(); ?>
                      <!-- wp-php end-->
                 </nav>
                </div>
