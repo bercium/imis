@@ -38,7 +38,7 @@
 
         <div id="container">
             <div class="header-wrap">
-                <div class="row">
+                <div class="header-row row">
                     <header>
                         <!-- REPLACE wp-php here on: -->
                         <h1 class="main-logo" ><a href=" <?php echo home_url(); ?> ">Imaging systems</a></h1>                

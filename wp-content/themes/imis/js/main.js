@@ -11,7 +11,7 @@ $(function( ) {
 // ad text to search text field
 $(function( ) {
 	var searchForm = $(".main-navigation .searchform input[type=text]");
-	searchForm.val("išči...");
+	searchForm.val("Išči...");
 	searchForm.click(function() {          
         $(this).val('')          
                .unbind('click'); 
@@ -33,6 +33,22 @@ $(function( ) {
 	});
 
 */
+
+	// remove border on last main-navigation button
+	$(function(){
+		$(".main-navigation > ul > li > a:last").css("border-right", "none");
+
+	});
+
+
+		// keep hover on main-nav button when in dropdown
+	$(function(){
+		$(".main-navigation > ul > li").hover(function() {
+			$(this).toggleClass("stayhover");
+
+		});
+
+	});
 
 
 

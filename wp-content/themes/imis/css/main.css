@@ -60,12 +60,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
 body {
 background: url(../img/body_bg.jpg) center 0 ;
 background-attachment: fixed;
-
 }
 
 /****** @main grid % common styles ******/
@@ -140,10 +137,16 @@ clearfix {
     clear: both;
 }
 
-li {
+.home-main-content li,
+.main-content li,
+.sidebar,
+.home-sidebar {
     list-style: square;
 }
 
+.post-edit-link {
+    color: blue !important;
+}
 
 /****** @header ******/
 
@@ -160,6 +163,10 @@ li {
     margin-bottom: 1px;
 }
 
+#container .header-wrap .header-row {
+    height: 105px;
+}
+
 .main-logo a {
     position: absolute;
     height: 90%;
@@ -171,8 +178,8 @@ li {
 
 .header-wrap {
     background: url(../img/header-bg.png) 0 bottom repeat-x;
+    height: 124px;
 }
-
 
 .vs {
     height: 294px;
@@ -180,7 +187,6 @@ li {
     background-position: 0 0;
     background-repeat: no-repeat;
 }
-
 
 .vs-default,
 .slika-akreditiran {
@@ -204,8 +210,7 @@ li {
 }
 
 .main-navigation ul li {
-    float: left;
-    margin-right: 1px;
+    float: left;    
     margin-bottom: 0px;
     list-style: none;
 }
@@ -216,6 +221,10 @@ li {
     background: #333333;
     text-decoration: none;
     padding: 5px 8px 2px 6px;
+
+}
+.main-navigation > ul > li > a {
+    border-right: 1px solid #7f7f7f;         
 }
 
 .main-navigation > ul > .current_page_item:first-letter,
@@ -225,10 +234,16 @@ border-bottom: 1px solid #faad24;
 
 .main-navigation > ul > .current_page_item > a,
 .main-navigation > ul > .current_page_ancestor > a,
-.main-navigation > ul  > li > a:hover {
-    box-shadow: 0 -10px 10px 4px #1A1A1A inset;
-    background: #434343;
+.main-navigation > ul  > li > a:hover,
+.stayhover > a {
+    /*box-shadow: 0 -10px 10px 4px #1A1A1A inset;*/
+    background: url(../img/main-nav-bg-hover.png) 0 0 no-repeat !important;
+    background-size:100% auto !important;
+    background-color: #1c1c1c !important;    
 }
+
+
+
 
 .main-navigation > ul > .current-menu-item,
 .main-navigation > ul  > li:hover {
@@ -237,9 +252,9 @@ border-bottom: 1px solid #faad24;
 
 
 .main-navigation .searchform {
-    padding: 0 12px 0 27px;
-    padding-bottom: 0;
-    margin-top:14px;
+    height: 16px;
+    margin-top: 0;
+    padding: 7px 12px 0 27px;
 }
 
 
@@ -252,14 +267,17 @@ border-bottom: 1px solid #faad24;
     text-indent: 100%; /* css image replacement  http://www.sitepoint.com/new-css-image-replacement-technique/ */
     white-space: nowrap;
     overflow: hidden;
-    position: relative;
-    margin-bottom: 1px;
+    position: relative;    
     border: none;
     color: #1A1A1A;
     text-indent: -99px;
+    padding-top: 3px;
+    margin-left: 1px;
 }
 
-
+.main-navigation .searchform #searchsubmit:hover {
+    background-position: 0 -21px;
+}
 
 
 .main-navigation .searchform input[type=text] {
@@ -267,13 +285,13 @@ border-bottom: 1px solid #faad24;
     width: 176px;
     padding-left: 5px;
     padding-top: 5px;
+    padding-bottom: 1px;
+    background: url(../img/bg-search-field.png) 0 0 repeat-x;
+    background-color: #fff;
 }
 
 
 
-.main-navigation .searchform #searchsubmit:hover {
-    background-position: 0 -21px;
-}
 
 /* ie fixes main nav */
 
@@ -321,9 +339,10 @@ border-bottom: 1px solid #faad24;
 .main-navigation > ul > li > ul {
     
     position: absolute;
-    padding: 8px 0 30px 0;
+    padding: 16px 0 30px 0;
     background: #1a1a1a;    
     text-transform: uppercase; 
+    margin-top: 1px;
 }
 
 .csstransitions .main-navigation > ul > li > ul,

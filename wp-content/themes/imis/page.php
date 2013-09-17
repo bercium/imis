@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-<div class="vs <?php the_field('slika-v-glavi'); ?>" ></div>
+<div class="vs vs-default <?php the_field('slika-v-glavi'); ?>" ></div>
 
 
  <div class="row">
