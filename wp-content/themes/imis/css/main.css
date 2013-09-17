@@ -178,7 +178,7 @@ clearfix {
 
 .header-wrap {
     background: url(../img/header-bg.png) 0 bottom repeat-x;
-    height: 124px;
+    height: 123px;
 }
 
 .vs {
@@ -200,6 +200,19 @@ clearfix {
 .slika-arhiviranje {
     background: url(../img/vs-arhiviranje.jpg);
 }
+
+#crumbs {
+    position: absolute;
+    top:-45px;
+    
+}
+#crumbs, #crumbs a {
+    font-size: 10px;
+    color:#8c8d8b;
+    
+
+}
+
 
 /****** @main navigation ******/
 
@@ -470,11 +483,11 @@ border-bottom: 1px solid #faad24;
 
 
  .sidebar-one ul .current_page_item a,
- .sidebar-one ul .current_page_ancestor a {
+ .sidebar-one ul .current_page_item a {
     background: #b3b3b3;
 }
 .sidebar-one ul .current_page_item a:hover,
-.sidebar-one ul .current_page_ancestor a:hover {
+.sidebar-one ul .current_page_item a:hover {
     color: #000;
 }
 
@@ -487,11 +500,13 @@ border-bottom: 1px solid #faad24;
     float: left;
     min-height: 700px;
     padding-bottom: 47px;
+    padding-top: 58px;
 
 }
 
  .main-content .text-wrap {
     margin: 0 50px;
+    position: relative;
 }
 
 
@@ -568,11 +583,14 @@ footer .widget-one {
     background: #faad24; 
     overflow: hidden;
     padding: 1px 0;
+    height: 22px;
 }
+
 
 footer .widget-one .text-wrap {
     margin-left: 50px;
     display: block;
+    margin-top: 3px;
 
 }
 
@@ -591,14 +609,14 @@ footer .footer .text-wrap {
 /****** @ footer copyright ******/
 
 footer .footer .copyright {
-    margin-top: 1px;
+    margin-top: 5px;
 }
 
 /****** @ footer mini-menu ******/
 
 footer .footer .mini-navigation {
     margin-right: 11px;
-    margin-top: 13px;
+    margin-top: 8px;
 }
 .mini-navigation .about {
     position: relative;

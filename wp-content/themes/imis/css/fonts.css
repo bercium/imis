@@ -115,14 +115,31 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     font-weight: normal;
 }
- 
-header h2 {
-   margin-top: 58px;
-   margin-bottom: 15px;
-    font-size: 29px;
+
+h1 {
+    font-size: 36px;
     line-height: 40px;
 
 }
+h2 {
+  font-size: 27px;
+  line-height: 36px;
+
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 30px;
+}
+ 
+ h4 {
+   
+   margin-bottom: 15px;
+    font-size: 29px;
+    line-height: 40px;
+}
+
+
 
 .main-navigation .searchform input[type=text]  {
   font-size: 13px;
@@ -150,6 +167,7 @@ h6 {
   color: #faad24;
   border-bottom: 1px dotted #faad24;
   font-weight: 400 !important;
+  line-height: 15px;
 
 }
 
@@ -184,6 +202,7 @@ h6 {
         margin-bottom: 7px;
         margin-top: 7px;
         letter-spacing: 0.04em;
+        line-height: 15px;
         }
 
         .sidebar-two a {
@@ -235,7 +254,8 @@ footer .widget-one p {
   font-size: 12px;
   font-weight: bold;
   color: #fff;  
-  line-height: 0; 
+  line-height: 14px; 
+  letter-spacing: 0.1px;
 }
 
 footer .footer p,
@@ -245,7 +265,7 @@ footer .footer ul li a {
   font-size: 11px;
   color: #fff;
   text-decoration: none;
-  line-height: 0;
+  line-height: 14px;
 }
 
 footer .footer .mini-navigation {
