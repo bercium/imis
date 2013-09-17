@@ -53,7 +53,7 @@
                        <?php wp_list_pages('title_li=&depth=2' ); ?>
 
                         <li class="page_item page-item-11">
-                          <a >Iskalnik</a>
+                          <a ><?php _e('Iskalnik','www.imis.si'); ?></a>
                           <ul class="children">
                             <li class="page_item page-item-2">
                               <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ) ?>">
