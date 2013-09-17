@@ -87,6 +87,37 @@ function get_post_top_ancestor_id(){
     return $post->ID;
 }}
 
+function wordpress_breadcrumbs() {
+  $delimiter = '>';
+  $currentBefore = '<span class="current">';
+  $currentAfter = '</span>';
+  
+  if ( !is_home() && !is_front_page() || is_paged()) {
+    global $post;
+    if (count($post->ancestors) > 1){
+    echo '<div id="crumbs">';
+    if ( is_page() && !$post->post_parent ) {
+      echo $currentBefore;
+      the_title();
+      echo $currentAfter; }
+	elseif ( is_page() && $post->post_parent ) {
+      $parent_id  = $post->post_parent;
+      $breadcrumbs = array();
+      while ($parent_id) {
+        $page = get_page($parent_id);
+        $breadcrumbs[] = '<a href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
+        $parent_id  = $page->post_parent;
+      }
+      $breadcrumbs = array_reverse($breadcrumbs);
+      foreach ($breadcrumbs as $crumb) echo $crumb . ' ' . $delimiter . ' ';
+      echo $currentBefore;
+      the_title();
+      echo $currentAfter;
+    }
+    echo '</div>';
+  }
+  }
+}
 
 // custom css for login screen
 function my_login_stylesheet() { ?>

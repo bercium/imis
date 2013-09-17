@@ -16,7 +16,8 @@ get_header(); ?>
               <img src="<?php bloginfo('template_directory'); ?>/img/secondary-logo.png" title="IMIS"  />
                   <?php  // left sidebar / secondary menu menu ?>
                   <ul class="clearfix">
-                    <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
+                    <?php wp_list_pages( array('title_li'=>'','include'=>get_post_top_ancestor_id()) ); ?>
+                    <?php wp_list_pages( array('title_li'=>'','depth'=>1, 'child_of'=>get_post_top_ancestor_id()) ); ?>
                   </ul>
           <!-- wp-php end  -->
           </div>
@@ -26,6 +27,9 @@ get_header(); ?>
       <div class="main-content">
           <div class="text-wrap">
               <!-- REPLACE  wp-php here on: -->
+              
+              <?php wordpress_breadcrumbs(); ?>
+              
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <article class="post" id="post-<?php the_ID(); ?>">
     <header>
