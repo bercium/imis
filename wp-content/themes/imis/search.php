@@ -31,18 +31,18 @@ get_header(); ?>
 
             <?php if (have_posts()) : ?>
               <header>
-                <h1>REZULTATI ISKANJA</h1>
+                <h1><?php _e("Rezultati iskanja","imis-site"); ?></h1>
               </header>
 
               <nav>
-                <div><?php next_posts_link('&laquo; Older Entries') ?></div>
-                <div><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+                <div><?php next_posts_link('&laquo; '.__("Prejšni zadetki","imis-site")) ?></div>
+                <div><?php previous_posts_link(__("Naslednji zadetki","imis-site").' &raquo;') ?></div>
               </nav>
 
               <?php while (have_posts()) : the_post(); ?>
 
                 <article <?php post_class() ?>>
-                  <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                  <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
                   <?php /* ?>
                   <footer>
@@ -56,24 +56,22 @@ get_header(); ?>
               <?php endwhile; ?>
 
               <nav>
-                <div><?php next_posts_link('&laquo; Older Entries') ?></div>
-                <div><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+                <div><?php next_posts_link('&laquo; '.__("Prejšni zadetki","imis-site")) ?></div>
+                <div><?php previous_posts_link(__("Naslednji zadetki","imis-site").' &raquo;') ?></div>
               </nav>
 
             <?php else : ?>
             <header>
-              <h2>Nothing found. Try a different search?</h2>
+              <h2><?php _e("Izbrano iskanje ni vrnilo nobenih zadetkov.","imis-site"); ?></h2>
               </header>
               <?php //get_search_form(); ?>
 
             <?php endif; ?>
               
               
-              
-              
-              
           </div>
       </div>
+   
       <div class="sidebar-two sidebar">
         <div class="img-box" ></div>
         <div class="text-wrap">

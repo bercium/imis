@@ -30,12 +30,12 @@ get_header(); ?>
           <div class="text-wrap">            
             
     <header>
-      <h1><?php _e("Mapa strani","imis-site"); ?> </h1>
+      <h1><?php the_title(); ?></h1>
 
     </header>            
 
           <ul class="clearfix">
-             <?php wp_list_pages( array('title_li'=>'','depth'=>2, 'show_date' => true) ); ?>
+             <?php wp_list_pages( array('title_li'=>'','depth'=>2) ); ?>
           </ul>
               
           </div>

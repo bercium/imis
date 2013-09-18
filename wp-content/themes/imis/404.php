@@ -24,11 +24,11 @@ get_header(); ?>
 
       <div class="main-content">
           <div class="text-wrap">
-              <details>
-      <summary><h1 style="font-size: 60px; line-height: 90px; color: #999;">Napaka 404</h1></summary>      
-    </details>
+              <h1><?php _e("Željena stran ni bila najdena!","imis-site"); ?></h1>
           </div>
       </div>
+   
+   <?php //* ?>
       <div class="sidebar-two sidebar">
         <div class="img-box" ></div>
         <div class="text-wrap">
@@ -36,12 +36,12 @@ get_header(); ?>
           <!-- REPLACE wp-php here on: -->
             <?php 
             // right side sidebar
-            dynamic_sidebar();
+            //dynamic_sidebar();
             //get_sidebar(); ?>
 
           <!-- wp-php end  -->
           </div>
-      </div>            
+      </div><?php //*/ ?>
   </div>
 
 
