@@ -29,9 +29,13 @@ get_header(); ?>
       <div class="main-content">
           <div class="text-wrap">            
             
+    <header>
+      <h1><?php _e("Mapa strani","imis-site"); ?> </h1>
+
+    </header>            
 
           <ul class="clearfix">
-             <?php wp_list_pages( array('title_li'=>'','depth'=>2) ); ?>
+             <?php wp_list_pages( array('title_li'=>'','depth'=>2, 'show_date' => true) ); ?>
           </ul>
               
           </div>

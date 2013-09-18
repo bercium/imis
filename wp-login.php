@@ -645,7 +645,7 @@ default:
 				$redirect_to = get_dashboard_url( $user->ID );
 			elseif ( !$user->has_cap('edit_posts') )
 				$redirect_to = admin_url('profile.php');
-      $redirect_to = 'index.php';
+      //$redirect_to = 'index.php';
 		}
 		wp_safe_redirect($redirect_to);
 		exit();

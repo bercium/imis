@@ -49,9 +49,12 @@
                <div class="row">
                 <nav class="main-navigation clearfix">
                     <!-- REPLACE wp-php here on: -->
-                    <ul>
-                       <?php wp_list_pages('title_li=&depth=2' ); ?>
-
+                    
+                    
+                       <?php //wp_list_pages('title_li=&depth=2' ); ?>
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 
+                                                 'container' => false) ); ?>
+                       <ul>
                         <li class="page_item page-item-11 searchbtn">
                           <a ><?php _e('Iskalnik','www.imis.si'); ?></a>
                           <ul class="children">
@@ -66,7 +69,8 @@
                           </ul>
                         </li>
                      </ul>
-                     <div class="lang-box">
+
+                    <div class="lang-box">
                     <?php simple_language_switcher(); ?>
                   </div>
                      <!-- wp-php end-->

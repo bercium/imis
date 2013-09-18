@@ -91,33 +91,54 @@ function wordpress_breadcrumbs() {
   $delimiter = '<span class="del"> &gt; </span>';
   $currentBefore = '<span class="current">';
   $currentAfter = '</span>';
-  
-  if ( !is_home() && !is_front_page() || is_paged()) {
+  if (!is_home() && !is_front_page() || is_paged()) {
     global $post;
-    if (count($post->ancestors) > 1){
-    echo '<div id="crumbs">';
-    if ( is_page() && !$post->post_parent ) {
-      echo $currentBefore;
-      the_title();
-      echo $currentAfter; }
-	elseif ( is_page() && $post->post_parent ) {
-      $parent_id  = $post->post_parent;
-      $breadcrumbs = array();
-      while ($parent_id) {
-        $page = get_page($parent_id);
-        $breadcrumbs[] = '<a href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
-        $parent_id  = $page->post_parent;
+    if (count($post->ancestors) > 1) {
+      echo '<div id="crumbs">';
+      if (is_page() && !$post->post_parent) {
+        echo $currentBefore;
+        the_title();
+        echo $currentAfter;
+      } elseif (is_page() && $post->post_parent) {
+        $parent_id = $post->post_parent;
+        $breadcrumbs = array();
+        while ($parent_id) {
+          $page = get_page($parent_id);
+          $breadcrumbs[] = '<a href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
+          $parent_id = $page->post_parent;
+        }
+        $breadcrumbs = array_reverse($breadcrumbs);
+        foreach ($breadcrumbs as $crumb)
+          echo $crumb . ' ' . $delimiter . ' ';
+        echo $currentBefore;
+        the_title();
+        echo $currentAfter;
       }
-      $breadcrumbs = array_reverse($breadcrumbs);
-      foreach ($breadcrumbs as $crumb) echo $crumb . ' ' . $delimiter . ' ';
-      echo $currentBefore;
-      the_title();
-      echo $currentAfter;
+      echo '</div>';
     }
-    echo '</div>';
-  }
   }
 }
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Glavni menu',"imis-site"),
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
+
+/**
+ * Redirect non-admins to the homepage after logging into the site.
+ *
+ * @since 	1.0
+ */
+function soi_login_redirect( $redirect_to, $request, $user  ) {
+	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
+} // end soi_login_redirect
+add_filter( 'login_redirect', 'soi_login_redirect', 10, 3 );
+
 
 // custom css for login screen
 function my_login_stylesheet() { ?>

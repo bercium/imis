@@ -21,10 +21,15 @@
                     <div class="right text-wrap">
                     <!-- REPLACE wp-php here on: -->
                     <ul class="mini-navigation">
-                        <li><a href="/sitemap">Mapa strani</a></li>
-                        <li class="about"><a href="">O AVTORJIH</a>
-                            <ul><li><a href="">EBerce</a><span>PRILAGODITEV VSEBIN IN TEHNIČNA IZVEDBA</span></li>
-                                <li><a href="">Katja Žerko</a><span>OBLIKOVANJE</span></li>
+                      
+                      <?php 
+                      $actual_link = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+                      preg_match(, $actual_link, $matches);
+                      ?>
+                        <li><a href="<?php _e("sitemap","imis-site"); ?>"><?php _e("Mapa strani","imis-site"); ?></a></li>
+                        <li class="about"><a href=""><?php _e("O AVTORJIH","imis-site"); ?> </a>
+                            <ul><li><a href="">EBerce</a><span><?php _e("PRILAGODITEV VSEBIN IN TEHNIČNA IZVEDBA","imis-site"); ?></span></li>
+                                <li><a href="">Katja Žerko</a><span><?php _e("OBLIKOVANJE","imis-site"); ?></span></li>
                             </ul>
                         </li>
                     </ul>
@@ -36,7 +41,6 @@
             </div>  
 
         </footer>
-        
 
         </div><!-- container -->
         

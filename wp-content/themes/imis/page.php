@@ -16,7 +16,11 @@ get_header(); ?>
               <img src="<?php bloginfo('template_directory'); ?>/img/secondary-logo.png" title="IMIS"  />
                   <?php  // left sidebar / secondary menu menu ?>
                   <ul class="clearfix">
-                    <?php wp_list_pages( array('title_li'=>'','include'=>get_post_top_ancestor_id()) ); ?>
+                    <?php echo str_replace("current_page_parent","",
+                                 str_replace("current_page_ancestor", "", 
+                                   wp_list_pages( array('title_li'=>'','echo'=>0,'include'=>get_post_top_ancestor_id()) )
+                                 )
+                               ); ?>
                     <?php wp_list_pages( array('title_li'=>'','depth'=>1, 'child_of'=>get_post_top_ancestor_id()) ); ?>
                   </ul>
           <!-- wp-php end  -->
