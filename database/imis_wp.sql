@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 18, 2013 at 02:38 PM
+-- Generation Time: Sep 18, 2013 at 04:02 PM
 -- Server version: 5.5.12
 -- PHP Version: 5.4.4
 
@@ -223,7 +223,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (145, '_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a', '1378296456', 'yes'),
 (146, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'a:40:{s:6:"widget";a:3:{s:4:"name";s:6:"widget";s:4:"slug";s:6:"widget";s:5:"count";s:4:"3898";}s:4:"post";a:3:{s:4:"name";s:4:"Post";s:4:"slug";s:4:"post";s:5:"count";s:4:"2456";}s:6:"plugin";a:3:{s:4:"name";s:6:"plugin";s:4:"slug";s:6:"plugin";s:5:"count";s:4:"2344";}s:5:"admin";a:3:{s:4:"name";s:5:"admin";s:4:"slug";s:5:"admin";s:5:"count";s:4:"1930";}s:5:"posts";a:3:{s:4:"name";s:5:"posts";s:4:"slug";s:5:"posts";s:5:"count";s:4:"1856";}s:7:"sidebar";a:3:{s:4:"name";s:7:"sidebar";s:4:"slug";s:7:"sidebar";s:5:"count";s:4:"1583";}s:7:"twitter";a:3:{s:4:"name";s:7:"twitter";s:4:"slug";s:7:"twitter";s:5:"count";s:4:"1329";}s:6:"google";a:3:{s:4:"name";s:6:"google";s:4:"slug";s:6:"google";s:5:"count";s:4:"1325";}s:8:"comments";a:3:{s:4:"name";s:8:"comments";s:4:"slug";s:8:"comments";s:5:"count";s:4:"1310";}s:6:"images";a:3:{s:4:"name";s:6:"images";s:4:"slug";s:6:"images";s:5:"count";s:4:"1260";}s:4:"page";a:3:{s:4:"name";s:4:"page";s:4:"slug";s:4:"page";s:5:"count";s:4:"1225";}s:5:"image";a:3:{s:4:"name";s:5:"image";s:4:"slug";s:5:"image";s:5:"count";s:4:"1121";}s:9:"shortcode";a:3:{s:4:"name";s:9:"shortcode";s:4:"slug";s:9:"shortcode";s:5:"count";s:4:"1000";}s:8:"facebook";a:3:{s:4:"name";s:8:"Facebook";s:4:"slug";s:8:"facebook";s:5:"count";s:3:"982";}s:5:"links";a:3:{s:4:"name";s:5:"links";s:4:"slug";s:5:"links";s:5:"count";s:3:"974";}s:3:"seo";a:3:{s:4:"name";s:3:"seo";s:4:"slug";s:3:"seo";s:5:"count";s:3:"950";}s:9:"wordpress";a:3:{s:4:"name";s:9:"wordpress";s:4:"slug";s:9:"wordpress";s:5:"count";s:3:"844";}s:7:"gallery";a:3:{s:4:"name";s:7:"gallery";s:4:"slug";s:7:"gallery";s:5:"count";s:3:"821";}s:6:"social";a:3:{s:4:"name";s:6:"social";s:4:"slug";s:6:"social";s:5:"count";s:3:"780";}s:3:"rss";a:3:{s:4:"name";s:3:"rss";s:4:"slug";s:3:"rss";s:5:"count";s:3:"722";}s:7:"widgets";a:3:{s:4:"name";s:7:"widgets";s:4:"slug";s:7:"widgets";s:5:"count";s:3:"686";}s:6:"jquery";a:3:{s:4:"name";s:6:"jquery";s:4:"slug";s:6:"jquery";s:5:"count";s:3:"681";}s:5:"pages";a:3:{s:4:"name";s:5:"pages";s:4:"slug";s:5:"pages";s:5:"count";s:3:"678";}s:5:"email";a:3:{s:4:"name";s:5:"email";s:4:"slug";s:5:"email";s:5:"count";s:3:"623";}s:4:"ajax";a:3:{s:4:"name";s:4:"AJAX";s:4:"slug";s:4:"ajax";s:5:"count";s:3:"615";}s:5:"media";a:3:{s:4:"name";s:5:"media";s:4:"slug";s:5:"media";s:5:"count";s:3:"595";}s:10:"javascript";a:3:{s:4:"name";s:10:"javascript";s:4:"slug";s:10:"javascript";s:5:"count";s:3:"572";}s:5:"video";a:3:{s:4:"name";s:5:"video";s:4:"slug";s:5:"video";s:5:"count";s:3:"570";}s:10:"buddypress";a:3:{s:4:"name";s:10:"buddypress";s:4:"slug";s:10:"buddypress";s:5:"count";s:3:"541";}s:4:"feed";a:3:{s:4:"name";s:4:"feed";s:4:"slug";s:4:"feed";s:5:"count";s:3:"539";}s:7:"content";a:3:{s:4:"name";s:7:"content";s:4:"slug";s:7:"content";s:5:"count";s:3:"530";}s:5:"photo";a:3:{s:4:"name";s:5:"photo";s:4:"slug";s:5:"photo";s:5:"count";s:3:"522";}s:4:"link";a:3:{s:4:"name";s:4:"link";s:4:"slug";s:4:"link";s:5:"count";s:3:"506";}s:6:"photos";a:3:{s:4:"name";s:6:"photos";s:4:"slug";s:6:"photos";s:5:"count";s:3:"505";}s:5:"login";a:3:{s:4:"name";s:5:"login";s:4:"slug";s:5:"login";s:5:"count";s:3:"471";}s:4:"spam";a:3:{s:4:"name";s:4:"spam";s:4:"slug";s:4:"spam";s:5:"count";s:3:"458";}s:5:"stats";a:3:{s:4:"name";s:5:"stats";s:4:"slug";s:5:"stats";s:5:"count";s:3:"453";}s:8:"category";a:3:{s:4:"name";s:8:"category";s:4:"slug";s:8:"category";s:5:"count";s:3:"452";}s:7:"youtube";a:3:{s:4:"name";s:7:"youtube";s:4:"slug";s:7:"youtube";s:5:"count";s:3:"436";}s:7:"comment";a:3:{s:4:"name";s:7:"comment";s:4:"slug";s:7:"comment";s:5:"count";s:3:"432";}}', 'yes'),
 (149, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1379505849;s:7:"checked";a:10:{s:31:"add-admin-css/add-admin-css.php";s:3:"1.2";s:30:"advanced-custom-fields/acf.php";s:5:"4.2.2";s:19:"akismet/akismet.php";s:5:"2.5.9";s:59:"black-studio-tinymce-widget/black-studio-tinymce-widget.php";s:5:"1.2.0";s:34:"custom-sidebars/customsidebars.php";s:3:"1.2";s:9:"hello.php";s:3:"1.6";s:21:"polylang/polylang.php";s:5:"1.1.5";s:69:"remove-dashboard-access-for-non-admins/remove-wp-dashboard-access.php";s:3:"1.0";s:53:"simple-language-switcher/simple-language-switcher.php";s:3:"1.1";s:43:"user-access-manager/user-access-manager.php";s:7:"1.2.4.3";}s:8:"response";a:0:{}}', 'yes'),
-(150, 'uamAdminOptions', 'a:32:{s:15:"hide_post_title";s:5:"false";s:10:"post_title";s:10:"No rights!";s:12:"post_content";s:43:"Sorry you have no rights to view this post!";s:9:"hide_post";s:4:"true";s:17:"hide_post_comment";s:5:"false";s:20:"post_comment_content";s:33:"Sorry no rights to view comments!";s:20:"post_comments_locked";s:5:"false";s:15:"hide_page_title";s:5:"false";s:10:"page_title";s:10:"No rights!";s:12:"page_content";s:43:"Sorry you have no rights to view this page!";s:9:"hide_page";s:4:"true";s:17:"hide_page_comment";s:5:"false";s:20:"page_comment_content";s:33:"Sorry no rights to view comments!";s:20:"page_comments_locked";s:5:"false";s:8:"redirect";s:5:"false";s:20:"redirect_custom_page";s:1:"2";s:19:"redirect_custom_url";s:0:"";s:14:"lock_recursive";s:4:"true";s:25:"authors_has_access_to_own";s:4:"true";s:31:"authors_can_add_posts_to_groups";s:5:"false";s:9:"lock_file";s:5:"false";s:14:"file_pass_type";s:6:"random";s:15:"lock_file_types";s:3:"all";s:13:"download_type";s:5:"fopen";s:17:"locked_file_types";s:14:"zip,rar,tar,gz";s:21:"not_locked_file_types";s:16:"gif,jpg,jpeg,png";s:15:"blog_admin_hint";s:4:"true";s:20:"blog_admin_hint_text";s:3:"[L]";s:21:"hide_empty_categories";s:4:"true";s:12:"protect_feed";s:4:"true";s:29:"show_post_content_before_more";s:5:"false";s:16:"full_access_role";s:13:"administrator";}', 'yes'),
+(150, 'uamAdminOptions', 'a:32:{s:15:"hide_post_title";s:5:"false";s:10:"post_title";s:10:"No rights!";s:12:"post_content";s:43:"Sorry you have no rights to view this post!";s:9:"hide_post";s:4:"true";s:17:"hide_post_comment";s:5:"false";s:20:"post_comment_content";s:33:"Sorry no rights to view comments!";s:20:"post_comments_locked";s:5:"false";s:15:"hide_page_title";s:5:"false";s:10:"page_title";s:10:"No rights!";s:12:"page_content";s:43:"Sorry you have no rights to view this page!";s:9:"hide_page";s:4:"true";s:17:"hide_page_comment";s:5:"false";s:20:"page_comment_content";s:33:"Sorry no rights to view comments!";s:20:"page_comments_locked";s:5:"false";s:8:"redirect";s:4:"blog";s:20:"redirect_custom_page";s:1:"2";s:19:"redirect_custom_url";s:0:"";s:14:"lock_recursive";s:4:"true";s:25:"authors_has_access_to_own";s:4:"true";s:31:"authors_can_add_posts_to_groups";s:5:"false";s:9:"lock_file";s:5:"false";s:14:"file_pass_type";s:6:"random";s:15:"lock_file_types";s:3:"all";s:13:"download_type";s:5:"fopen";s:17:"locked_file_types";s:14:"zip,rar,tar,gz";s:21:"not_locked_file_types";s:16:"gif,jpg,jpeg,png";s:15:"blog_admin_hint";s:4:"true";s:20:"blog_admin_hint_text";s:4:" [L]";s:21:"hide_empty_categories";s:4:"true";s:12:"protect_feed";s:4:"true";s:29:"show_post_content_before_more";s:5:"false";s:16:"full_access_role";s:13:"administrator";}', 'yes'),
 (151, 'uam_db_version', '1.1', 'yes'),
 (190, 'theme_mods_twentythirteen', 'a:1:{s:16:"sidebars_widgets";a:2:{s:4:"time";i:1378580441;s:4:"data";a:3:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}}}}', 'yes'),
 (191, 'current_theme', 'IMIS', 'yes'),
@@ -309,7 +309,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=335 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=352 ;
 
 --
 -- Dumping data for table `wp_postmeta`
@@ -327,8 +327,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (11, 2, '_edit_last', '1'),
 (12, 2, '_cs_replacements', 'a:1:{s:9:"sidebar-1";s:9:"sidebar-1";}'),
 (31, 16, '_edit_last', '1'),
-(32, 16, '_edit_lock', '1379441224:1'),
-(33, 16, '_wp_page_template', 'default'),
+(32, 16, '_edit_lock', '1379512130:1'),
+(33, 16, '_wp_page_template', 'page_list.php'),
 (34, 11, '_post_restored_from', 'a:3:{s:20:"restored_revision_id";i:18;s:16:"restored_by_user";i:1;s:13:"restored_time";i:1378982562;}'),
 (35, 81, '_edit_last', '1'),
 (36, 81, '_edit_lock', '1379154092:1'),
@@ -593,7 +593,24 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (331, 159, '_translations', 'a:2:{s:2:"sl";i:159;s:2:"en";i:0;}'),
 (332, 7, '_slika-v-glavi', 'field_523824086a15c'),
 (333, 129, 'slika-v-glavi', 'slika-akreditiran'),
-(334, 129, '_wp_page_template', 'default');
+(334, 129, '_wp_page_template', 'default'),
+(335, 16, '_translations', 'a:2:{s:2:"sl";i:16;s:2:"en";i:0;}'),
+(336, 163, '_edit_last', '1'),
+(337, 163, '_edit_lock', '1379512158:1'),
+(338, 163, '_wp_page_template', 'default'),
+(339, 164, 'slika-v-glavi', 'slika-akreditiran'),
+(340, 164, '_slika-v-glavi', 'field_523824086a15c'),
+(341, 163, 'slika-v-glavi', 'slika-akreditiran'),
+(342, 163, '_slika-v-glavi', 'field_523824086a15c'),
+(343, 163, '_translations', 'a:2:{s:2:"sl";i:163;s:2:"en";i:0;}'),
+(344, 165, '_edit_last', '1'),
+(345, 165, '_edit_lock', '1379512396:1'),
+(346, 165, '_wp_page_template', 'default'),
+(347, 166, 'slika-v-glavi', 'slika-akreditiran'),
+(348, 166, '_slika-v-glavi', 'field_523824086a15c'),
+(349, 165, 'slika-v-glavi', 'slika-akreditiran'),
+(350, 165, '_slika-v-glavi', 'field_523824086a15c'),
+(351, 165, '_translations', 'a:2:{s:2:"sl";i:165;s:2:"en";i:0;}');
 
 -- --------------------------------------------------------
 
@@ -630,7 +647,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=163 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=167 ;
 
 --
 -- Dumping data for table `wp_posts`
@@ -645,7 +662,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (11, 1, '2013-09-18 07:48:43', '2013-09-11 18:47:35', '<div style="border: 1px dotted #999; margin-bottom: 24px; margin-top: 26px;">\r\n<p style="padding: 8px 15px 8px 15px; margin: 0;">Centralizacija naročanja in popolni nadzor nad porabo sredstev.</p>\r\n<p style="padding: 0; margin: 0;"><a style="font-size: 11px; border-top: 1px dotted #999; display: block; padding: 5px 15px 3px 15px;" href="#">&gt;&gt;&gt; VEČ...</a></p>\r\n\r\n</div>\r\n<img class="alignnone size-full wp-image-116" alt="vstopna-slika1" src="http://127.0.0.1/razvoj/othr/imis/wp-content/uploads/2013/09/vstopna-slika1.jpg" width="174" height="119" />\r\n<div style="border: 1px dotted #999; margin-bottom: 20px;">\r\n<p style="padding: 8px 15px 8px 15px; margin: 0;">Prilagodite bančne procese zahtevam sodobnega poslovanja.</p>\r\n<p style="padding: 0; margin: 0;"><a style="font-size: 11px; border-top: 1px dotted #999; display: block; padding: 5px 15px 3px 15px;" href="#">&gt;&gt;&gt; VEČ...</a></p>\r\n\r\n</div>\r\n<div style="border: 1px dotted #999; margin-bottom: 20px;">\r\n<p style="padding: 8px 15px 8px 15px; margin: 0;">Leasing procese lahko bistveno hitreje in učinkoviteje opravljate elektronsko.</p>\r\n<p style="padding: 0; margin: 0;"><a style="font-size: 11px; border-top: 1px dotted #999; display: block; padding: 5px 15px 3px 15px;" href="#">&gt;&gt;&gt; VEČ...</a></p>\r\n\r\n</div>', 'Vstopna', '', 'publish', 'open', 'open', '', 'vstopna', '', '', '2013-09-17 20:07:31', '2013-09-17 20:07:31', '', 0, 'http://127.0.0.1/razvoj/othr/imis/?page_id=11', 0, 'page', '', 0),
 (12, 1, '2013-09-11 18:47:35', '2013-09-11 18:47:35', 'Centralizacija naročanja\r\nin popolni nadzor\r\nnad porabo sredstev.\r\n\r\nPrilagodite bančne\r\nprocese zahtevam\r\nsodobnega poslovanja.\r\n\r\nLeasing procese\r\nlahko bistveno hitreje\r\nin učinkoviteje\r\nopravljate elektronsko.', 'Vstopna', '', 'inherit', 'open', 'open', '', '11-revision-v1', '', '', '2013-09-11 18:47:35', '2013-09-11 18:47:35', '', 11, 'http://127.0.0.1/razvoj/othr/imis/?p=12', 0, 'revision', '', 0),
 (13, 1, '2013-09-11 19:15:19', '2013-09-11 19:15:19', 'This is an example page. It''s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\r\n<blockquote>Hi there! I''m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like piña coladas. (And gettin'' caught in the rain.)</blockquote>\r\n...or something like this:\r\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\r\nAs a new WordPress user, you should go to <a href="http://127.0.0.1/razvoj/othr/imis/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!', 'Sample Page', '', 'inherit', 'open', 'open', '', '2-revision-v1', '', '', '2013-09-11 19:15:19', '2013-09-11 19:15:19', '', 2, 'http://127.0.0.1/razvoj/othr/imis/2-revision-v1/', 0, 'revision', '', 0),
-(16, 1, '2013-09-11 20:12:21', '2013-09-11 20:12:21', 'some text here', 'subpage 2', '', 'publish', 'open', 'open', '', 'subpage-2', '', '', '2013-09-11 20:12:21', '2013-09-11 20:12:21', '', 7, 'http://127.0.0.1/razvoj/othr/imis/?page_id=16', 0, 'page', '', 0),
+(16, 1, '2013-09-11 20:12:21', '2013-09-11 20:12:21', 'some text here', 'subpage 2', '', 'publish', 'open', 'open', '', 'subpage-2', '', '', '2013-09-18 13:50:11', '2013-09-18 13:50:11', '', 7, 'http://127.0.0.1/razvoj/othr/imis/?page_id=16', 0, 'page', '', 0),
 (17, 1, '2013-09-11 20:12:21', '2013-09-11 20:12:21', 'some text here', 'subpage 2', '', 'inherit', 'open', 'open', '', '16-revision-v1', '', '', '2013-09-11 20:12:21', '2013-09-11 20:12:21', '', 16, 'http://127.0.0.1/razvoj/othr/imis/16-revision-v1/', 0, 'revision', '', 0),
 (18, 1, '2013-09-17 19:53:09', '2013-09-17 19:53:09', '<div style="border: 1px dotted #999;" ><p style="padding: 8px 15px 0px 15px; ">Centralizacija naročanja in popolni nadzor nad porabo sredstev.</p>\n<p style="padding:0; margin: 0"><a style="border-top: 1px dotted #999; display: block; padding: 6px 15px;" href="#">VEČ...</a></p>\n</div>', 'Vstopna', '', 'inherit', 'open', 'open', '', '11-autosave-v1', '', '', '2013-09-17 19:53:09', '2013-09-17 19:53:09', '', 11, 'http://127.0.0.1/razvoj/othr/imis/11-autosave-v1/', 0, 'revision', '', 0),
 (19, 1, '2013-09-12 09:29:50', '2013-09-12 09:29:50', '<table style="background-color: ffffcc;" width="100%" border="1" cellspacing="3" cellpadding="3">\r\n<tbody>\r\n<tr>\r\n<td>Centralizacija naročanja\r\nin popolni nadzor\r\nnad porabo sredstev.\r\n\r\nPrilagodite bančne\r\nprocese zahtevam\r\nsodobnega poslovanja.\r\n\r\nLeasing procese\r\nlahko bistveno hitreje\r\nin učinkoviteje\r\nopravljate elektronsko.</td>\r\n<td>Table Cell</td>\r\n</tr>\r\n<tr>\r\n<td>Table Cell</td>\r\n<td>Table Cell</td>\r\n</tr>\r\n</tbody>\r\n</table>', 'Vstopna', '', 'inherit', 'open', 'open', '', '11-revision-v1', '', '', '2013-09-12 09:29:50', '2013-09-12 09:29:50', '', 11, 'http://127.0.0.1/razvoj/othr/imis/11-revision-v1/', 0, 'revision', '', 0),
@@ -795,7 +812,11 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (159, 1, '2013-09-18 09:50:47', '2013-09-18 09:50:47', 'mm.m,', 'novo novo', '', 'publish', 'open', 'open', '', 'novo-novo', '', '', '2013-09-18 09:50:47', '2013-09-18 09:50:47', '', 0, 'http://127.0.0.1/razvoj/othr/imis/?p=159', 0, 'post', '', 0),
 (160, 1, '2013-09-18 09:50:47', '2013-09-18 09:50:47', 'mm.m,', 'novo novo', '', 'inherit', 'open', 'open', '', '159-revision-v1', '', '', '2013-09-18 09:50:47', '2013-09-18 09:50:47', '', 159, 'http://127.0.0.1/razvoj/othr/imis/159-revision-v1/', 0, 'revision', '', 0),
 (161, 1, '2013-09-18 10:09:21', '2013-09-18 10:09:21', '', 'novo novo', '', 'inherit', 'open', 'open', '', '159-autosave-v1', '', '', '2013-09-18 10:09:21', '2013-09-18 10:09:21', '', 159, 'http://127.0.0.1/razvoj/othr/imis/159-autosave-v1/', 0, 'revision', '', 0),
-(162, 1, '2013-09-18 10:54:52', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-09-18 10:54:52', '0000-00-00 00:00:00', '', 0, 'http://127.0.0.1/razvoj/othr/imis/?p=162', 0, 'post', '', 0);
+(162, 1, '2013-09-18 10:54:52', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-09-18 10:54:52', '0000-00-00 00:00:00', '', 0, 'http://127.0.0.1/razvoj/othr/imis/?p=162', 0, 'post', '', 0),
+(163, 1, '2013-09-18 13:51:09', '2013-09-18 13:51:09', 'evo ful enga norga teksta', 'Druga testna sub stran', '', 'publish', 'open', 'open', '', 'druga-testna-sub-stran', '', '', '2013-09-18 13:51:09', '2013-09-18 13:51:09', '', 16, 'http://127.0.0.1/razvoj/othr/imis/?page_id=163', 0, 'page', '', 0),
+(164, 1, '2013-09-18 13:51:09', '2013-09-18 13:51:09', 'evo ful enga norga teksta', 'Druga testna sub stran', '', 'inherit', 'open', 'open', '', '163-revision-v1', '', '', '2013-09-18 13:51:09', '2013-09-18 13:51:09', '', 163, 'http://127.0.0.1/razvoj/othr/imis/163-revision-v1/', 0, 'revision', '', 0),
+(165, 1, '2013-09-18 13:54:40', '2013-09-18 13:54:40', 'bla bla bla', 'neki hecnega', '', 'publish', 'open', 'open', '', 'neki-hecnega', '', '', '2013-09-18 13:54:40', '2013-09-18 13:54:40', '', 163, 'http://127.0.0.1/razvoj/othr/imis/?page_id=165', 0, 'page', '', 0),
+(166, 1, '2013-09-18 13:54:40', '2013-09-18 13:54:40', 'bla bla bla', 'neki hecnega', '', 'inherit', 'open', 'open', '', '165-revision-v1', '', '', '2013-09-18 13:54:40', '2013-09-18 13:54:40', '', 165, 'http://127.0.0.1/razvoj/othr/imis/165-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -910,7 +931,9 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (158, 3, 0),
 (159, 3, 0),
 (159, 7, 0),
-(162, 3, 0);
+(162, 3, 0),
+(163, 3, 0),
+(165, 3, 0);
 
 -- --------------------------------------------------------
 
@@ -936,7 +959,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
 (1, 1, 'category', '', 0, 2),
-(3, 3, 'language', 'sl_SI', 0, 17),
+(3, 3, 'language', 'sl_SI', 0, 19),
 (4, 4, 'language', 'en_US', 0, 4),
 (5, 5, 'nav_menu', '', 0, 6),
 (6, 6, 'nav_menu', '', 0, 4),
