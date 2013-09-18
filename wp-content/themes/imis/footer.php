@@ -23,8 +23,8 @@
                     <ul class="mini-navigation">
                       
                       <?php 
-                      $actual_link = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-                      preg_match(, $actual_link, $matches);
+                      /*$actual_link = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+                      preg_match(, $actual_link, $matches);*/
                       ?>
                         <li><a href="<?php _e("sitemap","imis-site"); ?>"><?php _e("Mapa strani","imis-site"); ?></a></li>
                         <li class="about"><a href=""><?php _e("O AVTORJIH","imis-site"); ?> </a>
