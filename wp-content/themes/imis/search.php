@@ -62,7 +62,7 @@ get_header(); ?>
 
             <?php else : ?>
             <header>
-              <h2><?php _e("Izbrano iskanje ni vrnilo nobenih zadetkov.","imis-site"); ?></h2>
+              <h1><?php _e("Izbrano iskanje ni vrnilo nobenih zadetkov.","imis-site"); ?></h1>
               </header>
               <?php //get_search_form(); ?>
 

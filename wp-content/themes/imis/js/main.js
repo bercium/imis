@@ -36,20 +36,12 @@ $(function( ) {
 
 	// remove border on last main-navigation button
 	$(function(){
-		$(".main-navigation > ul > li > a:last").css("border-right", "none");
+		$(".main-navigation > ul > li:last").css("border-right", "none");
 
 	});
 
 
-		// keep hover on main-nav button when in dropdown
-	$(function(){
-		$(".main-navigation > ul > li").hover(function() {
-			$(this).toggleClass("stayhover");
-
-		});
-
-	});
-
+	
 
 
 });

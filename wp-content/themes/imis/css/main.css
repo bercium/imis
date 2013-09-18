@@ -164,7 +164,7 @@ clearfix {
 }
 
 #container .header-wrap .header-row {
-    height: 105px;
+    height: 101px;
 }
 
 .main-logo a {
@@ -203,7 +203,7 @@ clearfix {
 
 #crumbs {
     position: absolute;
-    top:-45px;
+    top:0px;
     text-transform: uppercase;
     
 }
@@ -224,62 +224,58 @@ clearfix {
 
 /****** @main navigation ******/
 
+.main-navigation {
+    
+}
 .main-navigation ul {
     padding: 0;
-    margin: 0;  
-
+    margin: 0;      
 }
 
-.main-navigation ul li {
+.main-navigation > ul > li {
     float: left;    
     margin-bottom: 0px;
     list-style: none;
+    background: pink;
+    height: 19px;
+     background: #333333; 
+    padding: 2px 0 0 0;
+    margin: 0;
+    border-right: 1px solid #7f7f7f;  
+    padding: 3px 0px 0px 0px;  
+}
+
+.main-navigation > ul > li:hover,
+.main-navigation > ul > li.current_page_item,
+.main-navigation > ul > li.current-page-ancestor {
+    background: url(../img/main-nav-bg-hover.png) top center no-repeat !important; 
+    
+    background-size:100% auto !important;
+    background-color: #1A1A1A !important;
+
+
 }
 
 .main-navigation > ul > li a {
     color: #fff;
-    font-size: 13px;
-    background: #333333;
+    font-size: 13px;    
     text-decoration: none;
-    padding: 5px 8px 2px 6px;
-
-}
-.main-navigation > ul > li > a {
-    border-right: 1px solid #7f7f7f;         
+    width: 100%;    
+    padding: 5px 8px 3px 8px;
 }
 
-.main-navigation > ul > .current_page_item:first-letter,
- .main-navigation > ul > .current_page_ancestor:first-letter  {
-border-bottom: 1px solid #faad24;
-} 
 
 .main-navigation > ul > .current_page_item > a,
-.main-navigation > ul > .current_page_ancestor > a,
-.main-navigation > ul  > li > a:hover,
-.stayhover > a,
-.searchbtn > a {
-    /*box-shadow: 0 -10px 10px 4px #1A1A1A inset;*/
-    background: url(../img/main-nav-bg-hover.png) top center no-repeat !important;
-    
-    background-size:100% auto !important;
-    background-color: #1A1A1A !important;    
-}
-
-
-
-
-.main-navigation > ul > .current-menu-item,
-.main-navigation > ul  > li:hover {
-    
-}
-
+ .main-navigation > ul > .current_page_ancestor > a,
+ .main-navigation > ul > .current-page-ancestor > a  {
+background: url("../img/current-item-line.png")  7px 19px no-repeat;
+} 
 
 .main-navigation .searchform {
     height: 16px;
     margin-top: 0;
     padding: 7px 12px 0 27px;
 }
-
 
 .main-navigation .searchform input[type=submit] {
         background: url(../img/ico-search.png)  0 top no-repeat;
@@ -319,20 +315,14 @@ border-bottom: 1px solid #faad24;
     float: left;
     height: 18px;
     width: 80px;    
-    margin-top: 0px;
+    margin-top: 4px;
 
-}
-
-.main-navigation .lang-box a {
-    font-size: 11px;
-    text-transform: uppercase;
-    color: #707070;
-    text-decoration: none;
 }
 
 
 /* ie fixes main nav */
 
+/*
 .lt-ie9  .main-navigation > ul > .current-menu-item a,
 .lt-ie9 .main-navigation > ul > li a:hover {
     background: url(../img/main-nav-bg-lt-ie9.png) 0 0 repeat-x;              
@@ -349,14 +339,13 @@ border-bottom: 1px solid #faad24;
     border: none !important;
 }
 
-
+*/
 /* language menu */
 
 .main-navigation .menu-item-language a {
     font-size: 11px;
     color: #707070;
     background: none;
-
 }
 
 .main-navigation .menu-item-language-current a {
@@ -380,6 +369,7 @@ border-bottom: 1px solid #faad24;
     padding: 16px 0 30px 0;
     background: #1a1a1a;    
     text-transform: uppercase; 
+    margin-top: 1px;
     
 }
 
@@ -508,7 +498,8 @@ border-bottom: 1px solid #faad24;
 
 
  .sidebar-one ul .current_page_item a,
- .sidebar-one ul .current_page_item a   {
+ .sidebar-one ul .current_page_parent a,
+ .sidebar-one ul .current_page_ancestor a   {
     background: #b3b3b3;
 }
 .sidebar-one ul .current_page_item a:hover,
@@ -546,6 +537,7 @@ border-bottom: 1px solid #faad24;
     border-bottom: 1px solid #221f1f;
     float: right;
     margin-top: 60px;
+    margin-bottom: 60px;
 
 }
 
@@ -621,7 +613,7 @@ footer .widget-one .text-wrap {
 
 footer .footer {
     background: #000;
-    padding: 10px 0 6px 0;
+    padding: 10px 0 8px 0;
 
 
 }
@@ -641,7 +633,7 @@ footer .footer .copyright {
 
 footer .footer .mini-navigation {
     margin-right: 11px;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 .mini-navigation .about {
     position: relative;

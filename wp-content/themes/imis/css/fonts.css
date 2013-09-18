@@ -1,83 +1,84 @@
 
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=372421ac-a2a3-4c73-b091-7be91a46bfde");
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=00120949-db3e-402a-845d-2eb79f719d97");
 @font-face{
-font-family:"Eurostile Next W01 Bold";
-src:url("Fonts/bc835265-5330-42c8-9919-852df90dcc4a.eot?#iefix");
-src:url("Fonts/bc835265-5330-42c8-9919-852df90dcc4a.eot?#iefix") format("eot"),url("Fonts/2ffb2ca5-bb3a-40ab-bd73-8e3f9e01d3c5.woff") format("woff"),url("Fonts/e5280698-d618-49c0-a0bb-2f0efcd511d9.ttf") format("truetype"),url("Fonts/84078a65-4d26-48c3-ba2f-7a7485f8f427.svg#84078a65-4d26-48c3-ba2f-7a7485f8f427") format("svg");
+font-family:"EurostileNextW02-UltLig";
+src:url("Fonts/236befc0-5b41-4ba6-9416-d22e80d5defa.eot?#iefix");
+src:url("Fonts/236befc0-5b41-4ba6-9416-d22e80d5defa.eot?#iefix") format("eot"),url("Fonts/4fcbbab9-fae2-46e2-95bb-014b4355442d.woff") format("woff"),url("Fonts/82ebae9b-21d2-438b-b16e-c95bd1132b68.ttf") format("truetype"),url("Fonts/dd553674-deb3-4533-8f2a-f97e17c251b5.svg#dd553674-deb3-4533-8f2a-f97e17c251b5") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-BoldEx";
-src:url("Fonts/b62578e2-99a4-4c2c-a5d8-bbe60e8a3686.eot?#iefix");
-src:url("Fonts/b62578e2-99a4-4c2c-a5d8-bbe60e8a3686.eot?#iefix") format("eot"),url("Fonts/a6bf4171-008f-47d7-a210-b450dc6b2f88.woff") format("woff"),url("Fonts/2781e8b9-8650-412c-8fa4-f4e4e113b05d.ttf") format("truetype"),url("Fonts/ff7a2311-cc92-40aa-8a50-05d78ed06796.svg#ff7a2311-cc92-40aa-8a50-05d78ed06796") format("svg");
+font-family:"EurostileNextW02-LightC";
+src:url("Fonts/cbe8dfdf-887e-4582-a2e1-a8e838b15053.eot?#iefix");
+src:url("Fonts/cbe8dfdf-887e-4582-a2e1-a8e838b15053.eot?#iefix") format("eot"),url("Fonts/a9eb0819-c1f5-466a-9967-8a9ae27a8dc6.woff") format("woff"),url("Fonts/9a41439e-e211-4952-b76a-db43a12b2d83.ttf") format("truetype"),url("Fonts/7f5c17f4-0386-4b5a-84e4-661c629bdd0d.svg#7f5c17f4-0386-4b5a-84e4-661c629bdd0d") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-Cond";
-src:url("Fonts/ffcdba74-d836-44e4-9590-4654083445f1.eot?#iefix");
-src:url("Fonts/ffcdba74-d836-44e4-9590-4654083445f1.eot?#iefix") format("eot"),url("Fonts/88718722-4d61-4abb-b9ba-43d93ac9a7a4.woff") format("woff"),url("Fonts/7125337f-a363-4767-a350-6ac8a6719ab0.ttf") format("truetype"),url("Fonts/2194e090-23dc-43b2-a4c3-a532880efd48.svg#2194e090-23dc-43b2-a4c3-a532880efd48") format("svg");
+font-family:"EurostileNextW02-Cn";
+src:url("Fonts/80b63f5f-06b3-4ad1-9bdd-07dcb9463274.eot?#iefix");
+src:url("Fonts/80b63f5f-06b3-4ad1-9bdd-07dcb9463274.eot?#iefix") format("eot"),url("Fonts/9afcb3a6-22f2-452d-b819-05122ae74e72.woff") format("woff"),url("Fonts/4d81f86d-ef2f-467b-a23b-ae40ed54b8fb.ttf") format("truetype"),url("Fonts/699dfee9-9ecc-4e78-99b2-68c76c4c4a68.svg#699dfee9-9ecc-4e78-99b2-68c76c4c4a68") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-Extend";
-src:url("Fonts/bb9f8bd4-ba5f-4322-85f0-0fbae2ee11c2.eot?#iefix");
-src:url("Fonts/bb9f8bd4-ba5f-4322-85f0-0fbae2ee11c2.eot?#iefix") format("eot"),url("Fonts/a9e934be-ccaf-4ef9-8da7-128c86e41d7b.woff") format("woff"),url("Fonts/bf36a607-ef60-4f61-91de-448992be155f.ttf") format("truetype"),url("Fonts/5a0c3ba9-19f9-45ec-a49c-e03d8ed4a3eb.svg#5a0c3ba9-19f9-45ec-a49c-e03d8ed4a3eb") format("svg");
+font-family:"EurostileNextW02-Semibo";
+src:url("Fonts/ce7cbc53-2a29-4aed-90d2-ac9408f0eb42.eot?#iefix");
+src:url("Fonts/ce7cbc53-2a29-4aed-90d2-ac9408f0eb42.eot?#iefix") format("eot"),url("Fonts/ea16d1fb-75ff-48b4-b886-79b53b3e01e4.woff") format("woff"),url("Fonts/33c9414d-473b-4ad5-bfa2-8459bb37d39e.ttf") format("truetype"),url("Fonts/2e368054-d96a-4360-b432-9f6a3c4ac234.svg#2e368054-d96a-4360-b432-9f6a3c4ac234") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-Light";
-src:url("Fonts/10f542b3-9979-490e-bb67-f3e662cedfa9.eot?#iefix");
-src:url("Fonts/10f542b3-9979-490e-bb67-f3e662cedfa9.eot?#iefix") format("eot"),url("Fonts/91cd8b4d-6789-4d4b-9ed3-c6b52e9cb0ae.woff") format("woff"),url("Fonts/83b619ca-db67-4f42-84c9-25dec6351887.ttf") format("truetype"),url("Fonts/fe22b722-9a8d-4645-be39-4bb8f0b048ac.svg#fe22b722-9a8d-4645-be39-4bb8f0b048ac") format("svg");
+font-family:"EurostileNextW02-Light";
+src:url("Fonts/8fd9fd8e-4907-45dc-adc2-f8d681e89e4c.eot?#iefix");
+src:url("Fonts/8fd9fd8e-4907-45dc-adc2-f8d681e89e4c.eot?#iefix") format("eot"),url("Fonts/85939995-a007-4f87-8997-a1f60936cb1f.woff") format("woff"),url("Fonts/bb952275-5083-4e63-a187-1b3f0a95f097.ttf") format("truetype"),url("Fonts/a51bf992-8e5e-4073-9ac6-27d18ce890a3.svg#a51bf992-8e5e-4073-9ac6-27d18ce890a3") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-LightC";
-src:url("Fonts/ea0c14f3-c84b-4425-a7db-4b800df049ad.eot?#iefix");
-src:url("Fonts/ea0c14f3-c84b-4425-a7db-4b800df049ad.eot?#iefix") format("eot"),url("Fonts/2103fcc5-5043-4473-913f-ce0999ac5373.woff") format("woff"),url("Fonts/5527d27b-143f-4c29-8611-ead29aeb2a11.ttf") format("truetype"),url("Fonts/ec50486d-8dcd-4089-a0ab-93dfcc8fa9a4.svg#ec50486d-8dcd-4089-a0ab-93dfcc8fa9a4") format("svg");
+font-family:"EurostileNextW02";
+src:url("Fonts/674aa347-350f-42ca-881a-0d0e89e149db.eot?#iefix");
+src:url("Fonts/674aa347-350f-42ca-881a-0d0e89e149db.eot?#iefix") format("eot"),url("Fonts/3721a03d-8ecc-4003-8a88-fcc548c10457.woff") format("woff"),url("Fonts/a810675b-57d1-4478-ad7c-fd369e272b14.ttf") format("truetype"),url("Fonts/60250abd-94bd-42b8-ae64-2cdb21d7b826.svg#60250abd-94bd-42b8-ae64-2cdb21d7b826") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-LightE";
-src:url("Fonts/6be414c2-3b91-4d13-83cc-48f8c7912d9e.eot?#iefix");
-src:url("Fonts/6be414c2-3b91-4d13-83cc-48f8c7912d9e.eot?#iefix") format("eot"),url("Fonts/9990b66c-b104-4530-b033-d7915655e857.woff") format("woff"),url("Fonts/e4cbd06e-07d8-47ad-9175-a2d5523e91b6.ttf") format("truetype"),url("Fonts/b8b30acc-df32-4d44-89f7-e7c8f21dd13a.svg#b8b30acc-df32-4d44-89f7-e7c8f21dd13a") format("svg");
+font-family:"EurostileNextW02-SemiBd 693874";
+src:url("Fonts/22760e69-e039-4ada-b87c-ea8918a8d6f6.eot?#iefix");
+src:url("Fonts/22760e69-e039-4ada-b87c-ea8918a8d6f6.eot?#iefix") format("eot"),url("Fonts/9271ed16-feb1-4849-bd61-6fbf0e5692d4.woff") format("woff"),url("Fonts/a4d360b1-1a59-4380-aeac-66a879146ac4.ttf") format("truetype"),url("Fonts/26cb155e-ee8b-4205-bc8f-ea13a73a33df.svg#26cb155e-ee8b-4205-bc8f-ea13a73a33df") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-Regula";
-src:url("Fonts/6bed8cad-cd15-4b82-9ff4-0efd0b173852.eot?#iefix");
-src:url("Fonts/6bed8cad-cd15-4b82-9ff4-0efd0b173852.eot?#iefix") format("eot"),url("Fonts/a4a37370-12ae-4b1e-838e-cc18e6390d9f.woff") format("woff"),url("Fonts/f751566a-35f7-41b7-90df-e4f8fe5dccbf.ttf") format("truetype"),url("Fonts/7745b755-2aae-4a8a-a7c7-b48387a9b37e.svg#7745b755-2aae-4a8a-a7c7-b48387a9b37e") format("svg");
+font-family:"Eurostile Next W02 Bold";
+src:url("Fonts/a892618c-6d7d-43cb-b849-6d296d40f697.eot?#iefix");
+src:url("Fonts/a892618c-6d7d-43cb-b849-6d296d40f697.eot?#iefix") format("eot"),url("Fonts/e2b9130c-bdf2-4031-b0f6-2bd75c0855bb.woff") format("woff"),url("Fonts/7bdba40b-a27c-422e-86ef-08c7049f053b.ttf") format("truetype"),url("Fonts/10e49673-2706-4a5c-bd82-5d53d8b28f06.svg#10e49673-2706-4a5c-bd82-5d53d8b28f06") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-SmBd";
-src:url("Fonts/b064692f-59f1-4d8b-a899-a82a486028a4.eot?#iefix");
-src:url("Fonts/b064692f-59f1-4d8b-a899-a82a486028a4.eot?#iefix") format("eot"),url("Fonts/f5e1f63d-a59b-4f88-a0c5-55f863443051.woff") format("woff"),url("Fonts/63768ea5-be6a-400b-b964-f7469df9bf0b.ttf") format("truetype"),url("Fonts/6ac4ebbc-7e05-49a5-a85f-ffb747cb05a2.svg#6ac4ebbc-7e05-49a5-a85f-ffb747cb05a2") format("svg");
+font-family:"EurostileNextW02-LightE";
+src:url("Fonts/b5c3a0d8-07c4-41ca-a0a7-6c6c6422a9ff.eot?#iefix");
+src:url("Fonts/b5c3a0d8-07c4-41ca-a0a7-6c6c6422a9ff.eot?#iefix") format("eot"),url("Fonts/d2eccd5d-73b5-437c-82bb-13c2051f520c.woff") format("woff"),url("Fonts/f41c1d19-414c-45cc-b6a0-a0c05320ef5e.ttf") format("truetype"),url("Fonts/216a591a-f869-4581-b6ee-287c8106964c.svg#216a591a-f869-4581-b6ee-287c8106964c") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-SmBdCo";
-src:url("Fonts/389ef3c9-0b13-43b7-ac42-311a8f1e26a1.eot?#iefix");
-src:url("Fonts/389ef3c9-0b13-43b7-ac42-311a8f1e26a1.eot?#iefix") format("eot"),url("Fonts/6e6ff8b9-1f72-427b-820f-c57026fed380.woff") format("woff"),url("Fonts/b5d336e6-e8dd-4219-bf02-db67704f61cb.ttf") format("truetype"),url("Fonts/db4bb45c-6a2d-49e3-bd38-fe32ae585a4b.svg#db4bb45c-6a2d-49e3-bd38-fe32ae585a4b") format("svg");
+font-family:"EurostileNextW02-Ext";
+src:url("Fonts/cc69e7d7-bf28-436c-ac6d-582fdef91496.eot?#iefix");
+src:url("Fonts/cc69e7d7-bf28-436c-ac6d-582fdef91496.eot?#iefix") format("eot"),url("Fonts/ae61bec9-0509-40e9-943b-4340e6c1ce46.woff") format("woff"),url("Fonts/aae2bcac-511d-436d-bb81-acb6407c75df.ttf") format("truetype"),url("Fonts/fa613ca2-0a71-40c6-b0e7-a34a8f4990b5.svg#fa613ca2-0a71-40c6-b0e7-a34a8f4990b5") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-SmBdEx";
-src:url("Fonts/b3894d01-d226-459c-874c-054ae4c20973.eot?#iefix");
-src:url("Fonts/b3894d01-d226-459c-874c-054ae4c20973.eot?#iefix") format("eot"),url("Fonts/d4377c90-7249-46cf-9e1d-bfb43c1a58a1.woff") format("woff"),url("Fonts/bcd4d152-bef1-4470-b05c-dd5a8a485e69.ttf") format("truetype"),url("Fonts/096c9f76-145f-4fba-a5e7-610b150b504f.svg#096c9f76-145f-4fba-a5e7-610b150b504f") format("svg");
+font-family:"EurostileNextW02-SemiBd 693886";
+src:url("Fonts/ee9bedbc-12e2-448e-9fb1-572beb365fba.eot?#iefix");
+src:url("Fonts/ee9bedbc-12e2-448e-9fb1-572beb365fba.eot?#iefix") format("eot"),url("Fonts/0ba2fdea-efc0-4e5c-bf89-7443c69e3559.woff") format("woff"),url("Fonts/dc0eec5a-907e-44ac-a97c-936e665db0d3.ttf") format("truetype"),url("Fonts/83b60aa5-0980-4330-8fd8-8706424853c3.svg#83b60aa5-0980-4330-8fd8-8706424853c3") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-UltLtC";
-src:url("Fonts/a5f7e471-706d-4fb9-a94e-6c67035d0fb4.eot?#iefix");
-src:url("Fonts/a5f7e471-706d-4fb9-a94e-6c67035d0fb4.eot?#iefix") format("eot"),url("Fonts/06891dfe-9776-43db-886f-a1b24647a3d3.woff") format("woff"),url("Fonts/74acfc2a-a8d2-423c-a8b2-7313e95d41af.ttf") format("truetype"),url("Fonts/e93caabb-b206-4178-a06e-cfcd3c4800ab.svg#e93caabb-b206-4178-a06e-cfcd3c4800ab") format("svg");
+font-family:"EurostileNextW02-BoldEx";
+src:url("Fonts/5cfce038-df25-4500-b2e7-3d4f3147ba56.eot?#iefix");
+src:url("Fonts/5cfce038-df25-4500-b2e7-3d4f3147ba56.eot?#iefix") format("eot"),url("Fonts/a813015f-024d-4450-8558-ce940b13ba45.woff") format("woff"),url("Fonts/318d3230-cc57-4f88-9aa4-746b9ef90efe.ttf") format("truetype"),url("Fonts/d87d5297-231f-4bdb-a75e-4e2a4c3b7c30.svg#d87d5297-231f-4bdb-a75e-4e2a4c3b7c30") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-CnBd";
-src:url("Fonts/fbb01178-8100-4d6e-ba35-6a05b240a659.eot?#iefix");
-src:url("Fonts/fbb01178-8100-4d6e-ba35-6a05b240a659.eot?#iefix") format("eot"),url("Fonts/303183a5-b0c7-4b4e-8afd-1ab6343205cb.woff") format("woff"),url("Fonts/36315209-477b-4aa5-92ad-e44b7e0352b5.ttf") format("truetype"),url("Fonts/a60d75b9-7a0a-4114-a2b6-90eddfe2401c.svg#a60d75b9-7a0a-4114-a2b6-90eddfe2401c") format("svg");
+font-family:"EurostileNextW02-CnBd";
+src:url("Fonts/66fbd608-c6d4-4b90-924a-8f7d5ecb1a8d.eot?#iefix");
+src:url("Fonts/66fbd608-c6d4-4b90-924a-8f7d5ecb1a8d.eot?#iefix") format("eot"),url("Fonts/2a6fb248-30e2-4c17-a408-e934d8414f03.woff") format("woff"),url("Fonts/d4efd195-d623-4748-a674-047def84d3c6.ttf") format("truetype"),url("Fonts/7a096cf1-39fc-4a04-a42b-06b33185e637.svg#7a096cf1-39fc-4a04-a42b-06b33185e637") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-ExtUlt";
-src:url("Fonts/d1950356-4c31-47b1-a67b-9552574e2e6f.eot?#iefix");
-src:url("Fonts/d1950356-4c31-47b1-a67b-9552574e2e6f.eot?#iefix") format("eot"),url("Fonts/d82f7907-5a42-408a-b479-fb495b9369e5.woff") format("woff"),url("Fonts/716836ab-871f-4aba-acc4-898fa8b65164.ttf") format("truetype"),url("Fonts/2de71f7a-0ca5-4a1b-a8bd-987baf29104b.svg#2de71f7a-0ca5-4a1b-a8bd-987baf29104b") format("svg");
+font-family:"EurostileNextW02-UltLt";
+src:url("Fonts/4d7706c5-c712-42d2-ad73-b2606f3a0e40.eot?#iefix");
+src:url("Fonts/4d7706c5-c712-42d2-ad73-b2606f3a0e40.eot?#iefix") format("eot"),url("Fonts/f218ac30-74d8-4cb0-b0da-e576f832d7d5.woff") format("woff"),url("Fonts/9bcd6c22-cbbc-4153-88bc-bb61b7aec771.ttf") format("truetype"),url("Fonts/4adecd23-9560-4e07-92e9-817cc706cb96.svg#4adecd23-9560-4e07-92e9-817cc706cb96") format("svg");
 }
 @font-face{
-font-family:"EurostileNextW01-UltLt";
-src:url("Fonts/e9ef705d-e81d-4c12-a636-da03f0d94538.eot?#iefix");
-src:url("Fonts/e9ef705d-e81d-4c12-a636-da03f0d94538.eot?#iefix") format("eot"),url("Fonts/cb72719e-4216-4659-891b-f36a9c6e79c0.woff") format("woff"),url("Fonts/0f770563-2f55-43bc-9836-95cf9bdb867d.ttf") format("truetype"),url("Fonts/c6398340-fc54-4743-9c18-84b1c1444ca9.svg#c6398340-fc54-4743-9c18-84b1c1444ca9") format("svg");
+font-family:"EurostileNextW02-ExtUlt";
+src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix");
+src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix") format("eot"),url("Fonts/f6f2f966-caae-414b-9d8e-028c4ed1efbe.woff") format("woff"),url("Fonts/f402e160-d22f-41b5-9572-4f62d27aaa64.ttf") format("truetype"),url("Fonts/148839e9-367e-43c9-b546-c6e6af5679bd.svg#148839e9-367e-43c9-b546-c6e6af5679bd") format("svg");
 }
 
+
 body {color: #000000;
-font-family: EurostileNextW01-Regula;  
+font-family: EurostileNextW02;  
 font-size: 12px;
 }
 
@@ -96,7 +97,7 @@ font-size: 12px;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    font-family: EurostileNextW01-Regula;  
+    font-family: EurostileNextW02;  
     font-weight: normal;
 }
 
@@ -129,12 +130,22 @@ h2 {
 }
 
 
+.main-navigation .lang-box span.lang a,
+.main-navigation .lang-box span.lang  {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #707070;
+    text-decoration: none;
+}
 
+.main-navigation .lang-box #current-lang {
+  color: #000;
+}
 
 
 .main-navigation .searchform input[type=text]  {
   font-size: 13px;
-  font-family: EurostileNextW01-Regula;  
+  font-family: EurostileNextW02;  
 }
 
  
@@ -144,7 +155,7 @@ h2 {
 
 /****** @ home ******/
 .home .sidebar h2 { 
-  font-family: EurostileNextW01-SmBd;
+  font-family: "EurostileNextW02-SemiBd 693874";
   font-size: 13px;
   color: #faad24;
   border-bottom: 1px dotted #faad24;
@@ -161,7 +172,7 @@ h2 {
       
    /****** @ sidebar-one ******/
       .sidebar-one ul li a {
-      	font-family:"EurostileNextW01-SmBd";
+      	font-family:"EurostileNextW02-SemiBd 693874";
       	font-size: 11px;
       	color: #000000;
       }
@@ -172,7 +183,7 @@ h2 {
 
       .sidebar-two h2.widgettitle {  
         font-size: 10px;
-        font-family:"EurostileNextW01-SmBd";       
+        font-family:"EurostileNextW02-SemiBd 693874";       
         margin-bottom: 7px;
         margin-top: 7px;
         letter-spacing: 0.04em;
@@ -180,7 +191,7 @@ h2 {
         }
      
         .sidebar-two p, .sidebar-two h1, .sidebar-two h2, .sidebar-two h3, .sidebar-two h4, .sidebar-two h5, .sidebar-two h6 {
-            font-family: EurostileNextW01-Regula;  
+            font-family: EurostileNextW02;  
             font-weight: normal;
         }
 
@@ -188,7 +199,7 @@ h2 {
            font-size: 10px;
        }
         .sidebar-two p {
-          font-family: EurostileNextW01-Regula;
+          font-family: EurostileNextW02;
           font-size: 10px;
           line-height: 12px;
           margin: 4px 0 12px;
@@ -197,17 +208,18 @@ h2 {
 
         .sidebar-two h1 {
           font-size: 10px;
-          font-family:"EurostileNextW01-SmBd";       
+          font-family:"EurostileNextW02-SemiBd 693874";       
           margin-bottom: 7px;
           margin-top: 7px;
           letter-spacing: 0.04em;
           line-height: 15px;
 
+
         }
 
         .sidebar-two h2 {
           font-size: 10px;
-          font-family:"EurostileNextW01-SmBd";       
+          font-family:"EurostileNextW02-SemiBd 693874";       
           margin-bottom: 7px;
           margin-top: 7px;
           letter-spacing: 0.04em;
@@ -217,7 +229,7 @@ h2 {
          .sidebar-two h3, .sidebar-two h4, .sidebar-two h5, .sidebar-two h6 {
            
           font-size: 10px;
-          font-family:"EurostileNextW01-SmBd";       
+          font-family:"EurostileNextW02-SemiBd 693874";       
           margin-bottom: 7px;
           margin-top: 7px;
           letter-spacing: 0.04em;
@@ -237,7 +249,7 @@ h2 {
 
          .home-sidebar p,
          .home-sidebar  {
-         		font-family:"EurostileNextW01-Regula";
+         		font-family:"EurostileNextW02";
          		font-size: 12px;
          		margin-bottom: 24px;
          		line-height: 14px;
@@ -246,11 +258,12 @@ h2 {
        
 
          .home-sidebar h2 {	
-       	font-family: EurostileNextW01-SmBd;
+       	font-family: "EurostileNextW02-SemiBd 693874";
        	font-size: 13px;
        	color: #faad24;
        	border-bottom: 1px dotted #faad24;
-       	font-weight: 400 !important;
+        line-height: 19px;
+        letter-spacing: 2.2px;
        	margin-bottom: 29px;
 
       }
@@ -260,7 +273,7 @@ h2 {
       .home-sidebar h4,
       .home-sidebar h5,
       .home-sidebar h6  {
-      	font-family:"EurostileNextW01-SmBd";
+      	font-family:"EurostileNextW02-SemiBd 693874";
       	font-size: 10px;
 
       }
@@ -281,7 +294,7 @@ footer .widget-one p {
 footer .footer p,
 footer .footer ul,
 footer .footer ul li a {
-  font-family: EurostileNextW01-Regula;
+  font-family: EurostileNextW02;
   font-size: 11px;
   color: #fff;
   text-decoration: none;

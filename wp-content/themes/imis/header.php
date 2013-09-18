@@ -48,8 +48,7 @@
 
                <div class="row">
                 <nav class="main-navigation clearfix">
-                    <!-- REPLACE wp-php here on: -->
-                    
+                    <!-- REPLACE wp-php here on: -->                    
                     
                        <?php //wp_list_pages('title_li=&depth=2' ); ?>
                         <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 
