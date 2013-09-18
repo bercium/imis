@@ -23,10 +23,11 @@
                     <ul class="mini-navigation">
                       
                       <?php 
-                      /*$actual_link = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-                      preg_match(, $actual_link, $matches);*/
+                        //detect english for sitemap
+                        $actual_link = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+                        preg_match("~/en/~", $actual_link, $matches);
                       ?>
-                        <li><a href="<?php _e("sitemap","imis-site"); ?>"><?php _e("Mapa strani","imis-site"); ?></a></li>
+                        <li><a href="<?php if (count($matches)) echo "sitemap"; else echo "mapastrani"; ?>"><?php _e("Mapa strani","imis-site"); ?></a></li>
                         <li class="about"><a href=""><?php _e("O AVTORJIH","imis-site"); ?> </a>
                             <ul><li><a href="">EBerce</a><span><?php _e("PRILAGODITEV VSEBIN IN TEHNIČNA IZVEDBA","imis-site"); ?></span></li>
                                 <li><a href="">Katja Žerko</a><span><?php _e("OBLIKOVANJE","imis-site"); ?></span></li>
