@@ -10,7 +10,96 @@
 get_header(); ?>
 
 
-<div class="row" ><img src="<?php bloginfo('template_directory'); ?>/img/brisime.jpg"></div>
+<div id="featured" class="inside">
+        <ul class="ui-tabs-nav">  
+          <li class="ui-tabs-nav-item ui-tabs-selected fit1" id="nav-fragment-1"><a href="#fragment-1">Industrijska<span>gradnja</span></a></li>  
+          <li class="ui-tabs-nav-item fit2" id="nav-fragment-2"><a href="#fragment-2">Visoke<span>gradnje</span></a></li>  
+          <li class="ui-tabs-nav-item fit3" id="nav-fragment-3"><a href="#fragment-3">Nizke<span>gradnje</span></a></li>  
+          <li class="ui-tabs-nav-item fit4" id="nav-fragment-4"><a href="#fragment-4" class="padfix">Inženiring</a></li>  
+        </ul>   
+        
+        <!-- First Content -->  
+        <div id="fragment-1" class="ui-tabs-panel" style="">  
+            <section>
+            <div class="podrocja">
+                <?php $page_id = 125; $queried_page = get_page($page_id); ?>
+                <h2><?php echo $queried_page->post_title; ?></h2>
+                <?php echo apply_filters('the_content', $queried_page->post_content); ?>
+            </div>
+            
+            <div class="metas">
+                <?php $image = wp_get_attachment_image_src ( get_post_thumbnail_id ( $page_id ), 'single-post-thumbnail' ); ?>
+                <img class="f_img" src="<?php echo $image[0];?>" >
+                <a href="#" class="button">Mnenja strank</a>
+                <a href="#" class="button">Reference</a>
+            </div>            
+            
+          </section>  
+        </div>  
+        
+        <!-- Second Content -->  
+        <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">  
+          <section>
+            <div class="podrocja">          
+                <?php
+                $page_id = 129;               $queried_page = get_page($page_id);?>
+                <h2><?php echo $queried_page->post_title; ?></h2>
+                <?php echo apply_filters('the_content', $queried_page->post_content); ?>
+            </div>  
+              
+            <div class="metas">
+                <?php $image = wp_get_attachment_image_src ( get_post_thumbnail_id ( $page_id ), 'single-post-thumbnail' ); ?>
+                <img class="f_img" src="<?php echo $image[0];?>" >
+                <a href="#" class="button">Mnenja strank</a>
+                <a href="#" class="button">Reference</a>
+            </div>            
+                      
+          </section>  
+        </div>  
+        
+        <!-- Third Content -->  
+        <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">  
+          <section>
+            <div class="podrocja">
+                <?php           $page_id = 131;           $queried_page = get_page($page_id);?>
+                <h2><?php echo $queried_page->post_title; ?></h2>           
+                <?php echo apply_filters('the_content', $queried_page->post_content); ?>
+            </div>
+            
+            <div class="metas">
+                <?php $image = wp_get_attachment_image_src ( get_post_thumbnail_id ( $page_id ), 'single-post-thumbnail' ); ?>
+                <img class="f_img" src="<?php echo $image[0];?>" >
+                <a href="#" class="button">Mnenja strank</a>
+                <a href="#" class="button">Reference</a>
+            </div>    
+          </section>  
+        </div>  
+        
+        <!-- Fourth Content -->  
+        <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">  
+          <section>
+            <div class="podrocja">
+            <?php
+            $page_id = 133;
+            $queried_page = get_page($page_id);
+            ?>
+            <h2><?php echo $queried_page->post_title; ?></h2>
+            <?php echo apply_filters('the_content', $queried_page->post_content); ?>  
+            </div>
+            
+            <div class="metas">
+                <?php $image = wp_get_attachment_image_src ( get_post_thumbnail_id ( $page_id ), 'single-post-thumbnail' ); ?>
+                <img class="f_img" src="<?php echo $image[0];?>" >
+                <a href="#" class="button">Mnenja strank</a>
+                <a href="#" class="button">Reference</a>
+            </div>            
+            
+          </section>    
+        </div>  
+      </div>
+
+
+    <!-- end of #featured -->
 
          <div class="row content-wrapper">
 
