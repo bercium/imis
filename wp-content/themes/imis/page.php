@@ -8,7 +8,6 @@ get_header(); ?>
 
 <div class="vs vs-default <?php the_field('slika-v-glavi'); ?>" ></div>
 
-
  <div class="row">
       <div class="sidebar-one sidebar">
           <div class="text-wrap">
@@ -40,7 +39,7 @@ get_header(); ?>
       <h1><?php the_title(); ?></h1>
 
     </header>
-  
+    
     <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
 
     <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>

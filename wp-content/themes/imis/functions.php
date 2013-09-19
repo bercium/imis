@@ -128,6 +128,42 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+/*
+ * custom translate function bound
+ */
+function t($value, $lang = ''){
+  
+  if (($lang == '') && !isset($_COOKIE['pll_language'])) return $value;
+  if ($lang == '') $lang = $_COOKIE['pll_language'];
+  
+  $filename = get_template_directory()."/language/".$lang.".php";
+
+  if (!file_exists($filename)) return $value;
+  
+  $importedLang = include $filename;
+  if (isset($importedLang[$value])) return $importedLang[$value];
+  else{
+    $filenameAuto = get_template_directory()."/language/".$lang."-auto".".php";
+    $importedLangAuto = array();
+    if (file_exists($filename)) $importedLangAuto = include $filenameAuto;
+    
+    $importedLangAuto[$value] = '';
+    
+    $importedLangAutoString = "<?php\n\nreturn array(\n";
+    foreach ($importedLangAuto as $key => $val){
+      $importedLangAutoString .= '  "'.$key.'" => "'.$val.'",'."\n";
+    }
+    $importedLangAutoString .= ");\n";
+    
+    file_put_contents($filenameAuto, $importedLangAutoString);
+  }
+  return $value;
+}
+
+
+function et($value, $lang = ''){
+  echo t($value);
+}
 
 /**
  * Redirect non-admins to the homepage after logging into the site.
