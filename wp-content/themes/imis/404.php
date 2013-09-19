@@ -36,7 +36,7 @@ get_header(); ?>
           <!-- REPLACE wp-php here on: -->
             <?php 
             // right side sidebar
-            //dynamic_sidebar();
+            dynamic_sidebar();
             //get_sidebar(); ?>
 
           <!-- wp-php end  -->

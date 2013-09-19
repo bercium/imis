@@ -28,7 +28,6 @@ get_header(); ?>
           <div class="text-wrap">            
             
 
-
             <?php if (have_posts()) : ?>
               <header>
                 <h1><?php et("Rezultati iskanja"); ?></h1>

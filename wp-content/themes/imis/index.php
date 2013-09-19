@@ -22,6 +22,8 @@ get_header(); ?>
 
               <div class="home-main-content one-third">
                     <div class="text-wrap">
+                      to je INDEX.PHP
+                      
                            <!-- REPLACE  wp-php here on: -->
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <article class="post" id="post-<?php the_ID(); ?>">
