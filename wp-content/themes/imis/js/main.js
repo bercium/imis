@@ -1,3 +1,17 @@
+(function(){  
+	$("#featured").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);  
+	$("#featured").hover(  
+	function() {  
+	$("#featured").tabs("rotate",0,true);  
+	},  
+	function() {  
+	$("#featured").tabs("rotate",5000,true);  
+	}  
+	);  
+
+}());
+
+
 // right sidebar
 // remove  border on last element 
 $(function( ) {
@@ -39,6 +53,9 @@ $(function( ) {
 		$(".main-navigation > ul > li:last").css("border-right", "none");
 
 	});
+
+
+
 
 
 	

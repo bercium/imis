@@ -370,6 +370,7 @@ background: url("../img/current-item-line.png")  7px 19px no-repeat;
     background: #1a1a1a;    
     text-transform: uppercase; 
     margin-top: 1px;
+    z-index: 2;
     
 }
 
