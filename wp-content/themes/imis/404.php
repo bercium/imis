@@ -24,7 +24,7 @@ get_header(); ?>
 
       <div class="main-content">
           <div class="text-wrap">
-              <h1><?php _e("Željena stran ni bila najdena!","imis-site"); ?></h1>
+              <h1><?php et("Željena stran ni bila najdena!"); ?></h1>
           </div>
       </div>
    

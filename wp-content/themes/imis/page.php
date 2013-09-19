@@ -40,13 +40,13 @@ get_header(); ?>
 
     </header>
     
-    <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
+    <?php the_content('<p class="serif">'.t('Preberi preostanek strani').' &raquo;</p>'); ?>
 
-    <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+    <?php wp_link_pages(array('before' => '<p><strong>'.t('Strani').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
   
   </article>
   <?php endwhile; endif; ?>
-  <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+  <?php //edit_post_link(t('Uredi to stran').'.', '<p>', '</p>'); ?>
 
   <?php //comments_template(); ?>
               <!-- wp-php end  -->

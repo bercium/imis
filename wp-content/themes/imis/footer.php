@@ -9,28 +9,23 @@
                 <div class="widget-one">
                 <div class="text-wrap left">
                     <!-- REPLACE wp-php here on: -->
-                    <p>IMAGING SYSTEMS, informacijski sistemi d.o.o. | Telefon: 059 070 000 | E-mail: info@imis.si | Brnčičeva 41g, 1000 Ljubljana</p>
+                    <p><?php et("IMAGING SYSTEMS, informacijski sistemi d.o.o. | Telefon: 059 070 000 | E-mail: info@imis.si | Brnčičeva 41g, 1000 Ljubljana"); ?></p>
                     <!-- wp-php end  -->
                 </div>
                 </div>
             </div>
             <div class="row">
                 <div class="footer">
-                    <div class="left text-wrap  copyright"> <!-- REPLACE wp-php here on: --><p>Imaging Systems 2013 Pravice pridržave</p><!-- wp-php end  --></div>
+                    <div class="left text-wrap  copyright"> <!-- REPLACE wp-php here on: --><p><?php et("Imaging Systems 2013 Pravice pridržane"); ?></p><!-- wp-php end  --></div>
 
                     <div class="right text-wrap">
                     <!-- REPLACE wp-php here on: -->
                     <ul class="mini-navigation">
                       
-                      <?php 
-                        //detect english for sitemap
-                        $actual_link = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-                        preg_match("~/en/~", $actual_link, $matches);
-                      ?>
-                        <li><a href="<?php if (count($matches)) echo "sitemap"; else echo "mapastrani"; ?>"><?php _e("Mapa strani","imis-site"); ?></a></li>
-                        <li class="about"><a href=""><?php _e("O AVTORJIH","imis-site"); ?> </a>
-                            <ul><li><a href="">EBerce</a><span><?php _e("PRILAGODITEV VSEBIN IN TEHNIČNA IZVEDBA","imis-site"); ?></span></li>
-                                <li><a href="">Katja Žerko</a><span><?php _e("OBLIKOVANJE","imis-site"); ?></span></li>
+                        <li><a href="<?php if (getLang() == 'en') echo "sitemap"; else echo "mapastrani"; ?>"><?php et("Mapa strani"); ?></a></li>
+                        <li class="about"><a href=""><?php et("O AVTORJIH"); ?> </a>
+                            <ul><li><a href="">EBerce</a><span><?php et("PRILAGODITEV VSEBIN IN TEHNIČNA IZVEDBA"); ?></span></li>
+                                <li><a href="">Katja Žerko</a><span><?php et("OBLIKOVANJE"); ?></span></li>
                             </ul>
                         </li>
                     </ul>

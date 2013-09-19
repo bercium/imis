@@ -31,12 +31,12 @@ get_header(); ?>
 
             <?php if (have_posts()) : ?>
               <header>
-                <h1><?php _e("Rezultati iskanja","imis-site"); ?></h1>
+                <h1><?php et("Rezultati iskanja"); ?></h1>
               </header>
 
               <nav>
-                <div><?php next_posts_link('&laquo; '.__("Prejšni zadetki","imis-site")) ?></div>
-                <div><?php previous_posts_link(__("Naslednji zadetki","imis-site").' &raquo;') ?></div>
+                <div><?php next_posts_link('&laquo; '.t("Prejšni zadetki")) ?></div>
+                <div><?php previous_posts_link(t("Naslednji zadetki").' &raquo;') ?></div>
               </nav>
 
               <?php while (have_posts()) : the_post(); ?>
@@ -56,13 +56,13 @@ get_header(); ?>
               <?php endwhile; ?>
 
               <nav>
-                <div><?php next_posts_link('&laquo; '.__("Prejšni zadetki","imis-site")) ?></div>
-                <div><?php previous_posts_link(__("Naslednji zadetki","imis-site").' &raquo;') ?></div>
+                <div><?php next_posts_link('&laquo; '.t("Prejšni zadetki")) ?></div>
+                <div><?php previous_posts_link(t("Naslednji zadetki").' &raquo;') ?></div>
               </nav>
 
             <?php else : ?>
             <header>
-              <h1><?php _e("Izbrano iskanje ni vrnilo nobenih zadetkov.","imis-site"); ?></h1>
+              <h1><?php et("Izbrano iskanje ni vrnilo nobenih zadetkov."); ?></h1>
               </header>
               <?php //get_search_form(); ?>
 

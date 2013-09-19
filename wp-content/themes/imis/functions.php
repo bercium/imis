@@ -16,7 +16,7 @@ function mytheme_comment($comment, $args, $depth) {
           <?php edit_comment_link(__('(Edit)'),'  ','') ?>
        </header>
        <?php if ($comment->comment_approved == '0') : ?>
-          <em><?php _e('Your comment is awaiting moderation.') ?></em>
+          <em><?php et('Your comment is awaiting moderation.'); ?></em>
           <br />
        <?php endif; ?>
 
@@ -87,13 +87,13 @@ function get_post_top_ancestor_id(){
     return $post->ID;
 }}
 
-function wordpress_breadcrumbs() {
+function wordpress_breadcrumbs($minLevel = 1) {
   $delimiter = '<span class="del"> &gt; </span>';
   $currentBefore = '<span class="current">';
   $currentAfter = '</span>';
   if (!is_home() && !is_front_page() || is_paged()) {
     global $post;
-    if (count($post->ancestors) > 1) {
+    if (count($post->ancestors) > $minLevel) {
       echo '<div id="crumbs">';
       if (is_page() && !$post->post_parent) {
         echo $currentBefore;
@@ -122,11 +122,28 @@ function wordpress_breadcrumbs() {
 function register_my_menus() {
   register_nav_menus(
     array(
-      'header-menu' => __( 'Glavni menu',"imis-site"),
+      'header-menu' => t( 'Glavni menu'),
     )
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+
+function getLang(){
+  $lang = 'sl';
+  if (isset($_COOKIE['pll_language'])) $lang = $_COOKIE['pll_language'];
+  
+  $actual_link = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+  preg_match("~/en/~", $actual_link, $matches);
+  
+  $lang = substr(get_bloginfo( 'language' ), 0, 2);
+  return $lang;
+}
+
+function home_url_custom(){
+  if (getLang() == 'sl') return home_url();
+  else return home_url()."/".getLang();
+}
 
 /*
  * custom translate function bound
@@ -134,7 +151,7 @@ add_action( 'init', 'register_my_menus' );
 function t($value, $lang = ''){
   
   if (($lang == '') && !isset($_COOKIE['pll_language'])) return $value;
-  if ($lang == '') $lang = $_COOKIE['pll_language'];
+  if ($lang == '') $lang = getLang();//$_COOKIE['pll_language'];
   
   $filename = get_template_directory()."/language/".$lang.".php";
 

@@ -29,7 +29,6 @@
         
     </head>
     <body  <?php body_class(); ?>>
-      
 <?php /* ?>    <body <?php body_class(); ?>> <?php */ ?>
       
         <!--[if lt IE 7]>
@@ -41,7 +40,7 @@
                 <div class="header-row row">
                     <header>
                         <!-- REPLACE wp-php here on: -->
-                        <h1 class="main-logo" ><a href=" <?php echo home_url(); ?> ">Imaging systems</a></h1>                
+                        <h1 class="main-logo" ><a href=" <?php echo home_url_custom(); ?> ">Imaging systems</a></h1>                
                         <!-- end wp-php -->
                     </header>
                 </div>
@@ -55,13 +54,13 @@
                                                  'container' => false) ); ?>
                        <ul>
                         <li class="page_item page-item-11 searchbtn">
-                          <a ><?php _e('Iskalnik','www.imis.si'); ?></a>
+                          <a ><?php et('Iskalnik'); ?></a>
                           <ul class="children">
                             <li class="page_item page-item-2">
-                              <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ) ?>">
+                              <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url_custom().'/' ) ?>">
                                 <div>
                                   <input type="text" value="<?php echo get_search_query() ?>" name="s" id="s" />
-                                  <input type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+                                  <input type="submit" id="searchsubmit" value="<?php et('Išči'); ?>" />
                                 </div>
                               </form>
                             </li>
