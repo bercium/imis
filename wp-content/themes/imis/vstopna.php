@@ -71,7 +71,10 @@ get_header(); ?>
                            <!-- REPLACE  wp-php here on: -->
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <article class="post" id="post-<?php the_ID(); ?>">
-                         
+              
+                <?php the_content(); ?>
+
+                
               
               </article>
               <?php endwhile; endif; ?>

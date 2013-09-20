@@ -76,6 +76,22 @@ src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix");
 src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix") format("eot"),url("Fonts/f6f2f966-caae-414b-9d8e-028c4ed1efbe.woff") format("woff"),url("Fonts/f402e160-d22f-41b5-9572-4f62d27aaa64.ttf") format("truetype"),url("Fonts/148839e9-367e-43c9-b546-c6e6af5679bd.svg#148839e9-367e-43c9-b546-c6e6af5679bd") format("svg");
 }
 
+.home-main-content a,
+.main-content a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.main-content h1 a,
+.main-content h2 a,
+.main-content h3 a,
+.main-content h4 a,
+.main-content h5 a,
+.main-content h6 a {
+  text-decoration: none;
+
+ }
+
 
 .home-main-content a:hover, 
 .main-content a:hover {
@@ -88,12 +104,7 @@ font-family: EurostileNextW02;
 font-size: 12px;
 }
 
-.main-content a,
-.home-main-content a {
-  color: #000;
-  
-  text-decoration: none;
-}
+
 
 .main-content a:hover,
 .home-main-content a:hover {
