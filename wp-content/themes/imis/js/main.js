@@ -1,11 +1,14 @@
-(function(){  
-	$("#featured").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);  
+// slider 
+(function(){  	
+	
+	$("#featured").tabs({fx:{opacity: "toggle", duration: 300 }}).tabs("rotate", 3000, true);  
+
 	$("#featured").hover(  
-	function() {  
+function() {  
 	$("#featured").tabs("rotate",0,true);  
 	},  
 	function() {  
-	$("#featured").tabs("rotate",5000,true);  
+	$("#featured").tabs("rotate",3000,true);  
 	}  
 	);  
 
