@@ -76,18 +76,35 @@ src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix");
 src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix") format("eot"),url("Fonts/f6f2f966-caae-414b-9d8e-028c4ed1efbe.woff") format("woff"),url("Fonts/f402e160-d22f-41b5-9572-4f62d27aaa64.ttf") format("truetype"),url("Fonts/148839e9-367e-43c9-b546-c6e6af5679bd.svg#148839e9-367e-43c9-b546-c6e6af5679bd") format("svg");
 }
 
+.home-main-content a,
+.main-content a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.main-content h1 a,
+.main-content h2 a,
+.main-content h3 a,
+.main-content h4 a,
+.main-content h5 a,
+.main-content h6 a {
+  text-decoration: none;
+
+ }
+
+
+.home-main-content a:hover, 
+.main-content a:hover {
+  color: #FAAD24;
+  
+}
 
 body {color: #000000;
 font-family: EurostileNextW02;  
 font-size: 12px;
 }
 
-.main-content a,
-.home-main-content a {
-  color: #000;
-  
-  text-decoration: none;
-}
+
 
 .main-content a:hover,
 .home-main-content a:hover {
@@ -149,8 +166,7 @@ h2 {
 }
 
  
-/* Won't be used here */
- 
+
 
 
 /****** @ home ******/
@@ -163,6 +179,58 @@ h2 {
   line-height: 15px;
 
 }
+
+
+/****** @ slider ******/
+
+
+#featured .ui-tabs-panel .slider-text-wrap a {
+  color: #fff;
+  font-family: "EurostileNextW02-SemiBd 693874";
+  text-decoration: none;
+  margin-right: 45px;
+  font-size: 12px;
+
+}
+
+#featured li.ui-tabs-nav-item a {
+  font-size: 14px;
+}
+
+#featured ul.ui-tabs-nav li a {
+height: 62px;
+
+line-height:21px;  
+color: #fff;
+}
+
+#featured ul.ui-tabs-nav,
+#featured ul.ui-tabs-nav p {
+  font-size: 14px;
+  line-height: 17px;  
+}
+
+
+#featured .ui-tabs-panel .slider-text-wrap,
+#featured .ui-tabs-panel .slider-text-wrap p {
+  font-family: EurostileNextW02;  
+  font-size: 17px;
+  line-height: 22px;
+} 
+
+#featured .ui-tabs-panel .slider-text-wrap h1,
+#featured .ui-tabs-panel .slider-text-wrap h2,
+#featured .ui-tabs-panel .slider-text-wrap h3,
+#featured .ui-tabs-panel .slider-text-wrap h4,
+#featured .ui-tabs-panel .slider-text-wrap h5,
+#featured .ui-tabs-panel .slider-text-wrap h5 {
+  font-family: "EurostileNextW02-SemiBd 693874";
+  font-size: 29px;
+  line-height: 36px;
+  margin-bottom: 4px;
+}
+
+
 
 
 /* ==========================================================================

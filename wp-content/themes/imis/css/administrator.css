@@ -1,1 +1,14 @@
+.hl.acf-tab-group > li.acf-conditional_logic-hide {
+	display: block !important;
+}
 
+
+.acf-tab-group .active {
+    border: 1px solid #999;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+}
+
+.acf-image-uploader img {
+	background: #bbb;
+}

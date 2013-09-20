@@ -12,9 +12,9 @@ get_header(); ?>
 
 <div id="featured" class="inside">
       <ul class="ui-tabs-nav">  
-          <li class="ui-tabs-nav-item ui-tabs-selected fit1" id="nav-fragment-1"><a href="#fragment-1"><?php the_field('thumbnail-tekst-1'); ?></a></li>  
-          <li class="ui-tabs-nav-item fit2" id="nav-fragment-2"><a href="#fragment-2"><?php the_field('thumbnail-tekst-2'); ?></a></li>  
-          <li class="ui-tabs-nav-item fit3" id="nav-fragment-3"><a href="#fragment-3"><?php the_field('thumbnail-tekst-2'); ?></li>  
+          <li class="ui-tabs-nav-item ui-tabs-selected fit1" id="nav-fragment-1"><a href="#fragment-1"><img src="<?php the_field('thumbnail-slika-1'); ?>"><span><?php the_field('thumbnail-tekst-1'); ?><span></a></li>  
+          <li class="ui-tabs-nav-item fit2" id="nav-fragment-2"><a href="#fragment-2"><img src="<?php the_field('thumbnail-slika-2'); ?>"><span><?php the_field('thumbnail-tekst-2'); ?></a></span></li>  
+          <li class="ui-tabs-nav-item fit3" id="nav-fragment-3"><a href="#fragment-3"><img src="<?php the_field('thumbnail-slika-3'); ?>"><span><?php the_field('thumbnail-tekst-2'); ?></a></span></li>  
          
         </ul> 
          

@@ -11,48 +11,32 @@ get_header(); ?>
 
 
 <div id="featured" class="inside">
-        <ul class="ui-tabs-nav">  
-          <li class="ui-tabs-nav-item ui-tabs-selected fit1" id="nav-fragment-1"><a href="#fragment-1">Industrijska<span>gradnja</span></a></li>  
-          <li class="ui-tabs-nav-item fit2" id="nav-fragment-2"><a href="#fragment-2">Visoke<span>gradnje</span></a></li>  
-          <li class="ui-tabs-nav-item fit3" id="nav-fragment-3"><a href="#fragment-3">Nizke<span>gradnje</span></a></li>  
-          <li class="ui-tabs-nav-item fit4" id="nav-fragment-4"><a href="#fragment-4" class="padfix">Inženiring</a></li>  
-        </ul>   
+      <ul class="ui-tabs-nav">  
+          <li class="ui-tabs-nav-item ui-tabs-selected fit1" id="nav-fragment-1"><a href="#fragment-1"><img src="<?php the_field('thumbnail-slika-1'); ?>"><span><?php the_field('thumbnail-tekst-1'); ?><span></a></li>  
+          <li class="ui-tabs-nav-item fit2" id="nav-fragment-2"><a href="#fragment-2"><img src="<?php the_field('thumbnail-slika-2'); ?>"><span><?php the_field('thumbnail-tekst-2'); ?></a></span></li>  
+          <li class="ui-tabs-nav-item fit3" id="nav-fragment-3"><a href="#fragment-3"><img src="<?php the_field('thumbnail-slika-3'); ?>"><span><?php the_field('thumbnail-tekst-2'); ?></a></span></li>  
+         
+        </ul> 
+         
         
         <!-- First Content -->  
         <div id="fragment-1" class="ui-tabs-panel" style="">  
             <section>
-            <div class="podrocja">
-                <?php $page_id = 125; $queried_page = get_page($page_id); ?>
-                <h2><?php echo $queried_page->post_title; ?></h2>
-                <?php echo apply_filters('the_content', $queried_page->post_content); ?>
-            </div>
-            
-            <div class="metas">
-                <?php $image = wp_get_attachment_image_src ( get_post_thumbnail_id ( $page_id ), 'single-post-thumbnail' ); ?>
-                <img class="f_img" src="<?php echo $image[0];?>" >
-                <a href="#" class="button">Mnenja strank</a>
-                <a href="#" class="button">Reference</a>
-            </div>            
-            
+              <div class="slider-text-wrap">
+                <?php the_field('besedilo-1'); ?>
+              </div>
+           <img class="feat-img"  src="<?php the_field('slika-1'); ?>"> 
+           
           </section>  
         </div>  
         
         <!-- Second Content -->  
         <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">  
           <section>
-            <div class="podrocja">          
-                <?php
-                $page_id = 129;               $queried_page = get_page($page_id);?>
-                <h2><?php echo $queried_page->post_title; ?></h2>
-                <?php echo apply_filters('the_content', $queried_page->post_content); ?>
-            </div>  
-              
-            <div class="metas">
-                <?php $image = wp_get_attachment_image_src ( get_post_thumbnail_id ( $page_id ), 'single-post-thumbnail' ); ?>
-                <img class="f_img" src="<?php echo $image[0];?>" >
-                <a href="#" class="button">Mnenja strank</a>
-                <a href="#" class="button">Reference</a>
-            </div>            
+            <div class="slider-text-wrap">
+                <?php the_field('besedilo-2'); ?>
+              </div>
+            <img class="feat-img" src="<?php the_field('slika-2'); ?>"> 
                       
           </section>  
         </div>  
@@ -60,42 +44,15 @@ get_header(); ?>
         <!-- Third Content -->  
         <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">  
           <section>
-            <div class="podrocja">
-                <?php           $page_id = 131;           $queried_page = get_page($page_id);?>
-                <h2><?php echo $queried_page->post_title; ?></h2>           
-                <?php echo apply_filters('the_content', $queried_page->post_content); ?>
-            </div>
-            
-            <div class="metas">
-                <?php $image = wp_get_attachment_image_src ( get_post_thumbnail_id ( $page_id ), 'single-post-thumbnail' ); ?>
-                <img class="f_img" src="<?php echo $image[0];?>" >
-                <a href="#" class="button">Mnenja strank</a>
-                <a href="#" class="button">Reference</a>
-            </div>    
+            <div class="slider-text-wrap">
+              <?php the_field('besedilo-3'); ?>
+              </div>
+             <img class="feat-img" src="<?php the_field('slika-3'); ?>"> 
           </section>  
         </div>  
         
-        <!-- Fourth Content -->  
-        <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">  
-          <section>
-            <div class="podrocja">
-            <?php
-            $page_id = 133;
-            $queried_page = get_page($page_id);
-            ?>
-            <h2><?php echo $queried_page->post_title; ?></h2>
-            <?php echo apply_filters('the_content', $queried_page->post_content); ?>  
-            </div>
-            
-            <div class="metas">
-                <?php $image = wp_get_attachment_image_src ( get_post_thumbnail_id ( $page_id ), 'single-post-thumbnail' ); ?>
-                <img class="f_img" src="<?php echo $image[0];?>" >
-                <a href="#" class="button">Mnenja strank</a>
-                <a href="#" class="button">Reference</a>
-            </div>            
-            
-          </section>    
-        </div>  
+     
+        
       </div>
 
 
@@ -115,9 +72,9 @@ get_header(); ?>
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <article class="post" id="post-<?php the_ID(); ?>">
               
-                <?php the_content('<p class="serif">'.t('Preberi preostanek strani').' &raquo;</p>'); ?>
+                <?php the_content(); ?>
 
-                <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+                
               
               </article>
               <?php endwhile; endif; ?>

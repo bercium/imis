@@ -7,9 +7,11 @@ margin-top: 0px;
 width:940px;  
 padding-left: 0px;  
 top: 0;
+margin-bottom: 9px;
+background: #333333;
 
 position:relative;  
-height:314px;  
+height:311px;  
 /*background: url(../images/featured_bg.jpg) top right no-repeat; */
 /*background-color: #fff;*/
 
@@ -30,19 +32,27 @@ bottom: 0;
 width: 33.3333333%;
 float: left;
 background: #333333;
+height: 62px;
 
 }
 
-#featured ul.ui-tabs-nav li a {
-height: 62px;
-font-size:16px;
-line-height:21px;  
-color: #fff;
+#featured ul.ui-tabs-nav li img {
+	float:  left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
 
+#featured ul.ui-tabs-nav
+ {
+	margin: 0;
+	padding-top: 3px;
 }
 
 #featured ul.ui-tabs-nav li span{  
-display: block;
+float: left;
+padding-top: 11px;
+margin-left: 7px;
+
 } 	
 
 /* fixes padding of last list item - inženiring*/
@@ -60,7 +70,9 @@ width:940px;
 height:249px !important;  
 position:relative;  
 overflow:hidden;  
+
 }  	
+
 
 #featured .ui-tabs-panel img.feat-img {
 	position: absolute;
@@ -72,29 +84,31 @@ overflow:hidden;
 
 #featured .ui-tabs-panel .slider-text-wrap {
 	position: absolute;
+	width: 890px;
 	z-index: 3;
-	width: 940px;
-	height: 249px;
-	background: rgba(0,0,0,0.3);
-	color: #fff;
+	height:214px;
+	padding-top: 35px;
+	padding-left: 50px;
+	background:  url(../img/gradient-slider-bg.png) 0 0 repeat-y;	
+	
 }
 
 
 
-
 #featured .ui-tabs-hide{  
-display:none;  
+display: none;
 }  
+
+
 
 /*And the selected tab is given a background image with a left arrow. 
 Here are the styles for selected tab.*/
-#featured li.ui-tabs-nav-item a{/*On Hover Style*/  
+#featured li.ui-tabs-nav-item a { /*On Hover Style*/  
 display:block;  
-height:84px;  
-	
-text-transform: uppercase;
+
+
 text-decoration: none;		
-line-height:24px;  
+
 outline:none;  
 
 }  
@@ -102,7 +116,6 @@ outline:none;
 background: url(../images/fit_1px_bg.png);
 }  
 #featured li.ui-tabs-selected{ /*Selected tab style*/  
-/*background:url('../images/selected.png') top right no-repeat;  */
 
 } 
 
@@ -111,12 +124,10 @@ background: url(../images/fit_1px_bg.png);
 background: url(../img/ui-tab-nav-hover.png) 0 0 repeat-x;
 }  
 /*************************************************************************/
-/* styles of featured navigation $$*/
+/* styles of featured navigation */
 #featured .ui-tabs-nav-item {
-/*background: url(../images/fit_bg.jpg) top right no-repeat;*/
-text-align: center;
-}
 
+}
 
 
 
@@ -127,46 +138,9 @@ height: 249px;
 color: #fff;
 position: absolute;
 z-index: 1;
-
 }
 
-#featured .ui-tabs-panel h1 {
-font-size:32px;
-line-height: 36px;
-text-transform: capitalize;
-width: 385px;
 
-}
 
-#featured .ui-tabs-panel p {
-width:360px;
-margin-top: 18px;
-line-height: 18px;
-}
 
-.f_img {float: right;
-border: 1px solid #d8e0eb;
-}	
 
-#featured  .podrocja {
-float: left;
-width: 285px;
-}	
-
-#featured .metas {
-float: right;
-width: 230px;
-margin: 24px 0 0 0;
-}
-
-#featured  .metas .button {
-float: right;
-margin: 18px 13px  0 0;
-
-}
-.shadow {
-/*background: url(../images/shadow.png) top left no-repeat;*/
-height: 62px ;
-margin-top: 75px;
-}
-/*************************************************************************/
