@@ -53,7 +53,7 @@ get_header(); ?>
           </div>
       </div>
       <div class="sidebar-two sidebar">
-        <div class="img-box" ></div>
+        <div class="img-box <?php the_field('slika-v-desnem-stoplcu'); ?>" " ></div>
         <div class="text-wrap">
 
           <!-- REPLACE wp-php here on: -->

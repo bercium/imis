@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-    
+  
 <div id="featured" class="inside">
       <ul class="ui-tabs-nav">  
           <li class="ui-tabs-nav-item ui-tabs-selected fit1" id="nav-fragment-1"><a href="#fragment-1"><img src="<?php the_field('thumbnail-slika-1'); ?>"><span><?php the_field('thumbnail-tekst-1'); ?><span></a></li>  

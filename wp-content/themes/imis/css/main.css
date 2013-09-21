@@ -563,6 +563,12 @@ background: url("../img/current-item-line.png")  7px 19px no-repeat;
             background: url(../img/sidebar-img-macka.jpg)  0 0  no-repeat;
         }
 
+         .sidebar-two .slika-sova {
+             background: url(../img/sidebar-img-sova.jpg)  0 0  no-repeat;  
+         }
+
+
+
 
 /* ==========================================================================
   @ home styles
