@@ -57,5 +57,36 @@
         
 <?php wp_footer(); ?>
         
+        
+  <script language="javascript" type="text/javascript" src="javascripts/cookie/jquery.cookie.js"></script>
+  <script language="javascript" type="text/javascript" src="javascripts/cookie/jquery.cookiecuttr.<?php echo $lang; ?>.js"></script>
+  
+  <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."js/cookie/jquery.cookie.js") ?>
+  <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."js/cookie/jquery.cookiecuttr.".getLang().".js") ?>
+
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+  <script type="text/javascript">
+    var lang = '<?php echo $lang ?>';
+    
+    $(document).ready(function () {
+      $.cookieCuttr({cookieDeclineButton:false, cookiePolicyLink:'<?php  if (getLang() == 'en') echo home_url_custom()."/cookies"; else echo home_url_custom()."/piskotki"; ?>'});
+    });
+
+  if (jQuery.cookie('cc_cookie_accept') == "cc_cookie_accept") {
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9773251-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  }
+    
+  </script>
+  
     </body>
 </html>
