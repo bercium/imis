@@ -42,7 +42,8 @@ height: 62px;
 	margin-top: 10px;
 }
 
-#featured ul.ui-tabs-nav
+#featured ul.ui-tabs-nav,
+#featured ul.ui-tabs-nav p
  {
 	margin: 0;
 	padding-top: 3px;
@@ -50,7 +51,7 @@ height: 62px;
 
 #featured ul.ui-tabs-nav li span{  
 float: left;
-padding-top: 11px;
+padding-top: 12px;
 margin-left: 7px;
 
 } 	
