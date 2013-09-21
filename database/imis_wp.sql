@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2
+-- version 3.4.10.1
 -- http://www.phpmyadmin.net
 --
--- Gostitelj: localhost
--- Čas nastanka: 20 sep 2013 ob 11.20
--- Različica strežnika: 5.5.20
--- Različica PHP: 5.3.10
+-- Host: localhost
+-- Generation Time: Sep 21, 2013 at 01:08 PM
+-- Server version: 5.5.20
+-- PHP Version: 5.3.10
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,16 +17,17 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Zbirka podatkov: `imis_wp`
+-- Database: `imis_wp`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_commentmeta`
+-- Table structure for table `wp_commentmeta`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
+DROP TABLE IF EXISTS `wp_commentmeta`;
+CREATE TABLE `wp_commentmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `comment_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) DEFAULT NULL,
@@ -39,10 +40,11 @@ CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_comments`
+-- Table structure for table `wp_comments`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_comments` (
+DROP TABLE IF EXISTS `wp_comments`;
+CREATE TABLE `wp_comments` (
   `comment_ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `comment_post_ID` bigint(20) unsigned NOT NULL DEFAULT '0',
   `comment_author` tinytext NOT NULL,
@@ -66,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Odloži podatke za tabelo `wp_comments`
+-- Dumping data for table `wp_comments`
 --
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
@@ -75,10 +77,11 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_links`
+-- Table structure for table `wp_links`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_links` (
+DROP TABLE IF EXISTS `wp_links`;
+CREATE TABLE `wp_links` (
   `link_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `link_url` varchar(255) NOT NULL DEFAULT '',
   `link_name` varchar(255) NOT NULL DEFAULT '',
@@ -99,20 +102,21 @@ CREATE TABLE IF NOT EXISTS `wp_links` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_options`
+-- Table structure for table `wp_options`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_options` (
+DROP TABLE IF EXISTS `wp_options`;
+CREATE TABLE `wp_options` (
   `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `option_name` varchar(64) NOT NULL DEFAULT '',
   `option_value` longtext NOT NULL,
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=507 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=511 ;
 
 --
--- Odloži podatke za tabelo `wp_options`
+-- Dumping data for table `wp_options`
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -214,15 +218,15 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (96, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (97, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
 (98, 'sidebars_widgets', 'a:7:{s:19:"wp_inactive_widgets";a:6:{i:0;s:8:"search-2";i:1;s:17:"recent-comments-2";i:2;s:10:"archives-2";i:3;s:6:"meta-2";i:4;s:14:"recent-posts-2";i:5;s:12:"categories-2";}s:16:"cs-sidebar-1-ang";a:1:{i:0;s:22:"black-studio-tinymce-8";}s:9:"sidebar-1";a:2:{i:0;s:22:"black-studio-tinymce-2";i:1;s:22:"black-studio-tinymce-3";}s:17:"cs-sidebar-test-1";a:0:{}s:21:"cs-some-more-sidebars";a:2:{i:0;s:22:"black-studio-tinymce-5";i:1;s:22:"black-studio-tinymce-6";}s:23:"cs-heading-test-sidebar";a:1:{i:0;s:22:"black-studio-tinymce-7";}s:13:"array_version";i:3;}', 'yes'),
-(99, 'cron', 'a:3:{i:1379709518;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1379752794;a:2:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
-(101, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:1:{i:0;O:8:"stdClass":9:{s:8:"response";s:7:"upgrade";s:8:"download";s:40:"http://wordpress.org/wordpress-3.6.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.6.1.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.6.1-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.6.1-new-bundled.zip";s:7:"partial";s:50:"http://wordpress.org/wordpress-3.6.1-partial-0.zip";}s:7:"current";s:5:"3.6.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.6";s:15:"partial_version";s:3:"3.6";}}s:12:"last_checked";i:1379666338;s:15:"version_checked";s:3:"3.6";}', 'yes'),
-(105, '_site_transient_update_themes', 'O:8:"stdClass":3:{s:12:"last_checked";i:1379664414;s:7:"checked";a:3:{s:4:"imis";s:3:"1.0";s:14:"twentythirteen";s:3:"1.0";s:12:"twentytwelve";s:3:"1.2";}s:8:"response";a:0:{}}', 'yes'),
+(99, 'cron', 'a:3:{i:1379795918;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1379839194;a:2:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(101, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:1:{i:0;O:8:"stdClass":9:{s:8:"response";s:7:"upgrade";s:8:"download";s:40:"http://wordpress.org/wordpress-3.6.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.6.1.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.6.1-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.6.1-new-bundled.zip";s:7:"partial";s:50:"http://wordpress.org/wordpress-3.6.1-partial-0.zip";}s:7:"current";s:5:"3.6.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.6";s:15:"partial_version";s:3:"3.6";}}s:12:"last_checked";i:1379768241;s:15:"version_checked";s:3:"3.6";}', 'yes'),
+(105, '_site_transient_update_themes', 'O:8:"stdClass":3:{s:12:"last_checked";i:1379768244;s:7:"checked";a:3:{s:4:"imis";s:3:"1.0";s:14:"twentythirteen";s:3:"1.0";s:12:"twentytwelve";s:3:"1.2";}s:8:"response";a:0:{}}', 'yes'),
 (109, 'dashboard_widget_options', 'a:4:{s:25:"dashboard_recent_comments";a:1:{s:5:"items";i:5;}s:24:"dashboard_incoming_links";a:5:{s:4:"home";s:33:"http://127.0.0.1/razvoj/othr/imis";s:4:"link";s:109:"http://blogsearch.google.com/blogsearch?scoring=d&partner=wordpress&q=link:http://127.0.0.1/razvoj/othr/imis/";s:3:"url";s:142:"http://blogsearch.google.com/blogsearch_feeds?scoring=d&ie=utf-8&num=10&output=rss&partner=wordpress&q=link:http://127.0.0.1/razvoj/othr/imis/";s:5:"items";i:10;s:9:"show_date";b:0;}s:17:"dashboard_primary";a:7:{s:4:"link";s:26:"http://wordpress.org/news/";s:3:"url";s:31:"http://wordpress.org/news/feed/";s:5:"title";s:14:"WordPress Blog";s:5:"items";i:2;s:12:"show_summary";i:1;s:11:"show_author";i:0;s:9:"show_date";i:1;}s:19:"dashboard_secondary";a:7:{s:4:"link";s:28:"http://planet.wordpress.org/";s:3:"url";s:33:"http://planet.wordpress.org/feed/";s:5:"title";s:20:"Other WordPress News";s:5:"items";i:5;s:12:"show_summary";i:0;s:11:"show_author";i:0;s:9:"show_date";i:0;}}', 'yes'),
 (110, 'can_compress_scripts', '0', 'yes'),
 (144, 'recently_activated', 'a:0:{}', 'yes'),
 (145, '_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a', '1378296456', 'yes'),
 (146, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'a:40:{s:6:"widget";a:3:{s:4:"name";s:6:"widget";s:4:"slug";s:6:"widget";s:5:"count";s:4:"3898";}s:4:"post";a:3:{s:4:"name";s:4:"Post";s:4:"slug";s:4:"post";s:5:"count";s:4:"2456";}s:6:"plugin";a:3:{s:4:"name";s:6:"plugin";s:4:"slug";s:6:"plugin";s:5:"count";s:4:"2344";}s:5:"admin";a:3:{s:4:"name";s:5:"admin";s:4:"slug";s:5:"admin";s:5:"count";s:4:"1930";}s:5:"posts";a:3:{s:4:"name";s:5:"posts";s:4:"slug";s:5:"posts";s:5:"count";s:4:"1856";}s:7:"sidebar";a:3:{s:4:"name";s:7:"sidebar";s:4:"slug";s:7:"sidebar";s:5:"count";s:4:"1583";}s:7:"twitter";a:3:{s:4:"name";s:7:"twitter";s:4:"slug";s:7:"twitter";s:5:"count";s:4:"1329";}s:6:"google";a:3:{s:4:"name";s:6:"google";s:4:"slug";s:6:"google";s:5:"count";s:4:"1325";}s:8:"comments";a:3:{s:4:"name";s:8:"comments";s:4:"slug";s:8:"comments";s:5:"count";s:4:"1310";}s:6:"images";a:3:{s:4:"name";s:6:"images";s:4:"slug";s:6:"images";s:5:"count";s:4:"1260";}s:4:"page";a:3:{s:4:"name";s:4:"page";s:4:"slug";s:4:"page";s:5:"count";s:4:"1225";}s:5:"image";a:3:{s:4:"name";s:5:"image";s:4:"slug";s:5:"image";s:5:"count";s:4:"1121";}s:9:"shortcode";a:3:{s:4:"name";s:9:"shortcode";s:4:"slug";s:9:"shortcode";s:5:"count";s:4:"1000";}s:8:"facebook";a:3:{s:4:"name";s:8:"Facebook";s:4:"slug";s:8:"facebook";s:5:"count";s:3:"982";}s:5:"links";a:3:{s:4:"name";s:5:"links";s:4:"slug";s:5:"links";s:5:"count";s:3:"974";}s:3:"seo";a:3:{s:4:"name";s:3:"seo";s:4:"slug";s:3:"seo";s:5:"count";s:3:"950";}s:9:"wordpress";a:3:{s:4:"name";s:9:"wordpress";s:4:"slug";s:9:"wordpress";s:5:"count";s:3:"844";}s:7:"gallery";a:3:{s:4:"name";s:7:"gallery";s:4:"slug";s:7:"gallery";s:5:"count";s:3:"821";}s:6:"social";a:3:{s:4:"name";s:6:"social";s:4:"slug";s:6:"social";s:5:"count";s:3:"780";}s:3:"rss";a:3:{s:4:"name";s:3:"rss";s:4:"slug";s:3:"rss";s:5:"count";s:3:"722";}s:7:"widgets";a:3:{s:4:"name";s:7:"widgets";s:4:"slug";s:7:"widgets";s:5:"count";s:3:"686";}s:6:"jquery";a:3:{s:4:"name";s:6:"jquery";s:4:"slug";s:6:"jquery";s:5:"count";s:3:"681";}s:5:"pages";a:3:{s:4:"name";s:5:"pages";s:4:"slug";s:5:"pages";s:5:"count";s:3:"678";}s:5:"email";a:3:{s:4:"name";s:5:"email";s:4:"slug";s:5:"email";s:5:"count";s:3:"623";}s:4:"ajax";a:3:{s:4:"name";s:4:"AJAX";s:4:"slug";s:4:"ajax";s:5:"count";s:3:"615";}s:5:"media";a:3:{s:4:"name";s:5:"media";s:4:"slug";s:5:"media";s:5:"count";s:3:"595";}s:10:"javascript";a:3:{s:4:"name";s:10:"javascript";s:4:"slug";s:10:"javascript";s:5:"count";s:3:"572";}s:5:"video";a:3:{s:4:"name";s:5:"video";s:4:"slug";s:5:"video";s:5:"count";s:3:"570";}s:10:"buddypress";a:3:{s:4:"name";s:10:"buddypress";s:4:"slug";s:10:"buddypress";s:5:"count";s:3:"541";}s:4:"feed";a:3:{s:4:"name";s:4:"feed";s:4:"slug";s:4:"feed";s:5:"count";s:3:"539";}s:7:"content";a:3:{s:4:"name";s:7:"content";s:4:"slug";s:7:"content";s:5:"count";s:3:"530";}s:5:"photo";a:3:{s:4:"name";s:5:"photo";s:4:"slug";s:5:"photo";s:5:"count";s:3:"522";}s:4:"link";a:3:{s:4:"name";s:4:"link";s:4:"slug";s:4:"link";s:5:"count";s:3:"506";}s:6:"photos";a:3:{s:4:"name";s:6:"photos";s:4:"slug";s:6:"photos";s:5:"count";s:3:"505";}s:5:"login";a:3:{s:4:"name";s:5:"login";s:4:"slug";s:5:"login";s:5:"count";s:3:"471";}s:4:"spam";a:3:{s:4:"name";s:4:"spam";s:4:"slug";s:4:"spam";s:5:"count";s:3:"458";}s:5:"stats";a:3:{s:4:"name";s:5:"stats";s:4:"slug";s:5:"stats";s:5:"count";s:3:"453";}s:8:"category";a:3:{s:4:"name";s:8:"category";s:4:"slug";s:8:"category";s:5:"count";s:3:"452";}s:7:"youtube";a:3:{s:4:"name";s:7:"youtube";s:4:"slug";s:7:"youtube";s:5:"count";s:3:"436";}s:7:"comment";a:3:{s:4:"name";s:7:"comment";s:4:"slug";s:7:"comment";s:5:"count";s:3:"432";}}', 'yes'),
-(149, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1379673834;s:7:"checked";a:10:{s:31:"add-admin-css/add-admin-css.php";s:3:"1.2";s:30:"advanced-custom-fields/acf.php";s:5:"4.2.2";s:19:"akismet/akismet.php";s:5:"2.5.9";s:59:"black-studio-tinymce-widget/black-studio-tinymce-widget.php";s:5:"1.2.0";s:34:"custom-sidebars/customsidebars.php";s:3:"1.2";s:9:"hello.php";s:3:"1.6";s:21:"polylang/polylang.php";s:5:"1.1.5";s:69:"remove-dashboard-access-for-non-admins/remove-wp-dashboard-access.php";s:3:"1.0";s:53:"simple-language-switcher/simple-language-switcher.php";s:3:"1.1";s:43:"user-access-manager/user-access-manager.php";s:7:"1.2.4.3";}s:8:"response";a:0:{}}', 'yes'),
+(149, '_site_transient_update_plugins', 'O:8:"stdClass":2:{s:12:"last_checked";i:1379768241;s:8:"response";a:0:{}}', 'yes'),
 (150, 'uamAdminOptions', 'a:32:{s:15:"hide_post_title";s:5:"false";s:10:"post_title";s:10:"No rights!";s:12:"post_content";s:43:"Sorry you have no rights to view this post!";s:9:"hide_post";s:4:"true";s:17:"hide_post_comment";s:5:"false";s:20:"post_comment_content";s:33:"Sorry no rights to view comments!";s:20:"post_comments_locked";s:5:"false";s:15:"hide_page_title";s:5:"false";s:10:"page_title";s:10:"No rights!";s:12:"page_content";s:43:"Sorry you have no rights to view this page!";s:9:"hide_page";s:4:"true";s:17:"hide_page_comment";s:5:"false";s:20:"page_comment_content";s:33:"Sorry no rights to view comments!";s:20:"page_comments_locked";s:5:"false";s:8:"redirect";s:4:"blog";s:20:"redirect_custom_page";s:1:"2";s:19:"redirect_custom_url";s:0:"";s:14:"lock_recursive";s:4:"true";s:25:"authors_has_access_to_own";s:4:"true";s:31:"authors_can_add_posts_to_groups";s:5:"false";s:9:"lock_file";s:5:"false";s:14:"file_pass_type";s:6:"random";s:15:"lock_file_types";s:3:"all";s:13:"download_type";s:5:"fopen";s:17:"locked_file_types";s:14:"zip,rar,tar,gz";s:21:"not_locked_file_types";s:16:"gif,jpg,jpeg,png";s:15:"blog_admin_hint";s:4:"true";s:20:"blog_admin_hint_text";s:4:" [L]";s:21:"hide_empty_categories";s:4:"true";s:12:"protect_feed";s:4:"true";s:29:"show_post_content_before_more";s:5:"false";s:16:"full_access_role";s:13:"administrator";}', 'yes'),
 (151, 'uam_db_version', '1.1', 'yes'),
 (190, 'theme_mods_twentythirteen', 'a:1:{s:16:"sidebars_widgets";a:2:{s:4:"time";i:1378580441;s:4:"data";a:3:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}}}}', 'yes'),
@@ -286,16 +290,19 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (500, '_transient_plugin_slugs', 'a:10:{i:0;s:31:"add-admin-css/add-admin-css.php";i:1;s:30:"advanced-custom-fields/acf.php";i:2;s:19:"akismet/akismet.php";i:3;s:59:"black-studio-tinymce-widget/black-studio-tinymce-widget.php";i:4;s:34:"custom-sidebars/customsidebars.php";i:5;s:9:"hello.php";i:6;s:21:"polylang/polylang.php";i:7;s:69:"remove-dashboard-access-for-non-admins/remove-wp-dashboard-access.php";i:8;s:53:"simple-language-switcher/simple-language-switcher.php";i:9;s:43:"user-access-manager/user-access-manager.php";}', 'no'),
 (501, '_transient_timeout_dash_de3249c4736ad3bd2cd29147c4a0d43e', '1379707641', 'no'),
 (502, '_transient_dash_de3249c4736ad3bd2cd29147c4a0d43e', '<h4>Most Popular</h4>\n<h5><a href=''http://wordpress.org/plugins/facebook/''>Facebook</a></h5>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=facebook&amp;_wpnonce=187160b4ec&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''Facebook''>Install</a>)</span>\n<p>Add Facebook social plugins and the ability to publish new posts to a Facebook Timeline or Facebook Page. Official Facebook plugin.</p>\n<h4>Newest Plugins</h4>\n<h5><a href=''http://wordpress.org/plugins/orbisius-simple-notice/''>Orbisius Simple Notice</a></h5>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=orbisius-simple-notice&amp;_wpnonce=5d2b62c585&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''Orbisius Simple Notice''>Install</a>)</span>\n<p>This plugin allows you to show a simple notice to alert your users about server maintenance, new product launches etc.</p>\n', 'no'),
-(504, '_site_transient_timeout_theme_roots', '1379668139', 'yes'),
-(505, '_site_transient_theme_roots', 'a:3:{s:4:"imis";s:7:"/themes";s:14:"twentythirteen";s:7:"/themes";s:12:"twentytwelve";s:7:"/themes";}', 'yes');
+(508, '_site_transient_timeout_theme_roots', '1379770043', 'yes'),
+(509, '_site_transient_theme_roots', 'a:3:{s:4:"imis";s:7:"/themes";s:14:"twentythirteen";s:7:"/themes";s:12:"twentytwelve";s:7:"/themes";}', 'yes');
+INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
+(510, 'rewrite_rules', 'a:134:{s:52:"(en)/category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[2]&feed=$matches[3]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:47:"(en)/category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[2]&feed=$matches[3]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:40:"(en)/category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[2]&paged=$matches[3]";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:22:"(en)/category/(.+?)/?$";s:35:"index.php?category_name=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:49:"(en)/tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[2]&feed=$matches[3]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:44:"(en)/tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[2]&feed=$matches[3]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:37:"(en)/tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[2]&paged=$matches[3]";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:19:"(en)/tag/([^/]+)/?$";s:25:"index.php?tag=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:50:"(en)/type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:67:"index.php?lang=$matches[1]&post_format=$matches[2]&feed=$matches[3]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:58:"index.php?lang=sl&post_format=$matches[1]&feed=$matches[2]";s:45:"(en)/type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:67:"index.php?lang=$matches[1]&post_format=$matches[2]&feed=$matches[3]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:58:"index.php?lang=sl&post_format=$matches[1]&feed=$matches[2]";s:38:"(en)/type/([^/]+)/page/?([0-9]{1,})/?$";s:68:"index.php?lang=$matches[1]&post_format=$matches[2]&paged=$matches[3]";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:59:"index.php?lang=sl&post_format=$matches[1]&paged=$matches[2]";s:20:"(en)/type/([^/]+)/?$";s:50:"index.php?lang=$matches[1]&post_format=$matches[2]";s:15:"type/([^/]+)/?$";s:41:"index.php?lang=sl&post_format=$matches[1]";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:20:".*wp-app\\.php(/.*)?$";s:19:"index.php?error=403";s:18:".*wp-register.php$";s:23:"index.php?register=true";s:37:"(en)/feed/(feed|rdf|rss|rss2|atom)/?$";s:44:"index.php?lang=$matches[1]&&feed=$matches[2]";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:35:"index.php?lang=sl&&feed=$matches[1]";s:32:"(en)/(feed|rdf|rss|rss2|atom)/?$";s:44:"index.php?lang=$matches[1]&&feed=$matches[2]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:35:"index.php?lang=sl&&feed=$matches[1]";s:25:"(en)/page/?([0-9]{1,})/?$";s:45:"index.php?lang=$matches[1]&&paged=$matches[2]";s:20:"page/?([0-9]{1,})/?$";s:36:"index.php?lang=sl&&paged=$matches[1]";s:32:"(en)/comment-page-([0-9]{1,})/?$";s:56:"index.php?lang=$matches[1]&&page_id=11&cpage=$matches[2]";s:27:"comment-page-([0-9]{1,})/?$";s:47:"index.php?lang=sl&&page_id=11&cpage=$matches[1]";s:7:"(en)/?$";s:26:"index.php?lang=$matches[1]";s:46:"(en)/comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:59:"index.php?lang=$matches[1]&&feed=$matches[2]&withcomments=1";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?lang=sl&&feed=$matches[1]&withcomments=1";s:41:"(en)/comments/(feed|rdf|rss|rss2|atom)/?$";s:59:"index.php?lang=$matches[1]&&feed=$matches[2]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?lang=sl&&feed=$matches[1]&withcomments=1";s:49:"(en)/search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:57:"index.php?lang=$matches[1]&s=$matches[2]&feed=$matches[3]";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:48:"index.php?lang=sl&s=$matches[1]&feed=$matches[2]";s:44:"(en)/search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:57:"index.php?lang=$matches[1]&s=$matches[2]&feed=$matches[3]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:48:"index.php?lang=sl&s=$matches[1]&feed=$matches[2]";s:37:"(en)/search/(.+)/page/?([0-9]{1,})/?$";s:58:"index.php?lang=$matches[1]&s=$matches[2]&paged=$matches[3]";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:49:"index.php?lang=sl&s=$matches[1]&paged=$matches[2]";s:19:"(en)/search/(.+)/?$";s:40:"index.php?lang=$matches[1]&s=$matches[2]";s:14:"search/(.+)/?$";s:31:"index.php?lang=sl&s=$matches[1]";s:52:"(en)/author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:67:"index.php?lang=$matches[1]&author_name=$matches[2]&feed=$matches[3]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:58:"index.php?lang=sl&author_name=$matches[1]&feed=$matches[2]";s:47:"(en)/author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:67:"index.php?lang=$matches[1]&author_name=$matches[2]&feed=$matches[3]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:58:"index.php?lang=sl&author_name=$matches[1]&feed=$matches[2]";s:40:"(en)/author/([^/]+)/page/?([0-9]{1,})/?$";s:68:"index.php?lang=$matches[1]&author_name=$matches[2]&paged=$matches[3]";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:59:"index.php?lang=sl&author_name=$matches[1]&paged=$matches[2]";s:22:"(en)/author/([^/]+)/?$";s:50:"index.php?lang=$matches[1]&author_name=$matches[2]";s:17:"author/([^/]+)/?$";s:41:"index.php?lang=sl&author_name=$matches[1]";s:74:"(en)/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:97:"index.php?lang=$matches[1]&year=$matches[2]&monthnum=$matches[3]&day=$matches[4]&feed=$matches[5]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:88:"index.php?lang=sl&year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:69:"(en)/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:97:"index.php?lang=$matches[1]&year=$matches[2]&monthnum=$matches[3]&day=$matches[4]&feed=$matches[5]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:88:"index.php?lang=sl&year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:62:"(en)/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:98:"index.php?lang=$matches[1]&year=$matches[2]&monthnum=$matches[3]&day=$matches[4]&paged=$matches[5]";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:89:"index.php?lang=sl&year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:44:"(en)/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:80:"index.php?lang=$matches[1]&year=$matches[2]&monthnum=$matches[3]&day=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:71:"index.php?lang=sl&year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:61:"(en)/([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:81:"index.php?lang=$matches[1]&year=$matches[2]&monthnum=$matches[3]&feed=$matches[4]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:72:"index.php?lang=sl&year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:56:"(en)/([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:81:"index.php?lang=$matches[1]&year=$matches[2]&monthnum=$matches[3]&feed=$matches[4]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:72:"index.php?lang=sl&year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:49:"(en)/([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:82:"index.php?lang=$matches[1]&year=$matches[2]&monthnum=$matches[3]&paged=$matches[4]";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:73:"index.php?lang=sl&year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:31:"(en)/([0-9]{4})/([0-9]{1,2})/?$";s:64:"index.php?lang=$matches[1]&year=$matches[2]&monthnum=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:55:"index.php?lang=sl&year=$matches[1]&monthnum=$matches[2]";s:48:"(en)/([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:60:"index.php?lang=$matches[1]&year=$matches[2]&feed=$matches[3]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:51:"index.php?lang=sl&year=$matches[1]&feed=$matches[2]";s:43:"(en)/([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:60:"index.php?lang=$matches[1]&year=$matches[2]&feed=$matches[3]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:51:"index.php?lang=sl&year=$matches[1]&feed=$matches[2]";s:36:"(en)/([0-9]{4})/page/?([0-9]{1,})/?$";s:61:"index.php?lang=$matches[1]&year=$matches[2]&paged=$matches[3]";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:52:"index.php?lang=sl&year=$matches[1]&paged=$matches[2]";s:18:"(en)/([0-9]{4})/?$";s:43:"index.php?lang=$matches[1]&year=$matches[2]";s:13:"([0-9]{4})/?$";s:34:"index.php?lang=sl&year=$matches[1]";s:32:"(en)/.?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[2]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:42:"(en)/.?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[2]&tb=1";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:62:"(en)/.?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[2]&feed=$matches[3]";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:57:"(en)/.?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[2]&feed=$matches[3]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:57:"(en)/.?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[2]&cpage=$matches[3]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:25:"(en)/(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[2]&tb=1";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:45:"(en)/(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[2]&feed=$matches[3]";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:40:"(en)/(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[2]&feed=$matches[3]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:33:"(en)/(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[2]&paged=$matches[3]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:40:"(en)/(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[2]&cpage=$matches[3]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:25:"(en)/(.?.+?)(/[0-9]+)?/?$";s:47:"index.php?pagename=$matches[2]&page=$matches[3]";s:20:"(.?.+?)(/[0-9]+)?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";s:32:"(en)/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[2]";s:27:"[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:42:"(en)/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[2]&tb=1";s:37:"[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:62:"(en)/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[2]&feed=$matches[3]";s:57:"[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:57:"(en)/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[2]&feed=$matches[3]";s:52:"[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:57:"(en)/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[2]&cpage=$matches[3]";s:52:"[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:25:"(en)/([^/]+)/trackback/?$";s:31:"index.php?name=$matches[2]&tb=1";s:20:"([^/]+)/trackback/?$";s:31:"index.php?name=$matches[1]&tb=1";s:45:"(en)/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[2]&feed=$matches[3]";s:40:"([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:40:"(en)/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[2]&feed=$matches[3]";s:35:"([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:33:"(en)/([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?name=$matches[2]&paged=$matches[3]";s:28:"([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&paged=$matches[2]";s:40:"(en)/([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[2]&cpage=$matches[3]";s:35:"([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&cpage=$matches[2]";s:25:"(en)/([^/]+)(/[0-9]+)?/?$";s:43:"index.php?name=$matches[2]&page=$matches[3]";s:20:"([^/]+)(/[0-9]+)?/?$";s:43:"index.php?name=$matches[1]&page=$matches[2]";s:21:"(en)/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[2]";s:16:"[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:31:"(en)/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[2]&tb=1";s:26:"[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:51:"(en)/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[2]&feed=$matches[3]";s:46:"[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:46:"(en)/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[2]&feed=$matches[3]";s:41:"[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:46:"(en)/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[2]&cpage=$matches[3]";s:41:"[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";}', 'yes');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_postmeta`
+-- Table structure for table `wp_postmeta`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_postmeta` (
+DROP TABLE IF EXISTS `wp_postmeta`;
+CREATE TABLE `wp_postmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) DEFAULT NULL,
@@ -303,10 +310,10 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=727 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=775 ;
 
 --
--- Odloži podatke za tabelo `wp_postmeta`
+-- Dumping data for table `wp_postmeta`
 --
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
@@ -316,7 +323,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (4, 7, '_edit_lock', '1379506261:1'),
 (6, 7, '_cs_replacements', 'a:1:{s:9:"sidebar-1";s:21:"cs-some-more-sidebars";}'),
 (7, 11, '_edit_last', '1'),
-(8, 11, '_edit_lock', '1379675900:1'),
+(8, 11, '_edit_lock', '1379768448:1'),
 (10, 11, '_cs_replacements', 'a:1:{s:9:"sidebar-1";s:9:"sidebar-1";}'),
 (11, 2, '_edit_last', '1'),
 (12, 2, '_cs_replacements', 'a:1:{s:9:"sidebar-1";s:9:"sidebar-1";}'),
@@ -602,7 +609,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (349, 165, 'slika-v-glavi', 'slika-akreditiran'),
 (350, 165, '_slika-v-glavi', 'field_523824086a15c'),
 (351, 165, '_translations', 'a:2:{s:2:"sl";i:165;s:2:"en";i:0;}'),
-(352, 11, 'desni_stolpec', 'some'),
+(352, 11, 'desni_stolpec', '<h2>ZAKAJ IMAGING SYSTEMS?</h2>\r\n<div class="side-box-1">\r\n\r\nStrankam prihranimo čas in denar.\r\n\r\nTehnična odličnost naših rešitev\r\nomogoča urejenost dokumentacije\r\nin poslovnih procesov.\r\n\r\n</div>\r\n<div class="side-box-2">\r\n\r\n260+ podjetij in organizacij\r\nv 45 državah sveta uporablja\r\nprogramski produkt IMiS®.\r\n\r\n</div>\r\n<div class="side-box-3">\r\n\r\nNajveč delujočih sistemov\r\ns področja »Imaging &amp; Archiving«\r\nv Sloveniji.\r\n\r\n</div>'),
 (353, 11, '_desni_stolpec', 'field_523958eea4458'),
 (357, 167, '_edit_last', '1'),
 (358, 167, '_edit_lock', '1379673721:1'),
@@ -616,7 +623,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (367, 169, 'position', 'normal'),
 (368, 169, 'layout', 'no_box'),
 (369, 169, 'hide_on_screen', 'a:13:{i:0;s:11:"the_content";i:1;s:7:"excerpt";i:2;s:13:"custom_fields";i:3;s:10:"discussion";i:4;s:8:"comments";i:5;s:9:"revisions";i:6;s:4:"slug";i:7;s:6:"author";i:8;s:6:"format";i:9;s:14:"featured_image";i:10;s:10:"categories";i:11;s:4:"tags";i:12;s:15:"send-trackbacks";}'),
-(370, 169, '_edit_lock', '1379676000:1'),
+(370, 169, '_edit_lock', '1379768849:1'),
 (371, 169, 'field_523aab57783f3', 'a:11:{s:3:"key";s:19:"field_523aab57783f3";s:5:"label";s:7:"Slika-1";s:4:"name";s:7:"slika-1";s:4:"type";s:5:"image";s:12:"instructions";s:38:"vstavite sliko velikosti 940 X 249 px.";s:8:"required";s:1:"1";s:11:"save_format";s:3:"url";s:12:"preview_size";s:9:"thumbnail";s:7:"library";s:3:"all";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"1";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:1;}'),
 (373, 169, 'field_523aac41000c9', 'a:11:{s:3:"key";s:19:"field_523aac41000c9";s:5:"label";s:10:"Besedilo-1";s:4:"name";s:10:"besedilo-1";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:49:"Vpišite besedilo1 ki se prikaže znotraj okvirja";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:2;}'),
 (379, 169, 'field_523ab09d7710b', 'a:11:{s:3:"key";s:19:"field_523ab09d7710b";s:5:"label";s:17:"Thumbnail-tekst-1";s:4:"name";s:17:"thumbnail-tekst-1";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:53:"Dodajte tekst-1 ki se prikaže v majhnem oknu spodaj ";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:4:"full";s:12:"media_upload";s:3:"yes";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:3;}'),
@@ -683,10 +690,10 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (490, 167, '_thumbnail-slika-2', 'field_523c18635f8a6'),
 (491, 167, 'thumbnail-slika-3', '178'),
 (492, 167, '_thumbnail-slika-3', 'field_523c185e5f8a5'),
-(493, 177, '_wp_attached_file', '2013/09/ico-arhiviranje-dokumentov.png'),
-(494, 177, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:60;s:6:"height";i:45;s:4:"file";s:38:"2013/09/ico-arhiviranje-dokumentov.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}'),
-(495, 178, '_wp_attached_file', '2013/09/ico-sap.png');
+(493, 177, '_wp_attached_file', '2013/09/ico-arhiviranje-dokumentov.png');
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(494, 177, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:60;s:6:"height";i:45;s:4:"file";s:38:"2013/09/ico-arhiviranje-dokumentov.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}'),
+(495, 178, '_wp_attached_file', '2013/09/ico-sap.png'),
 (496, 178, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:60;s:6:"height";i:45;s:4:"file";s:19:"2013/09/ico-sap.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}'),
 (499, 11, 'slika-v-glavi', 'slika-akreditiran'),
 (500, 11, '_slika-v-glavi', 'field_523824086a15c'),
@@ -718,32 +725,33 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (687, 11, '_slika-2', 'field_523ab4e9394d8'),
 (705, 11, 'slika-3', '173'),
 (706, 11, '_slika-3', 'field_523ab6e2179fd'),
-(707, 131, 'levi_stolpec', '<h2>KAJ DELAMO?</h2>\r\n<a href="http://127.0.0.1/razvoj/othr/imis/wp-content/uploads/2013/09/imis.jpg"><img class="alignnone size-full wp-image-88" alt="imis" src="http://127.0.0.1/razvoj/othr/imis/wp-content/uploads/2013/09/imis.jpg" width="93" height="143" /></a>\r\n\r\nRazvoj programskega produkta IMiS®\r\nza skeniranje, arhiviranje, pregledovanje, razvrščanje in iskanje dokumentov,\r\nter povezovanje z aplikacijami.\r\n\r\nImplementacija, integracija in tehnična podpora za programski produkt IMiS®.\r\n\r\nSvetovanje, načrtovanje, razvoj\r\nin vzdrževanje dokumentnih sistemov.\r\n\r\nAnaliza dokumentov in procesov.'),
-(708, 131, 'desni_stolpec', 'some'),
-(709, 131, 'slika-v-glavi', 'slika-akreditiran'),
-(710, 131, 'besedilo-1', '<h1>DOKUMENTNI SISTEMI</h1>\r\nElektronska podpora procesom, skeniranje,\r\nelektronsko podpisovanje,časovno žigosanje\r\narhiviranje, iskanje, pregledovanje,\r\nrevizijska sled, integracija z aplikacijami\r\n\r\n<a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">INFORMACIJE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">PRIMERI UPORABE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/"> TESTIRANJE</a>'),
-(711, 131, 'thumbnail-tekst-1', 'Večja preglednost\r\ndokumentacije in poslovanja'),
-(712, 131, 'besedilo-2', '<h1>ELEKTRONSKI ARHIV DOKUMENTOV</h1>\r\nArhiviranje dokumentov in datotek, varnost in dostopne pravice,\r\nklasifikacijski načrt,  rok hrambe in brisanje, časovno žigosanje,\r\nrevizijska sled, integracija z aplikacijami.\r\n\r\n<a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">INFORMACIJE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">PRIMERI UPORABE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/"> TESTIRANJE</a>'),
-(713, 131, 'thumbnail-tekst-2', 'Arhiviranje dokumentov\r\ndirektno iz vaših aplikacij'),
-(714, 131, 'besedilo-3', '<h1>REŠITEV ZA SAP</h1>\r\nSkeniranje in arhiviranje prejetih dokumentov,\r\narhiviranje izhodnih dokumentov,\r\nSAP in dokumentni sistem.\r\n\r\n<a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">INFORMACIJE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">PRIMERI UPORABE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/"> TESTIRANJE</a>'),
-(715, 131, 'thumbnail-tekst-3', '<div><label><label></label></label>Arhiviranje in pregledovanje\r\ne-dokumentov v SAP</div>'),
-(716, 131, 'thumbnail-slika-1', '176'),
-(717, 131, 'slika-1', '174'),
-(718, 131, 'thumbnail-slika-2', '177'),
-(719, 131, 'thumbnail-slika-3', '178'),
-(720, 131, 'slika-2', '172'),
-(721, 131, 'slika-3', '173'),
-(722, 131, '_wp_page_template', 'vstopna.php'),
 (725, 169, 'rule', 'a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:3:"167";s:8:"order_no";i:0;s:8:"group_no";i:0;}'),
-(726, 169, 'rule', 'a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:2:"11";s:8:"order_no";i:0;s:8:"group_no";i:1;}');
+(726, 169, 'rule', 'a:5:{s:5:"param";s:4:"page";s:8:"operator";s:2:"==";s:5:"value";s:2:"11";s:8:"order_no";i:0;s:8:"group_no";i:1;}'),
+(759, 131, 'levi_stolpec', '<h2>KAJ DELAMO?</h2>\r\n<a href="http://127.0.0.1/razvoj/othr/imis/wp-content/uploads/2013/09/imis.jpg"><img class="alignnone size-full wp-image-88" alt="imis" src="http://127.0.0.1/razvoj/othr/imis/wp-content/uploads/2013/09/imis.jpg" width="93" height="143" /></a>\r\n\r\nRazvoj programskega produkta IMiS®\r\nza skeniranje, arhiviranje, pregledovanje, razvrščanje in iskanje dokumentov,\r\nter povezovanje z aplikacijami.\r\n\r\nImplementacija, integracija in tehnična podpora za programski produkt IMiS®.\r\n\r\nSvetovanje, načrtovanje, razvoj\r\nin vzdrževanje dokumentnih sistemov.\r\n\r\nAnaliza dokumentov in procesov.'),
+(760, 131, 'desni_stolpec', '<h2>ZAKAJ IMAGING SYSTEMS?</h2>\r\n<div class="side-box-1">\r\n\r\nStrankam prihranimo čas in denar.\r\n\r\nTehnična odličnost naših rešitev\r\nomogoča urejenost dokumentacije\r\nin poslovnih procesov.\r\n\r\n</div>\r\n<div class="side-box-2">\r\n\r\n260+ podjetij in organizacij\r\nv 45 državah sveta uporablja\r\nprogramski produkt IMiS®.\r\n\r\n</div>\r\n<div class="side-box-3">\r\n\r\nNajveč delujočih sistemov\r\ns področja »Imaging &amp; Archiving«\r\nv Sloveniji.\r\n\r\n</div>'),
+(761, 131, 'slika-v-glavi', 'slika-akreditiran'),
+(762, 131, 'besedilo-1', '<h1>DOKUMENTNI SISTEMI</h1>\r\nElektronska podpora procesom, skeniranje,\r\nelektronsko podpisovanje,časovno žigosanje\r\narhiviranje, iskanje, pregledovanje,\r\nrevizijska sled, integracija z aplikacijami\r\n\r\n<a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">INFORMACIJE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">PRIMERI UPORABE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/"> TESTIRANJE</a>'),
+(763, 131, 'thumbnail-tekst-1', 'Večja preglednost\r\ndokumentacije in poslovanja'),
+(764, 131, 'besedilo-2', '<h1>ELEKTRONSKI ARHIV DOKUMENTOV</h1>\r\nArhiviranje dokumentov in datotek, varnost in dostopne pravice,\r\nklasifikacijski načrt,  rok hrambe in brisanje, časovno žigosanje,\r\nrevizijska sled, integracija z aplikacijami.\r\n\r\n<a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">INFORMACIJE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">PRIMERI UPORABE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/"> TESTIRANJE</a>'),
+(765, 131, 'thumbnail-tekst-2', 'Arhiviranje dokumentov\r\ndirektno iz vaših aplikacij'),
+(766, 131, 'besedilo-3', '<h1>REŠITEV ZA SAP</h1>\r\nSkeniranje in arhiviranje prejetih dokumentov,\r\narhiviranje izhodnih dokumentov,\r\nSAP in dokumentni sistem.\r\n\r\n<a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">INFORMACIJE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/">PRIMERI UPORABE</a> <a title="Vstopna" href="http://127.0.0.1/razvoj/othr/imis/"> TESTIRANJE</a>'),
+(767, 131, 'thumbnail-tekst-3', '<div><label><label></label></label>Arhiviranje in pregledovanje\r\ne-dokumentov v SAP</div>'),
+(768, 131, 'thumbnail-slika-1', '176'),
+(769, 131, 'slika-1', '174'),
+(770, 131, 'thumbnail-slika-2', '177'),
+(771, 131, 'thumbnail-slika-3', '178'),
+(772, 131, 'slika-2', '172'),
+(773, 131, 'slika-3', '173'),
+(774, 131, '_wp_page_template', 'vstopna.php');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_posts`
+-- Table structure for table `wp_posts`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_posts` (
+DROP TABLE IF EXISTS `wp_posts`;
+CREATE TABLE `wp_posts` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `post_author` bigint(20) unsigned NOT NULL DEFAULT '0',
   `post_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -775,7 +783,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=179 ;
 
 --
--- Odloži podatke za tabelo `wp_posts`
+-- Dumping data for table `wp_posts`
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
@@ -784,7 +792,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (7, 1, '2013-09-18 07:47:57', '2013-09-11 08:24:23', '', 'REŠITVE', '', 'publish', 'open', 'open', '', 'sample-page-2', '', '', '2013-09-18 10:18:18', '2013-09-18 10:18:18', '', 0, 'http://127.0.0.1/razvoj/othr/imis/?page_id=7', 0, 'page', '', 0),
 (8, 1, '2013-09-11 08:24:23', '2013-09-11 08:24:23', '', 'sample page 2', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2013-09-11 08:24:23', '2013-09-11 08:24:23', '', 7, 'http://127.0.0.1/razvoj/othr/imis/?p=8', 0, 'revision', '', 0),
 (9, 1, '2013-09-11 08:27:47', '2013-09-11 08:27:47', 'some text here\r\n\r\n&nbsp;', 'sample page 2', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2013-09-11 08:27:47', '2013-09-11 08:27:47', '', 7, 'http://127.0.0.1/razvoj/othr/imis/?p=9', 0, 'revision', '', 0),
-(11, 1, '2013-09-18 07:48:43', '2013-09-11 18:47:35', '<div style="border: 1px dotted #999; margin-bottom: 24px; margin-top: 26px;">\r\n<p style="padding: 8px 15px 8px 15px; margin: 0;">Centralizacija naročanja in popolni nadzor nad porabo sredstev.</p>\r\n<p style="padding: 0; margin: 0;"><a style="font-size: 11px; border-top: 1px dotted #999; display: block; padding: 5px 15px 3px 15px;" href="#">&gt;&gt;&gt; VEČ...</a></p>\r\n\r\n</div>\r\n<img class="alignnone size-full wp-image-116" alt="vstopna-slika1" src="http://127.0.0.1/razvoj/othr/imis/wp-content/uploads/2013/09/vstopna-slika1.jpg" width="174" height="119" />\r\n<div style="border: 1px dotted #999; margin-bottom: 20px;">\r\n<p style="padding: 8px 15px 8px 15px; margin: 0;">Prilagodite bančne procese zahtevam sodobnega poslovanja.</p>\r\n<p style="padding: 0; margin: 0;"><a style="font-size: 11px; border-top: 1px dotted #999; display: block; padding: 5px 15px 3px 15px;" href="#">&gt;&gt;&gt; VEČ...</a></p>\r\n\r\n</div>\r\n<div style="border: 1px dotted #999; margin-bottom: 20px;">\r\n<p style="padding: 8px 15px 8px 15px; margin: 0;">Leasing procese lahko bistveno hitreje in učinkoviteje opravljate elektronsko.</p>\r\n<p style="padding: 0; margin: 0;"><a style="font-size: 11px; border-top: 1px dotted #999; display: block; padding: 5px 15px 3px 15px;" href="#">&gt;&gt;&gt; VEČ...</a></p>\r\n\r\n</div>', 'Vstopna', '', 'publish', 'open', 'open', '', 'vstopna', '', '', '2013-09-20 11:12:43', '2013-09-20 11:12:43', '', 0, 'http://127.0.0.1/razvoj/othr/imis/?page_id=11', 0, 'page', '', 0),
+(11, 1, '2013-09-18 07:48:43', '2013-09-11 18:47:35', '<div style="border: 1px dotted #999; margin-bottom: 24px; margin-top: 26px;">\r\n<p style="padding: 8px 15px 8px 15px; margin: 0;">Centralizacija naročanja in popolni nadzor nad porabo sredstev.</p>\r\n<p style="padding: 0; margin: 0;"><a style="font-size: 11px; border-top: 1px dotted #999; display: block; padding: 5px 15px 3px 15px;" href="#">&gt;&gt;&gt; VEČ...</a></p>\r\n\r\n</div>\r\n<img class="alignnone size-full wp-image-116" alt="vstopna-slika1" src="http://127.0.0.1/razvoj/othr/imis/wp-content/uploads/2013/09/vstopna-slika1.jpg" width="174" height="119" />\r\n<div style="border: 1px dotted #999; margin-bottom: 20px;">\r\n<p style="padding: 8px 15px 8px 15px; margin: 0;">Prilagodite bančne procese zahtevam sodobnega poslovanja.</p>\r\n<p style="padding: 0; margin: 0;"><a style="font-size: 11px; border-top: 1px dotted #999; display: block; padding: 5px 15px 3px 15px;" href="#">&gt;&gt;&gt; VEČ...</a></p>\r\n\r\n</div>\r\n<div style="border: 1px dotted #999; margin-bottom: 20px;">\r\n<p style="padding: 8px 15px 8px 15px; margin: 0;">Leasing procese lahko bistveno hitreje in učinkoviteje opravljate elektronsko.</p>\r\n<p style="padding: 0; margin: 0;"><a style="font-size: 11px; border-top: 1px dotted #999; display: block; padding: 5px 15px 3px 15px;" href="#">&gt;&gt;&gt; VEČ...</a></p>\r\n\r\n</div>', 'Vstopna', '', 'publish', 'open', 'open', '', 'vstopna', '', '', '2013-09-21 13:02:36', '2013-09-21 13:02:36', '', 0, 'http://127.0.0.1/razvoj/othr/imis/?page_id=11', 0, 'page', '', 0),
 (12, 1, '2013-09-11 18:47:35', '2013-09-11 18:47:35', 'Centralizacija naročanja\r\nin popolni nadzor\r\nnad porabo sredstev.\r\n\r\nPrilagodite bančne\r\nprocese zahtevam\r\nsodobnega poslovanja.\r\n\r\nLeasing procese\r\nlahko bistveno hitreje\r\nin učinkoviteje\r\nopravljate elektronsko.', 'Vstopna', '', 'inherit', 'open', 'open', '', '11-revision-v1', '', '', '2013-09-11 18:47:35', '2013-09-11 18:47:35', '', 11, 'http://127.0.0.1/razvoj/othr/imis/?p=12', 0, 'revision', '', 0),
 (13, 1, '2013-09-11 19:15:19', '2013-09-11 19:15:19', 'This is an example page. It''s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\r\n<blockquote>Hi there! I''m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like piña coladas. (And gettin'' caught in the rain.)</blockquote>\r\n...or something like this:\r\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\r\nAs a new WordPress user, you should go to <a href="http://127.0.0.1/razvoj/othr/imis/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!', 'Sample Page', '', 'inherit', 'open', 'open', '', '2-revision-v1', '', '', '2013-09-11 19:15:19', '2013-09-11 19:15:19', '', 2, 'http://127.0.0.1/razvoj/othr/imis/2-revision-v1/', 0, 'revision', '', 0),
 (16, 1, '2013-09-11 20:12:21', '2013-09-11 20:12:21', 'some text here', 'subpage 2', '', 'publish', 'open', 'open', '', 'subpage-2', '', '', '2013-09-18 13:50:11', '2013-09-18 13:50:11', '', 7, 'http://127.0.0.1/razvoj/othr/imis/?page_id=16', 0, 'page', '', 0),
@@ -957,10 +965,11 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_termmeta`
+-- Table structure for table `wp_termmeta`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_termmeta` (
+DROP TABLE IF EXISTS `wp_termmeta`;
+CREATE TABLE `wp_termmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) DEFAULT NULL,
@@ -971,7 +980,7 @@ CREATE TABLE IF NOT EXISTS `wp_termmeta` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
--- Odloži podatke za tabelo `wp_termmeta`
+-- Dumping data for table `wp_termmeta`
 --
 
 INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUES
@@ -987,10 +996,11 @@ INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUE
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_terms`
+-- Table structure for table `wp_terms`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_terms` (
+DROP TABLE IF EXISTS `wp_terms`;
+CREATE TABLE `wp_terms` (
   `term_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(200) NOT NULL DEFAULT '',
   `slug` varchar(200) NOT NULL DEFAULT '',
@@ -1001,7 +1011,7 @@ CREATE TABLE IF NOT EXISTS `wp_terms` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
--- Odloži podatke za tabelo `wp_terms`
+-- Dumping data for table `wp_terms`
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
@@ -1015,10 +1025,11 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_term_relationships`
+-- Table structure for table `wp_term_relationships`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
+DROP TABLE IF EXISTS `wp_term_relationships`;
+CREATE TABLE `wp_term_relationships` (
   `object_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `term_taxonomy_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `term_order` int(11) NOT NULL DEFAULT '0',
@@ -1027,7 +1038,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Odloži podatke za tabelo `wp_term_relationships`
+-- Dumping data for table `wp_term_relationships`
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
@@ -1081,10 +1092,11 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_term_taxonomy`
+-- Table structure for table `wp_term_taxonomy`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
+DROP TABLE IF EXISTS `wp_term_taxonomy`;
+CREATE TABLE `wp_term_taxonomy` (
   `term_taxonomy_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `taxonomy` varchar(32) NOT NULL DEFAULT '',
@@ -1097,7 +1109,7 @@ CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
--- Odloži podatke za tabelo `wp_term_taxonomy`
+-- Dumping data for table `wp_term_taxonomy`
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
@@ -1111,10 +1123,11 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_uam_accessgroups`
+-- Table structure for table `wp_uam_accessgroups`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_uam_accessgroups` (
+DROP TABLE IF EXISTS `wp_uam_accessgroups`;
+CREATE TABLE `wp_uam_accessgroups` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `groupname` tinytext NOT NULL,
   `groupdesc` text NOT NULL,
@@ -1125,7 +1138,7 @@ CREATE TABLE IF NOT EXISTS `wp_uam_accessgroups` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Odloži podatke za tabelo `wp_uam_accessgroups`
+-- Dumping data for table `wp_uam_accessgroups`
 --
 
 INSERT INTO `wp_uam_accessgroups` (`ID`, `groupname`, `groupdesc`, `read_access`, `write_access`, `ip_range`) VALUES
@@ -1135,10 +1148,11 @@ INSERT INTO `wp_uam_accessgroups` (`ID`, `groupname`, `groupdesc`, `read_access`
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_uam_accessgroup_to_object`
+-- Table structure for table `wp_uam_accessgroup_to_object`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_uam_accessgroup_to_object` (
+DROP TABLE IF EXISTS `wp_uam_accessgroup_to_object`;
+CREATE TABLE `wp_uam_accessgroup_to_object` (
   `object_id` varchar(11) NOT NULL,
   `object_type` varchar(255) NOT NULL,
   `group_id` int(11) NOT NULL,
@@ -1146,7 +1160,7 @@ CREATE TABLE IF NOT EXISTS `wp_uam_accessgroup_to_object` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Odloži podatke za tabelo `wp_uam_accessgroup_to_object`
+-- Dumping data for table `wp_uam_accessgroup_to_object`
 --
 
 INSERT INTO `wp_uam_accessgroup_to_object` (`object_id`, `object_type`, `group_id`) VALUES
@@ -1157,10 +1171,11 @@ INSERT INTO `wp_uam_accessgroup_to_object` (`object_id`, `object_type`, `group_i
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_usermeta`
+-- Table structure for table `wp_usermeta`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_usermeta` (
+DROP TABLE IF EXISTS `wp_usermeta`;
+CREATE TABLE `wp_usermeta` (
   `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) DEFAULT NULL,
@@ -1171,7 +1186,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=59 ;
 
 --
--- Odloži podatke za tabelo `wp_usermeta`
+-- Dumping data for table `wp_usermeta`
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -1237,10 +1252,11 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 -- --------------------------------------------------------
 
 --
--- Struktura tabele `wp_users`
+-- Table structure for table `wp_users`
 --
 
-CREATE TABLE IF NOT EXISTS `wp_users` (
+DROP TABLE IF EXISTS `wp_users`;
+CREATE TABLE `wp_users` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_login` varchar(60) NOT NULL DEFAULT '',
   `user_pass` varchar(64) NOT NULL DEFAULT '',
@@ -1257,7 +1273,7 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- Odloži podatke za tabelo `wp_users`
+-- Dumping data for table `wp_users`
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
