@@ -21,7 +21,7 @@ get_header(); ?>
         
         <!-- First Content -->  
         <div id="fragment-1" class="ui-tabs-panel" style="">  
-            <section>
+            <section class="slika1">
               <div class="slider-text-wrap">
                 <?php the_field('besedilo-1'); ?>
               </div>
@@ -32,7 +32,7 @@ get_header(); ?>
         
         <!-- Second Content -->  
         <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">  
-          <section>
+          <section class="slika2">
             <div class="slider-text-wrap">
                 <?php the_field('besedilo-2'); ?>
               </div>
@@ -43,7 +43,7 @@ get_header(); ?>
         
         <!-- Third Content -->  
         <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">  
-          <section>
+          <section class="slika3">
             <div class="slider-text-wrap">
               <?php the_field('besedilo-3'); ?>
               </div>
@@ -78,7 +78,7 @@ get_header(); ?>
               
               </article>
               <?php endwhile; endif; ?>
-              <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+              <?php //edit_post_link(t('Uredi to stran').'.', '<p>', '</p>'); ?>
 
               <?php// comments_template(); ?>
                           <!-- wp-php end  -->
