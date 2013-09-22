@@ -33,7 +33,7 @@ return array(
     "Prejšni zadetki" => "Previous",
     "Naslednji zadetki" => "Next",
     "Rezultati iskanja" => "Search results",
-    "" => "",
+    "Piškotki" => "Cookies",
     "" => "",
 );
 
