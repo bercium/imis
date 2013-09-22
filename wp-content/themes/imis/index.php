@@ -7,6 +7,9 @@
   Template Name: Vstopna
   */  
 
+wp_redirect( home_url_custom() ); 
+exit; 
+
 get_header(); ?>
 
   
