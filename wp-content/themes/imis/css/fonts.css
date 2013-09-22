@@ -248,12 +248,15 @@ color: #fff;
 
 
 /****** @ page-template-page_list-php ******/
+/****** @ page-template-news-php ******/
 
+.page-template-news-php .main-content .page-lists a,
 .page-template-page_list-php .main-content .page-lists a {
     text-decoration: none;
     font-weight: normal;
 }
 
+.page-template-news-php .main-content time,
 .page-template-page_list-php .main-content time {
 color: #646464;  
 }

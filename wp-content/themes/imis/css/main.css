@@ -202,9 +202,11 @@ clearfix {
 }
 
 #crumbs {
-    position: absolute;
-    top:0px;
+   margin-bottom: 6px;
+    margin-left: 50px;
+    margin-top: -20px;
     text-transform: uppercase;
+    
     
 }
 
@@ -215,6 +217,7 @@ clearfix {
 #crumbs, #crumbs a {
     font-size: 10px;
     color:#8c8d8b; 
+    font-weight: normal;
 }
 
 #crumbs a:hover {
@@ -583,14 +586,18 @@ background: url("../img/current-item-line.png")  7px 19px no-repeat;
 
 
 /****** @ page-template-page_list-php ******/
+/****** @ page-template-news-php ******/
 
+.page-template-news-php time, 
 .page-template-page_list-php time {
     margin-right: 20px;
 }
+
+.page-template-news-php .main-content ul, 
 .page-template-page_list-php .main-content ul {
     padding-left: 0;
 }
-
+.page-template-news-php .main-content li,
 .page-template-page_list-php .main-content li {
     list-style: none;
 }

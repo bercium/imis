@@ -7,7 +7,6 @@
 get_header(); ?>
 
 <div class="vs vs-default <?php the_field('slika-v-glavi'); ?>" ></div>
-<?php wordpress_breadcrumbs(); ?>
 
  <div class="row">
       <div class="sidebar-one sidebar">
@@ -29,6 +28,7 @@ get_header(); ?>
 
 
       <div class="main-content">
+        <?php wordpress_breadcrumbs(); ?>
 
           <div class="text-wrap">
               <!-- REPLACE  wp-php here on: -->

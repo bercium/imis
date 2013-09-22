@@ -116,7 +116,7 @@ overflow:hidden;
 }
 
 
-#featured .slider-panel-links {
+.slider-panel-links {
     position: absolute;
     bottom: 20px;
 }
