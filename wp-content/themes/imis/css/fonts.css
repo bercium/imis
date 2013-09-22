@@ -79,9 +79,10 @@ src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix") format("eot"),u
 .home-main-content a,
 .main-content a {
   color: #000;
-  text-decoration: underline;
+  font-weight: bold;
 }
 
+.home-main-content a,
 .main-content h1 a,
 .main-content h2 a,
 .main-content h3 a,
@@ -89,6 +90,7 @@ src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix") format("eot"),u
 .main-content h5 a,
 .main-content h6 a {
   text-decoration: none;
+  font-weight: normal;
 
  }
 
@@ -249,7 +251,21 @@ color: #fff;
 /****** @ page-template-page_list-php ******/
 
 .page-template-page_list-php .main-content .page-lists a {
-    text-decoration: none !important;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.page-template-page_list-php .main-content time {
+color: #646464;  
+}
+
+
+
+/****** @ page-template-sitemap-php ******/
+
+.page-template-sitemap-php ul > li {
+  font-weight: bold;
+  font-size: 13px;
 }
 
 
@@ -263,9 +279,9 @@ color: #fff;
       
    /****** @ sidebar-one ******/
       .sidebar-one ul li a {
-      	font-family:"EurostileNextW02-SemiBd 693874";
-      	font-size: 11px;
-      	color: #000000;
+        font-family:"EurostileNextW02-SemiBd 693874";
+        font-size: 11px;
+        color: #000000;
       }
 
     /****** @ sidebar-two ******/
@@ -340,22 +356,22 @@ color: #fff;
 
          .home-sidebar p,
          .home-sidebar  {
-         		font-family:"EurostileNextW02";
-         		font-size: 12px;
-         		margin-bottom: 24px;
-         		line-height: 14px;
+            font-family:"EurostileNextW02";
+            font-size: 12px;
+            margin-bottom: 24px;
+            line-height: 14px;
          }
 
        
 
-         .home-sidebar h2 {	
-       	font-family: "EurostileNextW02-SemiBd 693874";
-       	font-size: 13px;
-       	color: #faad24;
-       	border-bottom: 1px dotted #faad24;
+         .home-sidebar h2 { 
+        font-family: "EurostileNextW02-SemiBd 693874";
+        font-size: 13px;
+        color: #faad24;
+        border-bottom: 1px dotted #faad24;
         line-height: 19px;
         letter-spacing: 2.2px;
-       	margin-bottom: 29px;
+        margin-bottom: 29px;
 
       }
 
@@ -364,8 +380,8 @@ color: #fff;
       .home-sidebar h4,
       .home-sidebar h5,
       .home-sidebar h6  {
-      	font-family:"EurostileNextW02-SemiBd 693874";
-      	font-size: 10px;
+        font-family:"EurostileNextW02-SemiBd 693874";
+        font-size: 10px;
 
       }
 
