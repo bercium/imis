@@ -36,9 +36,27 @@ get_header(); ?>
           <div class="text-wrap">
               <!-- REPLACE  wp-php here on: -->
               
-              <?php wordpress_breadcrumbs(); ?>
+              <?php if ($post->post_parent){ 
+                
+                wordpress_breadcrumbs(0); ?>
               
+ <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <article class="post" id="post-<?php the_ID(); ?>">
+    <header>
+      <h1><?php the_title(); ?></h1>
+
+    </header>
+    
+    <?php the_content('<p class="serif">'.t('Preberi preostanek strani').' &raquo;</p>'); ?>
+
+    <?php wp_link_pages(array('before' => '<p><strong>'.t('Strani').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+  
+  </article>
+  <?php endwhile; endif; ?>
+              
+  <?php }else{
+    ?>
+    <article class="post" id="post-<?php the_ID(); ?>">
     <header>
       <h1><?php the_title(); ?></h1>
 
@@ -56,8 +74,8 @@ get_header(); ?>
       </ul>
     
   </article>
-
-  <?php //comments_template(); ?>
+    <?php
+  }//comments_template(); ?>
               <!-- wp-php end  -->
           </div>
       </div>
