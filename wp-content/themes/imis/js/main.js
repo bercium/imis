@@ -1,7 +1,7 @@
 // slider 
 (function(){  	
 	
-	$("#featured").tabs({fx:{opacity: "toggle", duration: 300 }}).tabs("rotate", 3000, true);  
+	$("#featured").tabs({fx:{opacity: "toggle", duration: 250 }}).tabs("rotate", 3000, true);  
 
 	$("#featured").hover(  
 function() {  
@@ -12,7 +12,6 @@ function() {
 	}  
 	);  
 
-	
 
 }());
 

@@ -582,8 +582,18 @@ background: url("../img/current-item-line.png")  7px 19px no-repeat;
          }
 
 
+/****** @ page-template-page_list-php ******/
 
+.page-template-page_list-php time {
+    margin-right: 20px;
+}
+.page-template-page_list-php .main-content ul {
+    padding-left: 0;
+}
 
+.page-template-page_list-php .main-content li {
+    list-style: none;
+}
 
 
 /* ==========================================================================
