@@ -50,7 +50,7 @@ get_header(); ?>
           foreach ($subPages as $singlePage){
             ?>
           
-            <li><span><?php echo date("d.m.Y",strtotime($singlePage->post_date)); ?></span> <a href="<?php echo get_page_link($singlePage->ID); ?>"><?php echo $singlePage->post_title; ?></a></li><br />
+            <li class="page-lists"><time datetime="<?php the_time('F j, Y'); ?>"><?php echo date("d.m.Y",strtotime($singlePage->post_date)); ?></time> <a href="<?php echo get_page_link($singlePage->ID); ?>"><?php echo $singlePage->post_title; ?></a></li><br />
           
           <?php } ?>
       </ul>

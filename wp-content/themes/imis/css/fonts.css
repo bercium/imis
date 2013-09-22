@@ -99,6 +99,15 @@ src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix") format("eot"),u
   
 }
 
+blockquote,
+blockquote p {
+  font-family: EurostileNextW02;  
+  font-size: 13px;
+  margin: 0;
+  line-height: 22px;
+  margin-bottom: 46px;
+}
+
 body {color: #000000;
 font-family: EurostileNextW02;  
 font-size: 12px;
@@ -237,6 +246,14 @@ color: #fff;
 }
 
 
+/****** @ page-template-page_list-php ******/
+
+.page-template-page_list-php .main-content .page-lists a {
+    text-decoration: none !important;
+}
+
+
+
 
 
 /* ==========================================================================
@@ -351,6 +368,9 @@ color: #fff;
       	font-size: 10px;
 
       }
+
+
+
 
 
       /* ==========================================================================
