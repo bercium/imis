@@ -12,9 +12,9 @@ get_header(); ?>
 
 <div id="featured" class="inside">
       <ul class="ui-tabs-nav">  
-          <li class="ui-tabs-nav-item ui-tabs-selected fit1" id="nav-fragment-1"><a href="#fragment-1"><img src="<?php the_field('thumbnail-slika-1'); ?>"><span><?php the_field('thumbnail-tekst-1'); ?><span></a></li>  
-          <li class="ui-tabs-nav-item fit2" id="nav-fragment-2"><a href="#fragment-2"><img src="<?php the_field('thumbnail-slika-2'); ?>"><span><?php the_field('thumbnail-tekst-2'); ?></a></span></li>  
-          <li class="ui-tabs-nav-item fit3" id="nav-fragment-3"><a href="#fragment-3"><img src="<?php the_field('thumbnail-slika-3'); ?>"><span><?php the_field('thumbnail-tekst-2'); ?></a></span></li>  
+          <li class="ui-tabs-nav-item ui-tabs-selected fit1" id="nav-fragment-1"><a href="#fragment-1"><span><div class="thumbnail-slika thumbnail-slika-1"></div><?php the_field('thumbnail-tekst-1'); ?><span></a></li>  
+          <li class="ui-tabs-nav-item fit2" id="nav-fragment-2"><a href="#fragment-2"><span><div class="thumbnail-slika thumbnail-slika-2"></div><?php the_field('thumbnail-tekst-2'); ?></a></span></li>  
+          <li class="ui-tabs-nav-item fit3" id="nav-fragment-3"><a href="#fragment-3"><span><div class="thumbnail-slika thumbnail-slika-3"></div><?php the_field('thumbnail-tekst-3'); ?></a></span></li>  
          
         </ul> 
          
@@ -25,7 +25,7 @@ get_header(); ?>
               <div class="slider-text-wrap">
                 <?php the_field('besedilo-1'); ?>
               </div>
-           <img class="feat-img"  src="<?php the_field('slika-1'); ?>"> 
+           <div class="feat-img-slika feat-img-slika-1"></div> 
            
           </section>  
         </div>  
@@ -36,7 +36,7 @@ get_header(); ?>
             <div class="slider-text-wrap">
                 <?php the_field('besedilo-2'); ?>
               </div>
-            <img class="feat-img" src="<?php the_field('slika-2'); ?>"> 
+           <div class="feat-img-slika feat-img-slika-2"></div> 
                       
           </section>  
         </div>  
@@ -47,7 +47,7 @@ get_header(); ?>
             <div class="slider-text-wrap">
               <?php the_field('besedilo-3'); ?>
               </div>
-             <img class="feat-img" src="<?php the_field('slika-3'); ?>"> 
+             <div class="feat-img-slika feat-img-slika-3"></div> 
           </section>  
         </div>  
         

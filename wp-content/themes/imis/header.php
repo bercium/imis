@@ -10,7 +10,7 @@
         <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+        
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/normalize.css") ?>
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/main.css") ?>
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/fonts.css") ?>
@@ -27,7 +27,7 @@
 
     <!-- Wordpress Head Items -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
+    
     <?php wp_head(); ?>        
         
     </head>

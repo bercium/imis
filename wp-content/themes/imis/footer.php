@@ -21,7 +21,7 @@
                     <div class="right text-wrap">
                     <!-- REPLACE wp-php here on: -->
                     <ul class="mini-navigation">
-                      
+                        <li><a href="<?php if (getLang() == 'en') echo "cookies"; else echo "piskotki"; ?>"><?php et("Piškotki"); ?></a></li>
                         <li><a href="<?php if (getLang() == 'en') echo "sitemap"; else echo "mapastrani"; ?>"><?php et("Mapa strani"); ?></a></li>
                         <li class="about"><a href=""><?php et("O AVTORJIH"); ?> </a>
                             <ul><li><a href="">EBerce</a><span><?php et("PRILAGODITEV VSEBIN IN TEHNIČNA IZVEDBA"); ?></span></li>

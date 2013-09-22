@@ -193,6 +193,10 @@ h2 {
 
 }
 
+#featured .ui-tabs-panel .slider-text-wrap a:hover {
+  color: #FAAD24;
+}
+
 #featured li.ui-tabs-nav-item a {
   font-size: 14px;
 }

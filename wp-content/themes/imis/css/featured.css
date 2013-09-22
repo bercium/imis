@@ -17,7 +17,7 @@ height:311px;
 
 }
 
-#featured ul.ui-tabs-nav{  
+#featured ul.ui-tabs-nav {  
 position: absolute; 
 width: 100%;
 
@@ -35,12 +35,38 @@ background: #333333;
 height: 62px;
 
 }
-
-#featured ul.ui-tabs-nav li img {
-	float:  left;
-	margin-left: 10px;
-	margin-top: 10px;
+#featured ul.ui-tabs-nav li a {
+	padding: 1px 0 0 1px;
 }
+
+
+
+#featured ul.ui-tabs-nav li .thumbnail-slika {	
+ 	
+ 	height: 45px;
+ 	width: 60px;
+ 	float: left;
+ 	margin-top: -2px;
+ 	
+ 	padding-left: 10px;
+ 	display: block;
+}
+
+
+#featured ul.ui-tabs-nav li .thumbnail-slika-1 {
+	background: url(../img/ico-dokumentni-sistemi.png) 0px 0px no-repeat;
+}
+
+
+#featured ul.ui-tabs-nav li .thumbnail-slika-2 {
+	background: url(../img/ico-arhiviranje-dokumentov.png)  0px 0px no-repeat;
+}
+
+
+#featured ul.ui-tabs-nav li .thumbnail-slika-3 {
+	background: url(../img/ico-sap.png)  0px 0px no-repeat;
+}
+
 
 #featured ul.ui-tabs-nav,
 #featured ul.ui-tabs-nav p
@@ -49,10 +75,14 @@ height: 62px;
 	padding-top: 3px;
 }
 
-#featured ul.ui-tabs-nav li span{  
+
+
+#featured ul.ui-tabs-nav li span {  
 float: left;
-padding-top: 12px;
-margin-left: 7px;
+padding-top: 11px;
+margin-left: 8px;
+width: 100%;
+display: block;
 
 } 	
 
@@ -75,13 +105,27 @@ overflow:hidden;
 }  	
 
 
-#featured .ui-tabs-panel img.feat-img {
+#featured .ui-tabs-panel .feat-img-slika {
 	position: absolute;
 	height: 249px;
 	width: 940px;
-	top: 0;
+	
 	z-index: 2;
 }
+
+#featured .ui-tabs-panel .feat-img-slika-1 {
+	background: url(../img/vs-vecja-preglednost.jpg) 0 0 no-repeat;
+}
+
+#featured .ui-tabs-panel .feat-img-slika-2 {
+	background: url(../img/vs-arhiviranje.jpg) 0 0 no-repeat;
+}
+
+#featured .ui-tabs-panel .feat-img-slika-3 {
+	background: url(../img/vs-akreditiran.jpg) 0 0 no-repeat;
+}
+
+
 
 #featured .ui-tabs-panel .slider-text-wrap {
 	position: absolute;
@@ -114,15 +158,22 @@ outline:none;
 
 }  
 #featured li.ui-tabs-nav-item a:hover{          
-background: url(../images/fit_1px_bg.png);
-}  
-#featured li.ui-tabs-selected{ /*Selected tab style*/  
 
+}  
+
+
+#featured li.ui-tabs-selected a,
+#featured li.ui-tabs-selected a:hover,
+#featured li.ui-tabs-selected a:active {
+
+	padding: 0 !important;
 } 
 
-#featured ul.ui-tabs-nav li.ui-tabs-selected a{         
+
+#featured ul.ui-tabs-nav li.ui-tabs-selected a {         
 /*background:url('../images/selected.png') top right no-repeat;  */
 background: url(../img/ui-tab-nav-hover.png) 0 0 repeat-x;
+
 }  
 /*************************************************************************/
 /* styles of featured navigation */

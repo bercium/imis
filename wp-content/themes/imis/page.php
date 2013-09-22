@@ -7,6 +7,7 @@
 get_header(); ?>
 
 <div class="vs vs-default <?php the_field('slika-v-glavi'); ?>" ></div>
+<?php wordpress_breadcrumbs(); ?>
 
  <div class="row">
       <div class="sidebar-one sidebar">
@@ -28,10 +29,11 @@ get_header(); ?>
 
 
       <div class="main-content">
+
           <div class="text-wrap">
               <!-- REPLACE  wp-php here on: -->
               
-              <?php wordpress_breadcrumbs(); ?>
+              
               
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <article class="post" id="post-<?php the_ID(); ?>">
@@ -53,7 +55,7 @@ get_header(); ?>
           </div>
       </div>
       <div class="sidebar-two sidebar">
-        <div class="img-box <?php the_field('slika-v-desnem-stoplcu'); ?>" " ></div>
+        <div class="img-box <?php the_field('slika-v-desnem-stolpcu'); ?>" ></div>
         <div class="text-wrap">
 
           <!-- REPLACE wp-php here on: -->
