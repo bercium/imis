@@ -8,8 +8,7 @@
   */  
 
 get_header(); ?>
-<div class="">
-<div class="row" ><img src="<?php bloginfo('template_directory'); ?>/img/brisime.jpg"></div>
+<div class="vs vs-default <?php the_field('slika-v-glavi'); ?>" ></div>
 
 
  <div class="row">
@@ -54,6 +53,5 @@ get_header(); ?>
       </div>            
   </div>
 
-</div>
 
 <?php get_footer(); ?>
