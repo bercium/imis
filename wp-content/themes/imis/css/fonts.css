@@ -80,6 +80,7 @@ src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix") format("eot"),u
 .main-content a {
   color: #000;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .home-main-content a,
@@ -178,8 +179,6 @@ h2 {
 
  
 
-
-
 /****** @ home ******/
 .home .sidebar h2 { 
   font-family: "EurostileNextW02-SemiBd 693874";
@@ -263,9 +262,9 @@ color: #646464;
 
 /****** @ page-template-sitemap-php ******/
 
-.page-template-sitemap-php ul > li {
-  font-weight: bold;
-  font-size: 13px;
+.page-template-sitemap-php ul  li a {
+  font-weight: normal;
+  text-decoration: none;
 }
 
 

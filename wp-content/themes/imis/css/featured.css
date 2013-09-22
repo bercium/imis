@@ -53,18 +53,20 @@ height: 62px;
 }
 
 
+
+
 #featured ul.ui-tabs-nav li .thumbnail-slika-1 {
-	background: url(../img/ico-dokumentni-sistemi.png) 0px 0px no-repeat;
+	background: url(../img/ico-slider-tabs.png) 0px 0px no-repeat;
 }
 
 
 #featured ul.ui-tabs-nav li .thumbnail-slika-2 {
-	background: url(../img/ico-arhiviranje-dokumentov.png)  0px 0px no-repeat;
+	background: url(../img/ico-slider-tabs.png)  0 -45px  no-repeat;
 }
 
 
 #featured ul.ui-tabs-nav li .thumbnail-slika-3 {
-	background: url(../img/ico-sap.png)  0px 0px no-repeat;
+	background: url(../img/ico-slider-tabs.png)  0px -90px no-repeat;
 }
 
 
