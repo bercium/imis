@@ -115,6 +115,13 @@ overflow:hidden;
 	z-index: 2;
 }
 
+
+#featured .slider-panel-links {
+    position: absolute;
+    bottom: 20px;
+}
+
+
 #featured .ui-tabs-panel .feat-img-slika-1 {
 	background: url(../img/vs-vecja-preglednost.jpg) 0 0 no-repeat;
 }
