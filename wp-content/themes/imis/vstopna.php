@@ -16,7 +16,7 @@ get_header(); ?>
           <li class="ui-tabs-nav-item fit2" id="nav-fragment-2"><a href="#fragment-2"><span><div class="thumbnail-slika thumbnail-slika-2"></div><?php the_field('thumbnail-tekst-2'); ?></a></span></li>  
           <li class="ui-tabs-nav-item fit3" id="nav-fragment-3"><a href="#fragment-3"><span><div class="thumbnail-slika thumbnail-slika-3"></div><?php the_field('thumbnail-tekst-3'); ?></a></span></li>  
          
-        </ul> 
+      </ul> 
          
         
         <!-- First Content -->  
@@ -51,11 +51,8 @@ get_header(); ?>
               </div>
              <img src="<?php bloginfo('template_directory'); ?>/img/vs-akreditiran.jpg" >
           </section>  
-        </div>  
-        
-     
-        
-      </div>
+        </div>       
+</div>  
 
 
     <!-- end of #featured -->
