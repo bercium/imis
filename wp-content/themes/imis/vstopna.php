@@ -25,7 +25,9 @@ get_header(); ?>
               <div class="slider-text-wrap">
                 <?php the_field('besedilo-1'); ?>
               </div>
-           <div class="feat-img-slika feat-img-slika-1"></div> 
+           
+           <img src="<?php bloginfo('template_directory'); ?>/img/vs-vecja-preglednost.jpg" >
+
            
           </section>  
         </div>  
@@ -36,7 +38,7 @@ get_header(); ?>
             <div class="slider-text-wrap">
                 <?php the_field('besedilo-2'); ?>
               </div>
-           <div class="feat-img-slika feat-img-slika-2"></div> 
+           <img src="<?php bloginfo('template_directory'); ?>/img/vs-arhiviranje.jpg" >
                       
           </section>  
         </div>  
@@ -47,7 +49,7 @@ get_header(); ?>
             <div class="slider-text-wrap">
               <?php the_field('besedilo-3'); ?>
               </div>
-             <div class="feat-img-slika feat-img-slika-3"></div> 
+             <img src="<?php bloginfo('template_directory'); ?>/img/vs-akreditiran.jpg" >
           </section>  
         </div>  
         
