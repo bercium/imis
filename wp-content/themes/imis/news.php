@@ -32,15 +32,14 @@ get_header(); ?>
       </div>
 
 
-      <div class="main-content">         
-              <?php if ($post->post_parent){ 
-                
-                wordpress_breadcrumbs(0); ?>
+      <div class="main-content">
+      <?php if ($post->post_parent) wordpress_breadcrumbs(0); ?>
           <div class="text-wrap">
               <!-- REPLACE  wp-php here on: -->
+              <?php if ($post->post_parent){ 
              
               
- <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  if (have_posts()) : while (have_posts()) : the_post(); ?>
   <article class="post" id="post-<?php the_ID(); ?>">
     <header>
       <h1><?php the_title(); ?></h1>
