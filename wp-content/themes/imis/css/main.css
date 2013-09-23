@@ -16,10 +16,6 @@ body {
     font-family: EurostileNextW01-Regula;
 }
 
-body:after{
-    display:none;
-    content: url(../img/vs-vecja-preglednost.jpg) url(../img/vs-arhiviranje.jpg) background: url(../img/vs-akreditiran.jpg);
-}
 
 
 
