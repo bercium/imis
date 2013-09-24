@@ -66,7 +66,7 @@ $(function( ) {
 
 
 
-	alert("ddmo");
+	
 
 
 });
