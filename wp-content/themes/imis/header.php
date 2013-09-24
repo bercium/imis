@@ -16,6 +16,7 @@
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/fonts.css") ?>
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/administrator.css") ?>
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/featured.css") ?>
+    <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."css/flexslider.css") ?>
         
     <?php versioned_stylesheet($GLOBALS["TEMPLATE_RELATIVE_URL"]."js/cookie/cookiecuttr.css") ?>
     
