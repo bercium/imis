@@ -40,8 +40,8 @@
 
         </div><!-- container -->
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-        <!-- <script>window.jQuery || document.write('<script src="<?php // echo $GLOBALS["TEMPLATE_RELATIVE_URL"] ?>js/vendor/jquery-1.10.0.min.js"><\/script>')</script> -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="<?php echo $GLOBALS["TEMPLATE_RELATIVE_URL"] ?>js/vendor/jquery-1.10.0.min.js"><\/script>')</script>
         <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."js/plugins.js") ?>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" ></script>
