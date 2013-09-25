@@ -1,19 +1,23 @@
 // slider 
-(function(){  	
+$(function(){  	
 	
-	$("#featured").tabs({fx:{opacity: "toggle", duration: 270 }}).tabs("rotate", 4000, true);  
 
-	$("#featured").hover(  
-function() {  
-	$("#featured").tabs("rotate",0,true);  
-	},  
-	function() {  
-	$("#featured").tabs("rotate",4000,true);  
-	}  
+var featured = $("#featured");
+
+	featured.tabs({fx:{opacity: "toggle" }}).tabs("rotate", 4000, true);  
+
+	featured.hover(  
+		function() {  
+			featured.tabs("rotate",0,true);  
+
+			},  
+		function() {  
+			featured.tabs("rotate",4000,true);  
+			}  
 	);  
 
 
-}());
+});
 
 
 // right sidebar

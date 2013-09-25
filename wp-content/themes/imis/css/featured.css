@@ -20,7 +20,6 @@ height:311px;
 #featured ul.ui-tabs-nav {  
 position: absolute; 
 width: 100%;
-
 list-style:none;  
 padding:0; margin:0;  
 position: absolute;
@@ -101,10 +100,15 @@ Decides which content panels are hidden and which is displayed.*/
 #featured .ui-tabs-panel{  
 width:940px;
 height:249px !important;  
-position:relative;  
-overflow:hidden;  
+
+padding: 0;
+
+color: #fff;
+position: absolute;
+z-index: 1;
 
 }  	
+
 
 
 #featured .ui-tabs-panel .feat-img-slika {
@@ -143,8 +147,7 @@ overflow:hidden;
 	height:214px;
 	padding-top: 35px;
 	padding-left: 50px;
-	background:  url(../img/gradient-slider-bg.png) 0 0 repeat-y;	
-	
+	background:  url(../img/gradient-slider-bg.png) 0 0 repeat-y;		
 }
 
 
@@ -166,10 +169,6 @@ text-decoration: none;
 outline:none;  
 
 }  
-#featured li.ui-tabs-nav-item a:hover{          
-
-}  
-
 
 #featured li.ui-tabs-selected a,
 #featured li.ui-tabs-selected a:hover,
@@ -192,14 +191,8 @@ background: url(../img/ui-tab-nav-hover.png) 0 0 repeat-x;
 
 
 
-#featured .ui-tabs-panel{
-padding: 0;
-width: 940px;
-height: 249px;
-color: #fff;
-position: absolute;
-z-index: 1;
-}
+
+
 
 
 
