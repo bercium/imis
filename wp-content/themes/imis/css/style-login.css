@@ -1,14 +1,20 @@
 @font-face{
-font-family:"EurostileNextW01-Regula";
-src:url("Fonts/6bed8cad-cd15-4b82-9ff4-0efd0b173852.eot?#iefix");
-src:url("Fonts/6bed8cad-cd15-4b82-9ff4-0efd0b173852.eot?#iefix") format("eot"),url("Fonts/a4a37370-12ae-4b1e-838e-cc18e6390d9f.woff") format("woff"),url("Fonts/f751566a-35f7-41b7-90df-e4f8fe5dccbf.ttf") format("truetype"),url("Fonts/7745b755-2aae-4a8a-a7c7-b48387a9b37e.svg#7745b755-2aae-4a8a-a7c7-b48387a9b37e") format("svg");
+font-family:"EurostileNextW02";
+src:url("Fonts/674aa347-350f-42ca-881a-0d0e89e149db.eot?#iefix");
+src:url("Fonts/674aa347-350f-42ca-881a-0d0e89e149db.eot?#iefix") format("eot"),url("Fonts/3721a03d-8ecc-4003-8a88-fcc548c10457.woff") format("woff"),url("Fonts/a810675b-57d1-4478-ad7c-fd369e272b14.ttf") format("truetype"),url("Fonts/60250abd-94bd-42b8-ae64-2cdb21d7b826.svg#60250abd-94bd-42b8-ae64-2cdb21d7b826") format("svg");
 }
 
-.login {
-font-family: EurostileNextW01-Regula;	
+.login,
+.login form .input, .login input[type="text"] {
+font-family:"EurostileNextW02";
 text-transform: uppercase;
 font-size: 8px;
 
+}
+
+
+.login form .input, .login input[type="text"] {
+    font-size: 14px;
 }
 
 body.login  {
@@ -50,6 +56,10 @@ body.login  {
 .login #nav a:hover, .login #backtoblog a:hover {
     color: #fff !important;
 
+}
+
+div.updated, .login .message {
+    font-size: 10px;
 }
 
 

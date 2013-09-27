@@ -19,25 +19,21 @@
   });
 
 
-    
+// remove border on last main-navigation button
 
-
-$(function( ) {
-	$(".flex-active").css( {
-		"background": "#000000",
-		"padding-bottom" : "1px"
-	  });
-});
+$(".main-navigation > ul > li:last").css( {
+		"border-right": "none",
+		"margin-right": "1px"
+} );
 
 
 // right sidebar
 // remove  border on last element 
-$(function( ) {
 	$(".sidebar-two section:last").css( {
 		"border-bottom": "none",
 		"padding-bottom" : "1px"
 	  });
-});
+
 
 //search dropdown
 // ad text to search text field
@@ -52,7 +48,6 @@ $(function( ) {
 	
 
 /*
-
 // show search dropdown while writing text
 	searchForm.focus(function () {
 	
@@ -66,11 +61,8 @@ $(function( ) {
 
 */
 
-	// remove border on last main-navigation button
-	$(function(){
-		$(".main-navigation > ul > li:last").css("border-right", "none");
 
-	});
+
 
 
 
