@@ -1,22 +1,32 @@
 // slider 
-$(function(){  	
-	
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+    	controlNav: true, 
+    	controlNav: "thumbnails",
+    	pauseOnHover: true,
+    	selector: ".slides > li", 
+    	directionNav: false,
+    	animationLoop: true,
+    	slideshowSpeed: 4000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+		animationSpeed: 600,
+    	manualControls: "#controls > li",
 
-var featured = $("#featured");
+     start: function(slider) {
+              $("#featured").removeClass('loading');
+           }
+    });
 
-	featured.tabs({fx:{opacity: "toggle" }}).tabs("rotate", 4000, true);  
-
-	featured.hover(  
-		function() {  
-			featured.tabs("rotate",0,true);  
-
-			},  
-		function() {  
-			featured.tabs("rotate",4000,true);  
-			}  
-	);  
+  });
 
 
+    
+
+
+$(function( ) {
+	$(".flex-active").css( {
+		"background": "#000000",
+		"padding-bottom" : "1px"
+	  });
 });
 
 
