@@ -43,7 +43,7 @@
         
       
         
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
       <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."js/jquery.flexslider.js") ?>        
       <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."js/main.js") ?>
 

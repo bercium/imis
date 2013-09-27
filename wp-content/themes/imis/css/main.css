@@ -185,24 +185,26 @@ clearfix {
 }
 
 .vs {
-    height: 249px;
+    height: 83px;
     width: 940px;
-    background-position: 0 0;
+    background-position: 0 bottom;
     background-repeat: no-repeat;
 }
 
 .vs-default,
 .slika-akreditiran {
-    background: url(../img/vs-akreditiran.jpg);
+    background: url(../img/vs-akreditiran.jpg) 0 bottom;
 }
 
 .slika-vecja-preglednost {
-    background: url(../img/vs-vecja-preglednost.jpg);
+    background: url(../img/vs-vecja-preglednost.jpg) 0 top;
 }
 
 .slika-arhiviranje {
-    background: url(../img/vs-arhiviranje.jpg);
+    background: url(../img/vs-arhiviranje.jpg) 0 center;
 }
+
+
 
 #crumbs {
    margin-bottom: 6px;
@@ -235,7 +237,9 @@ clearfix {
 }
 .main-navigation ul {
     padding: 0;
-    margin: 0;      
+    margin: 0;  
+    position: relative;
+
 
 }
 
@@ -250,6 +254,7 @@ clearfix {
     margin: 0;
     border-right: 1px solid #7f7f7f;  
     padding: 3px 0px 0px 0px;  
+    position: static;
 }
 
 .main-navigation > ul > li:hover,
@@ -277,6 +282,10 @@ clearfix {
  .main-navigation > ul > .current-page-ancestor > a  {
 background: url("../img/current-item-line.png")  7px 19px no-repeat;
 } 
+
+.main-navigation .searchbtn ul {
+    padding-bottom: 30px;
+}
 
 .main-navigation .searchform {
     height: 16px;
@@ -373,11 +382,15 @@ background: url("../img/current-item-line.png")  7px 19px no-repeat;
 .main-navigation > ul > li > ul {
     
     position: absolute;
-    padding: 16px 0 30px 0;
+    padding: 16px 0 22px 0;
     background: #1a1a1a;    
     text-transform: uppercase; 
-    margin-top: 1px;
+    
+    margin-left: 0;
     z-index: 4;
+    top:22px;
+    margin-left: 0;
+    
     
 }
 

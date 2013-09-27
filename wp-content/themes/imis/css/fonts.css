@@ -424,7 +424,8 @@ footer .footer .copyright {
   letter-spacing: 0.75px;
 }
 
-.lt-ie9 footer .widget-one p { letter-spacing: 0.04em;}
+.ie footer .widget-one p { letter-spacing: 0.04em;}
+
 
 
      
