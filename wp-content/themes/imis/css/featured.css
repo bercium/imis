@@ -9,12 +9,18 @@ padding-left: 0px;
 top: 0;
 margin-bottom: 9px;
 
+background-color: #333;
+
 
 position:relative;  
 height:311px;  
 /*background: url(../images/featured_bg.jpg) top right no-repeat; */
 /*background-color: #fff;*/
 
+}
+
+.loading {
+	background: url(../img/ajax-loader.gif) center center no-repeat;
 }
 
 #featured ul.ui-tabs-nav {  
@@ -151,7 +157,9 @@ z-index: 1;
 }
 
 
-
+#featured li.ui-tabs-nav-item {
+	background: #333333;
+}
 
 
 
@@ -161,17 +169,17 @@ Here are the styles for selected tab.*/
 display:block;  
 
 
+
 text-decoration: none;		
 
 outline:none;  
 
 }  
 
-#featured li.ui-tabs-selected a,
-#featured li.ui-tabs-selected a:hover,
-#featured li.ui-tabs-selected a:active {
 
-	padding: 0 !important;
+.flex-control-thumbs .flex-active a {
+
+	display: none;
 } 
 
 
@@ -183,12 +191,7 @@ background: url(../img/ui-tab-nav-hover.png) 0 0 repeat-x !important;
 
 }  
 /*************************************************************************/
-/* styles of featured navigation */
-#featured .ui-tabs-nav-item {
-
-}
-
-
+/* styles of .flexslider */
 
 
 

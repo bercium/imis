@@ -7,13 +7,20 @@
     	selector: ".slides > li", 
     	directionNav: false,
     	animationLoop: true,
-    	slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+    	slideshowSpeed: 4000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
 		animationSpeed: 600,
-    	
-    manualControls: "#controls > li"
+    	manualControls: "#controls > li",
+
+     start: function(slider) {
+              $("#featured").removeClass('loading');
+           }
     });
 
   });
+
+
+    
+
 
 $(function( ) {
 	$(".flex-active").css( {
