@@ -176,10 +176,13 @@ outline:none;
 
 }  
 
+.flex-control-thumbs li a {
+	padding: 1px 0 0 1px;
+}
 
 .flex-control-thumbs .flex-active a {
-
-	display: none;
+padding: 0 !important;
+	
 } 
 
 
