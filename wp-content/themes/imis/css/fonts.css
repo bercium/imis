@@ -400,7 +400,8 @@ footer .widget-one p {
   font-weight: bold;
   color: #fff;  
   line-height: 14px; 
-  letter-spacing: 0.1px;
+  /*letter-spacing: 0.1px;*/
+  letter-spacing: 0.08em
 }
 
 footer .footer p,
@@ -423,6 +424,7 @@ footer .footer .copyright {
   letter-spacing: 0.75px;
 }
 
+.lt-ie9 footer .widget-one p { letter-spacing: 0.04em;}
 
 
      
