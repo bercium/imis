@@ -423,7 +423,7 @@ background: url("../img/current-item-line.png")  7px 19px no-repeat;
 
 .main-navigation > ul > li > ul > li > a {
     background: #1a1a1a; 
-    padding-right:60px;
+    padding-right:52px;
     padding-left:22px;
     font-size: 10px;   
     width: 100px !important; 
