@@ -28,7 +28,7 @@ get_header(); ?>
           </div>
       </div>
    
-   <?php //* ?>
+   <?php /* ?>
       <div class="sidebar-two sidebar">
         <div class="img-box" ></div>
         <div class="text-wrap">

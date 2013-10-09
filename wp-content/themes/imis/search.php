@@ -71,6 +71,7 @@ get_header(); ?>
           </div>
       </div>
    
+   <?php /* ?>
       <div class="sidebar-two sidebar">
         <div class="img-box" ></div>
         <div class="text-wrap">
@@ -82,7 +83,7 @@ get_header(); ?>
 
           <!-- wp-php end  -->
           </div>
-      </div>            
+      </div><?php */ ?>
   </div>
 
 

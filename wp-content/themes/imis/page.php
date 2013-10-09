@@ -8,7 +8,7 @@ get_header(); ?>
 
 <div class="vs vs-default <?php the_field('slika-v-glavi'); ?>" ></div>
 
- <div class="row">
+ <div class="row <?php if ( !if_is_dynamic_sidebar() ) echo "no-sidebar"; ?>">
       <div class="sidebar-one sidebar">
           <div class="text-wrap">
               <!-- REPLACE  wp-php here on: -->
@@ -54,6 +54,7 @@ get_header(); ?>
               <!-- wp-php end  -->
           </div>
       </div>
+   <?php if ( if_is_dynamic_sidebar() ){ ?>
       <div class="sidebar-two sidebar">
         <div class="img-box <?php the_field('slika-v-desnem-stolpcu'); ?>" ></div>
         <div class="text-wrap">
@@ -66,7 +67,8 @@ get_header(); ?>
 
           <!-- wp-php end  -->
           </div>
-      </div>            
+      </div>
+   <?php } ?>
   </div>
 
 
