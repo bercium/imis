@@ -79,10 +79,9 @@ src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix") format("eot"),u
 .home-main-content a,
 .main-content a {
   color: #000;
-  
+ 
   text-decoration: none;
 }
-
 
 .home-main-content a,
 .main-content h1 a,
@@ -92,7 +91,7 @@ src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix") format("eot"),u
 .main-content h5 a,
 .main-content h6 a {
   text-decoration: none;
-  
+ 
 
  }
 
