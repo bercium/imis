@@ -1,5 +1,5 @@
 // slider 
-  $(window).load(function() {
+  
     $('.flexslider').flexslider({
     	controlNav: true, 
     	controlNav: "thumbnails",
@@ -16,7 +16,7 @@
            }
     });
 
-  });
+  
 
 
 // remove border on last main-navigation button

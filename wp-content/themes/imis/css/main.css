@@ -192,13 +192,48 @@ clearfix {
 }
 
 .vs-default,
-.slika-akreditiran {
-    background: url(../img/vs-akreditiran.jpg) 0 bottom;
+.slika1 {
+    background: url(../img/slika-v-glavi/slika1.jpg) 0 bottom;
 }
 
-.slika-vecja-preglednost {
-    background: url(../img/vs-vecja-preglednost.jpg) 0 top;
+.slika2 {
+    background: url(../img/slika-v-glavi/slika2.jpg) 0 bottom;
 }
+
+.slika3 {
+    background: url(../img/slika-v-glavi/slika3.jpg) 0 bottom;
+}
+
+.slika4 {
+    background: url(../img/slika-v-glavi/slika4.jpg) 0 bottom;
+}
+
+.slika5 {
+    background: url(../img/slika-v-glavi/slika5.jpg) 0 bottom;
+}
+
+.slika6 {
+    background: url(../img/slika-v-glavi/slika6.jpg) 0 bottom;
+}
+
+.slika7 {
+    background: url(../img/slika-v-glavi/slika7.jpg) 0 bottom;
+}
+
+.slika8 {
+    background: url(../img/slika-v-glavi/slika8.jpg) 0 bottom;
+}
+
+.slika9 {
+    background: url(../img/slika-v-glavi/slika9.jpg) 0 bottom;
+}
+
+.slika10 {
+    background: url(../img/slika-v-glavi/slika10.jpg) 0 bottom;
+}
+
+
+
 
 .slika-arhiviranje {
     background: url(../img/vs-arhiviranje.jpg) 0 center;
@@ -488,7 +523,7 @@ background: url("../img/current-item-line.png")  7px 19px no-repeat;
 
 
 
-/* ================================================.==========================
+/* ==========================================================================
     @ Pages styles
    ========================================================================== */
 
@@ -592,14 +627,37 @@ background: url("../img/current-item-line.png")  7px 19px no-repeat;
         /****** @ sidebar images ******/
 
         .sidebar-two .img-box,
-         .sidebar-two .slika-macka {
+         .sidebar-two .slika1 {
              
-            background: url(../img/sidebar-img-macka.jpg)  0 0  no-repeat;
+            background: url(../img/slika-v-desnem-stolpcu/slika1.jpg)  0 0  no-repeat;
         }
 
-         .sidebar-two .slika-sova {
-             background: url(../img/sidebar-img-sova.jpg)  0 0  no-repeat;  
-         }
+          .sidebar-two .slika2 {
+             
+            background: url(../img/slika-v-desnem-stolpcu/slika2.jpg)  0 0  no-repeat;
+        }
+
+          .sidebar-two .slika3 {
+             
+            background: url(../img/slika-v-desnem-stolpcu/slika3.jpg)  0 0  no-repeat;
+        }
+
+          .sidebar-two .slika4 {
+             
+            background: url(../img/slika-v-desnem-stolpcu/slika4.jpg)  0 0  no-repeat;
+        }
+
+          .sidebar-two .slika5 {
+             
+            background: url(../img/slika-v-desnem-stolpcu/slika5.jpg)  0 0  no-repeat;
+        }
+
+          .sidebar-two .slika6 {
+             
+            background: url(../img/slika-v-desnem-stolpcu/slika6.jpg)  0 0  no-repeat;
+        }
+
+       
 
 
 /****** @ page-template-page_list-php ******/

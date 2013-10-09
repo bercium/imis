@@ -9,7 +9,6 @@
 
 get_header(); ?>
 
-
 <div id="featured" class="inside container loading" >
       <ul id="controls" class="ui-tabs-nav flex-control-nav flex-control-thumbs">  
           <li class="ui-tabs-nav-item" id="nav-fragment-1"><a href="#fragment-1"><span><div class="thumbnail-slika thumbnail-slika-1"></div><?php the_field('thumbnail-tekst-1'); ?></span></a></li>  
@@ -28,7 +27,7 @@ get_header(); ?>
                 <?php the_field('besedilo-1'); ?>
               </div>
            
-           <img src="<?php bloginfo('template_directory'); ?>/img/vs-vecja-preglednost.jpg" >
+           <img src="<?php bloginfo('template_directory'); ?>/img/slike-slider/slide1.jpg" >
 
            
            
@@ -42,7 +41,7 @@ get_header(); ?>
             <div class="slider-text-wrap">
                 <?php the_field('besedilo-2'); ?>
               </div>
-           <img src="<?php bloginfo('template_directory'); ?>/img/vs-arhiviranje.jpg" >
+           <img src="<?php bloginfo('template_directory'); ?>/img/slike-slider/slide2.jpg" >
                       
            
         </div>  
@@ -56,7 +55,7 @@ get_header(); ?>
             <div class="slider-text-wrap">
               <?php the_field('besedilo-3'); ?>
               </div>
-             <img src="<?php bloginfo('template_directory'); ?>/img/vs-akreditiran.jpg" >
+             <img src="<?php bloginfo('template_directory'); ?>/img/slike-slider/slide3.jpg" >
            
         </div> 
         </li>
