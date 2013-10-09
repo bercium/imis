@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="vs vs-default <?php the_field('slika-v-glavi'); ?>" ></div>
 
 
- <div class="row">
+ <div class="row no-sidebar">
       <div class="sidebar-one sidebar">
           <div class="text-wrap">
               <!-- REPLACE  wp-php here on: -->

@@ -10,7 +10,7 @@ get_header(); ?>
 
 
 
- <div class="row">
+ <div class="row no-sidebar">
       <div class="sidebar-one sidebar">
           <div class="text-wrap">
               <!-- REPLACE  wp-php here on: -->
