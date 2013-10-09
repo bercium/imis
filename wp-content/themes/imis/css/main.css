@@ -590,6 +590,10 @@ background: url("../img/current-item-line.png")  7px 19px no-repeat;
 
 }
 
+.no-sidebar .main-content {
+    width: 763px;
+}
+
  .main-content .text-wrap {
     margin: 0 50px;
     position: relative;
