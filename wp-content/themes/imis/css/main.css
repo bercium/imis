@@ -569,11 +569,12 @@ background: url("../img/current-item-line.png")  7px 19px no-repeat;
  .sidebar-one ul .current_page_parent a,
  .sidebar-one ul .current_page_ancestor a   {
     background: #b3b3b3;
+    color:#fff;
 }
 .sidebar-one ul .current_page_item a:hover,
 .sidebar-one ul .current_page_item a:hover
  {
-    color: #000;
+    color: #fff;
 }
 
 
