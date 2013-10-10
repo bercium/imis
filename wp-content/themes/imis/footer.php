@@ -9,7 +9,7 @@
                 <div class="widget-one">
                 <div class="text-wrap left">
                     <!-- REPLACE wp-php here on: -->
-                    <p><?php et("IMAGING SYSTEMS, informacijski sistemi d.o.o. | Telefon: 059 070 000 | E-mail: info@imis.si | Brnčičeva 41g, 1000 Ljubljana"); ?></p>
+                    <p><?php et("IMAGING SYSTEMS, informacijski sistemi d.o.o. | Telefon: 059 070 000 | E-mail:"); echo ' <a href="mailto:info@imis.si" style="color:#FFF; text-decoration:none;">info@imis.si</a> '; et(" | Brnčičeva 41g, 1000 Ljubljana"); ?></p>
                     <!-- wp-php end  -->
                 </div>
                 </div>
@@ -25,7 +25,7 @@
                         <li><a href="<?php if (getLang() == 'en') echo "/sitemap"; else echo "/mapastrani"; ?>"><?php et("Mapa strani"); ?></a></li>
                         <li class="about"><a href=""><?php et("O AVTORJIH"); ?> </a>
                             <ul><li><a href="http://www.eberce.si" target="_blank">eBerce</a><span><?php et("PRILAGODITEV VSEBIN IN TEHNIČNA IZVEDBA"); ?></span></li>
-                                <li><a href="" target="_blank">Katja Žerko</a><span><?php et("OBLIKOVANJE"); ?></span></li>
+                                <li><a href="http://www.behance.net/zerko" target="_blank">Katja Žerko</a><span><?php et("OBLIKOVANJE"); ?></span></li>
                             </ul>
                         </li>
                     </ul>
