@@ -7,7 +7,9 @@
   Template Name: Vstopna
   */  
 
-get_header(); ?>
+get_header(); 
+
+if ($pagename == "fake-translate-home") wp_redirect( home_url_custom() ); ?>
 
 <div id="featured" class="inside container loading" >
       <ul id="controls" class="ui-tabs-nav flex-control-nav flex-control-thumbs">  
