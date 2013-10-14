@@ -7,7 +7,7 @@
   Template Name: Vstopna
   */  
 
-if (strpos($pagename, "fake-translate-home") !== false) wp_redirect( home_url_custom() );
+if (strpos($pagename, "fake-translate-home") !== false) wp_redirect(str_replace ("/fake-translate-home", "", home_url_custom()) );
 
 get_header(); 
 ?>
