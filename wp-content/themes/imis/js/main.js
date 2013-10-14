@@ -37,7 +37,7 @@ $(".main-navigation > ul > li:last").css( {
 
 //search dropdown
 // ad text to search text field
-$(function( ) {
+/*$(function( ) {
 	var searchForm = $(".main-navigation .searchform input[type=text]");
 	searchForm.val("Išči...");
 	searchForm.click(function() {          
@@ -59,21 +59,8 @@ $(function( ) {
 	 	});
 	});
 
-*/
+* /
 
 
-
-
-
-
-
-
-	
-
-
-});
-
-
-
-
+}); */
 

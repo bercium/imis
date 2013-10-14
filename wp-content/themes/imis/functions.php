@@ -142,7 +142,7 @@ function getLang(){
 
 function home_url_custom(){
   if (getLang() == 'sl') return home_url();
-  else return home_url()."/".getLang();
+  else return home_url()."/".getLang()."/entry";
 }
 
 /*

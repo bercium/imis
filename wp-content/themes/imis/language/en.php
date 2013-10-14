@@ -34,6 +34,8 @@ return array(
     "Naslednji zadetki" => "Next",
     "Rezultati iskanja" => "Search results",
     "Piškotki" => "Cookies",
-    "" => "",
+    "Išči..." => "Search...",
+    "IMAGING SYSTEMS, informacijski sistemi d.o.o. | Telefon: 059 070 000 | E-mail:" => "IMAGING SYSTEMS, informacijski sistemi d.o.o. | Phone: 059 070 000 | E-mail:",
+    " | Brnčičeva 41g, 1000 Ljubljana" => " | Brnčičeva 41g, 1000 Ljubljana",
 );
 

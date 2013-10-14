@@ -71,9 +71,15 @@
     
     $(document).ready(function () {
       $.cookieCuttr({cookieDeclineButton:false, cookiePolicyLink:'<?php  if (getLang() == 'en') echo home_url_custom()."/cookies"; else echo home_url_custom()."/piskotki"; ?>'});
+      
+      var searchForm = $(".main-navigation .searchform input[type=text]");
+      searchForm.val("<?php et("Išči..."); ?>");
+      searchForm.click(function() {
+            $(this).val('').unbind('click'); 
+         });
     });
 
-  if (jQuery.cookie('cc_cookie_accept') == "cc_cookie_accept") {
+  /*if (jQuery.cookie('cc_cookie_accept') == "cc_cookie_accept") {
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-9773251-4']);
     _gaq.push(['_trackPageview']);
@@ -83,7 +89,7 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-  }
+  }*/
     
   </script>
 
