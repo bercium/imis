@@ -1,0 +1,431 @@
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=00120949-db3e-402a-845d-2eb79f719d97");
+@font-face{
+font-family:"EurostileNextW02-UltLig";
+src:url("Fonts/236befc0-5b41-4ba6-9416-d22e80d5defa.eot?#iefix");
+src:url("Fonts/236befc0-5b41-4ba6-9416-d22e80d5defa.eot?#iefix") format("eot"),url("Fonts/4fcbbab9-fae2-46e2-95bb-014b4355442d.woff") format("woff"),url("Fonts/82ebae9b-21d2-438b-b16e-c95bd1132b68.ttf") format("truetype"),url("Fonts/dd553674-deb3-4533-8f2a-f97e17c251b5.svg#dd553674-deb3-4533-8f2a-f97e17c251b5") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-LightC";
+src:url("Fonts/cbe8dfdf-887e-4582-a2e1-a8e838b15053.eot?#iefix");
+src:url("Fonts/cbe8dfdf-887e-4582-a2e1-a8e838b15053.eot?#iefix") format("eot"),url("Fonts/a9eb0819-c1f5-466a-9967-8a9ae27a8dc6.woff") format("woff"),url("Fonts/9a41439e-e211-4952-b76a-db43a12b2d83.ttf") format("truetype"),url("Fonts/7f5c17f4-0386-4b5a-84e4-661c629bdd0d.svg#7f5c17f4-0386-4b5a-84e4-661c629bdd0d") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-Cn";
+src:url("Fonts/80b63f5f-06b3-4ad1-9bdd-07dcb9463274.eot?#iefix");
+src:url("Fonts/80b63f5f-06b3-4ad1-9bdd-07dcb9463274.eot?#iefix") format("eot"),url("Fonts/9afcb3a6-22f2-452d-b819-05122ae74e72.woff") format("woff"),url("Fonts/4d81f86d-ef2f-467b-a23b-ae40ed54b8fb.ttf") format("truetype"),url("Fonts/699dfee9-9ecc-4e78-99b2-68c76c4c4a68.svg#699dfee9-9ecc-4e78-99b2-68c76c4c4a68") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-Semibo";
+src:url("Fonts/ce7cbc53-2a29-4aed-90d2-ac9408f0eb42.eot?#iefix");
+src:url("Fonts/ce7cbc53-2a29-4aed-90d2-ac9408f0eb42.eot?#iefix") format("eot"),url("Fonts/ea16d1fb-75ff-48b4-b886-79b53b3e01e4.woff") format("woff"),url("Fonts/33c9414d-473b-4ad5-bfa2-8459bb37d39e.ttf") format("truetype"),url("Fonts/2e368054-d96a-4360-b432-9f6a3c4ac234.svg#2e368054-d96a-4360-b432-9f6a3c4ac234") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-Light";
+src:url("Fonts/8fd9fd8e-4907-45dc-adc2-f8d681e89e4c.eot?#iefix");
+src:url("Fonts/8fd9fd8e-4907-45dc-adc2-f8d681e89e4c.eot?#iefix") format("eot"),url("Fonts/85939995-a007-4f87-8997-a1f60936cb1f.woff") format("woff"),url("Fonts/bb952275-5083-4e63-a187-1b3f0a95f097.ttf") format("truetype"),url("Fonts/a51bf992-8e5e-4073-9ac6-27d18ce890a3.svg#a51bf992-8e5e-4073-9ac6-27d18ce890a3") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02";
+src:url("Fonts/674aa347-350f-42ca-881a-0d0e89e149db.eot?#iefix");
+src:url("Fonts/674aa347-350f-42ca-881a-0d0e89e149db.eot?#iefix") format("eot"),url("Fonts/3721a03d-8ecc-4003-8a88-fcc548c10457.woff") format("woff"),url("Fonts/a810675b-57d1-4478-ad7c-fd369e272b14.ttf") format("truetype"),url("Fonts/60250abd-94bd-42b8-ae64-2cdb21d7b826.svg#60250abd-94bd-42b8-ae64-2cdb21d7b826") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-SemiBd 693874";
+src:url("Fonts/22760e69-e039-4ada-b87c-ea8918a8d6f6.eot?#iefix");
+src:url("Fonts/22760e69-e039-4ada-b87c-ea8918a8d6f6.eot?#iefix") format("eot"),url("Fonts/9271ed16-feb1-4849-bd61-6fbf0e5692d4.woff") format("woff"),url("Fonts/a4d360b1-1a59-4380-aeac-66a879146ac4.ttf") format("truetype"),url("Fonts/26cb155e-ee8b-4205-bc8f-ea13a73a33df.svg#26cb155e-ee8b-4205-bc8f-ea13a73a33df") format("svg");
+}
+@font-face{
+font-family:"Eurostile Next W02 Bold";
+src:url("Fonts/a892618c-6d7d-43cb-b849-6d296d40f697.eot?#iefix");
+src:url("Fonts/a892618c-6d7d-43cb-b849-6d296d40f697.eot?#iefix") format("eot"),url("Fonts/e2b9130c-bdf2-4031-b0f6-2bd75c0855bb.woff") format("woff"),url("Fonts/7bdba40b-a27c-422e-86ef-08c7049f053b.ttf") format("truetype"),url("Fonts/10e49673-2706-4a5c-bd82-5d53d8b28f06.svg#10e49673-2706-4a5c-bd82-5d53d8b28f06") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-LightE";
+src:url("Fonts/b5c3a0d8-07c4-41ca-a0a7-6c6c6422a9ff.eot?#iefix");
+src:url("Fonts/b5c3a0d8-07c4-41ca-a0a7-6c6c6422a9ff.eot?#iefix") format("eot"),url("Fonts/d2eccd5d-73b5-437c-82bb-13c2051f520c.woff") format("woff"),url("Fonts/f41c1d19-414c-45cc-b6a0-a0c05320ef5e.ttf") format("truetype"),url("Fonts/216a591a-f869-4581-b6ee-287c8106964c.svg#216a591a-f869-4581-b6ee-287c8106964c") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-Ext";
+src:url("Fonts/cc69e7d7-bf28-436c-ac6d-582fdef91496.eot?#iefix");
+src:url("Fonts/cc69e7d7-bf28-436c-ac6d-582fdef91496.eot?#iefix") format("eot"),url("Fonts/ae61bec9-0509-40e9-943b-4340e6c1ce46.woff") format("woff"),url("Fonts/aae2bcac-511d-436d-bb81-acb6407c75df.ttf") format("truetype"),url("Fonts/fa613ca2-0a71-40c6-b0e7-a34a8f4990b5.svg#fa613ca2-0a71-40c6-b0e7-a34a8f4990b5") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-SemiBd 693886";
+src:url("Fonts/ee9bedbc-12e2-448e-9fb1-572beb365fba.eot?#iefix");
+src:url("Fonts/ee9bedbc-12e2-448e-9fb1-572beb365fba.eot?#iefix") format("eot"),url("Fonts/0ba2fdea-efc0-4e5c-bf89-7443c69e3559.woff") format("woff"),url("Fonts/dc0eec5a-907e-44ac-a97c-936e665db0d3.ttf") format("truetype"),url("Fonts/83b60aa5-0980-4330-8fd8-8706424853c3.svg#83b60aa5-0980-4330-8fd8-8706424853c3") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-BoldEx";
+src:url("Fonts/5cfce038-df25-4500-b2e7-3d4f3147ba56.eot?#iefix");
+src:url("Fonts/5cfce038-df25-4500-b2e7-3d4f3147ba56.eot?#iefix") format("eot"),url("Fonts/a813015f-024d-4450-8558-ce940b13ba45.woff") format("woff"),url("Fonts/318d3230-cc57-4f88-9aa4-746b9ef90efe.ttf") format("truetype"),url("Fonts/d87d5297-231f-4bdb-a75e-4e2a4c3b7c30.svg#d87d5297-231f-4bdb-a75e-4e2a4c3b7c30") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-CnBd";
+src:url("Fonts/66fbd608-c6d4-4b90-924a-8f7d5ecb1a8d.eot?#iefix");
+src:url("Fonts/66fbd608-c6d4-4b90-924a-8f7d5ecb1a8d.eot?#iefix") format("eot"),url("Fonts/2a6fb248-30e2-4c17-a408-e934d8414f03.woff") format("woff"),url("Fonts/d4efd195-d623-4748-a674-047def84d3c6.ttf") format("truetype"),url("Fonts/7a096cf1-39fc-4a04-a42b-06b33185e637.svg#7a096cf1-39fc-4a04-a42b-06b33185e637") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-UltLt";
+src:url("Fonts/4d7706c5-c712-42d2-ad73-b2606f3a0e40.eot?#iefix");
+src:url("Fonts/4d7706c5-c712-42d2-ad73-b2606f3a0e40.eot?#iefix") format("eot"),url("Fonts/f218ac30-74d8-4cb0-b0da-e576f832d7d5.woff") format("woff"),url("Fonts/9bcd6c22-cbbc-4153-88bc-bb61b7aec771.ttf") format("truetype"),url("Fonts/4adecd23-9560-4e07-92e9-817cc706cb96.svg#4adecd23-9560-4e07-92e9-817cc706cb96") format("svg");
+}
+@font-face{
+font-family:"EurostileNextW02-ExtUlt";
+src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix");
+src:url("Fonts/310236ff-f18f-4cc5-b8a8-ccd9df5441ab.eot?#iefix") format("eot"),url("Fonts/f6f2f966-caae-414b-9d8e-028c4ed1efbe.woff") format("woff"),url("Fonts/f402e160-d22f-41b5-9572-4f62d27aaa64.ttf") format("truetype"),url("Fonts/148839e9-367e-43c9-b546-c6e6af5679bd.svg#148839e9-367e-43c9-b546-c6e6af5679bd") format("svg");
+}
+
+.home-main-content a,
+.main-content a {
+  color: #000;
+ 
+  text-decoration: none;
+}
+
+.home-main-content a,
+.main-content h1 a,
+.main-content h2 a,
+.main-content h3 a,
+.main-content h4 a,
+.main-content h5 a,
+.main-content h6 a {
+  text-decoration: none;
+ 
+
+ }
+
+
+.home-main-content a:hover, 
+.main-content a:hover {
+  color: #FAAD24;
+  
+}
+
+blockquote,
+blockquote p {
+  font-family: EurostileNextW02;  
+  font-size: 13px;
+  margin: 0;
+  line-height: 22px;
+  margin-bottom: 46px;
+}
+
+body {color: #000000;
+font-family: EurostileNextW02;  
+font-size: 12px;
+}
+
+
+
+.main-content a:hover,
+.home-main-content a:hover {
+  color: #faad24;
+  
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: EurostileNextW02;  
+    font-weight: normal;
+}
+
+p {
+   font-size: 12px;
+   margin: 3px 0 20px 0;
+   line-height: 14.5px;
+}
+ 
+
+h1 {
+  font-size: 29px;
+  line-height: 36px;
+
+}
+
+h2 {
+  font-size: 21px;
+  line-height: 30px;
+}
+ 
+ h3, h4, h5, h6 {
+   
+    font-size: 12px;    
+    line-height: 14.5px;      
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+
+.main-navigation .lang-box span.lang a,
+.main-navigation .lang-box span.lang  {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #707070;
+    text-decoration: none;
+}
+
+.main-navigation .lang-box #current-lang {
+  color: #000;
+}
+
+
+.main-navigation .searchform input[type=text]  {
+  font-size: 13px;
+  font-family: EurostileNextW02;  
+}
+
+ 
+
+/****** @ home ******/
+.home .sidebar h2 { 
+  font-family: "EurostileNextW02-SemiBd 693874";
+  font-size: 13px;
+  color: #faad24;
+  border-bottom: 1px dotted #faad24;
+  font-weight: 400 !important;
+  line-height: 15px;
+
+}
+
+
+/****** @ slider ******/
+
+
+#featured .ui-tabs-panel .slider-text-wrap a {
+  color: #fff;
+  font-family: "EurostileNextW02-SemiBd 693874";
+  text-decoration: none;
+  margin-right: 45px;
+  font-size: 12px;
+
+}
+
+#featured .ui-tabs-panel .slider-text-wrap a:hover {
+  color: #FAAD24;
+}
+
+#featured li.ui-tabs-nav-item a {
+  font-size: 14px;
+}
+
+#featured ul.ui-tabs-nav li a {
+height: 62px;
+
+line-height:21px;  
+color: #fff;
+}
+
+#featured ul.ui-tabs-nav,
+#featured ul.ui-tabs-nav p {
+  font-size: 14px;
+  line-height: 17px;
+  
+
+}
+
+
+#featured .ui-tabs-panel .slider-text-wrap,
+#featured .ui-tabs-panel .slider-text-wrap p {
+  font-family: EurostileNextW02;  
+  font-size: 17px;
+  line-height: 22px;
+} 
+
+#featured .ui-tabs-panel .slider-text-wrap h1,
+#featured .ui-tabs-panel .slider-text-wrap h2,
+#featured .ui-tabs-panel .slider-text-wrap h3,
+#featured .ui-tabs-panel .slider-text-wrap h4,
+#featured .ui-tabs-panel .slider-text-wrap h5,
+#featured .ui-tabs-panel .slider-text-wrap h5 {
+  font-family: "EurostileNextW02-SemiBd 693874";
+  font-size: 29px;
+  line-height: 36px;
+  margin-bottom: 4px;
+}
+
+
+/****** @ page-template-page_list-php ******/
+/****** @ page-template-news-php ******/
+
+.page-template-news-php .main-content .page-lists a,
+.page-template-page_list-php .main-content .page-lists a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.page-template-news-php .main-content time,
+.page-template-page_list-php .main-content time {
+color: #646464;  
+}
+
+
+
+/****** @ page-template-sitemap-php ******/
+
+.page-template-sitemap-php ul  li a {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+
+
+
+
+/* ==========================================================================
+   @ sidebars
+   ========================================================================== */
+
+      
+   /****** @ sidebar-one ******/
+      .sidebar-one ul li a {
+        font-family:"EurostileNextW02-SemiBd 693874";
+        font-size: 11px;
+        color: #000000;
+      }
+
+    /****** @ sidebar-two ******/
+    
+
+
+      .sidebar-two h2.widgettitle {  
+        font-size: 10px;
+        font-family:"EurostileNextW02-SemiBd 693874";       
+        margin-bottom: 7px;
+        margin-top: 7px;
+        letter-spacing: 0.04em;
+        line-height: 15px;
+        }
+     
+        .sidebar-two p, .sidebar-two h1, .sidebar-two h2, .sidebar-two h3, .sidebar-two h4, .sidebar-two h5, .sidebar-two h6 {
+            font-family: EurostileNextW02;  
+            font-weight: normal;
+        }
+
+       .sidebar-two {
+           font-size: 10px;
+       }
+        .sidebar-two p {
+          font-family: EurostileNextW02;
+          font-size: 10px;
+          line-height: 12px;
+          margin: 4px 0 12px;
+      }
+         
+
+        .sidebar-two h1 {
+          font-size: 10px;
+          font-family:"EurostileNextW02-SemiBd 693874";       
+          margin-bottom: 7px;
+          margin-top: 7px;
+          letter-spacing: 0.04em;
+          line-height: 15px;
+
+
+        }
+
+        .sidebar-two h2 {
+          font-size: 10px;
+          font-family:"EurostileNextW02-SemiBd 693874";       
+          margin-bottom: 7px;
+          margin-top: 7px;
+          letter-spacing: 0.04em;
+          line-height: 15px;
+        }
+         
+         .sidebar-two h3, .sidebar-two h4, .sidebar-two h5, .sidebar-two h6 {
+           
+          font-size: 10px;
+          font-family:"EurostileNextW02-SemiBd 693874";       
+          margin-bottom: 7px;
+          margin-top: 7px;
+          letter-spacing: 0.04em;
+          line-height: 15px;
+        }
+
+         .sidebar-two a {
+          color: #000;
+          text-decoration: none;          
+        }
+        .sidebar-two a:hover {
+          color: #faad24;
+        }
+
+
+/****** @ home sidebar ******/
+
+         .home-sidebar p,
+         .home-sidebar  {
+            font-family:"EurostileNextW02";
+            font-size: 12px;
+            margin-bottom: 24px;
+            line-height: 14px;
+         }
+
+       
+
+         .home-sidebar h2 { 
+        font-family: "EurostileNextW02-SemiBd 693874";
+        font-size: 13px;
+        color: #faad24;
+        border-bottom: 1px dotted #faad24;
+        line-height: 19px;
+        letter-spacing: 2.2px;
+        margin-bottom: 29px;
+
+      }
+
+         
+      .home-sidebar h3,
+      .home-sidebar h4,
+      .home-sidebar h5,
+      .home-sidebar h6  {
+        font-family:"EurostileNextW02-SemiBd 693874";
+        font-size: 10px;
+
+      }
+
+
+
+
+
+      /* ==========================================================================
+  @ footer fonts:
+   ========================================================================== */
+
+footer .widget-one p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;  
+  line-height: 14px; 
+  /*letter-spacing: 0.1px;*/
+  letter-spacing: 0.08em
+}
+
+footer .footer p,
+footer .footer ul,
+footer .footer ul li a {
+  font-family: EurostileNextW02;
+  font-size: 11px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 14px;
+}
+
+footer .footer .mini-navigation {
+    letter-spacing: 1.43px;
+    line-height: 10px;
+    font-weight: 400;
+}
+
+footer .footer .copyright {
+  letter-spacing: 0.75px;
+}
+
+.ie footer .widget-one p { letter-spacing: 0.04em;}
+
+
+
+     

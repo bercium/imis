@@ -1,0 +1,205 @@
+/*************************************************************************/
+/*$slider $$*/
+/* $featured content*/
+
+#featured{  
+margin-top: 0px;
+width:940px;  
+padding-left: 0px;  
+top: 0;
+margin-bottom: 9px;
+
+background-color: #333;
+
+
+position:relative;  
+height:311px;  
+/*background: url(../images/featured_bg.jpg) top right no-repeat; */
+/*background-color: #fff;*/
+
+}
+
+.loading {
+	background: url(../img/ajax-loader.gif) center center no-repeat;
+}
+
+#featured ul.ui-tabs-nav {  
+position: absolute; 
+width: 100%;
+list-style:none;  
+padding:0; margin:0;  
+position: absolute;
+bottom: 0;
+
+}  
+
+#featured ul.ui-tabs-nav li {
+width: 33.3333333%;
+float: left;
+
+height: 62px;
+
+}
+#featured ul.ui-tabs-nav li a {
+	padding: 1px 0 0 1px;
+}
+
+
+
+#featured ul.ui-tabs-nav li .thumbnail-slika {	
+ 	
+ 	height: 45px;
+ 	width: 60px;
+ 	float: left;
+ 	margin-top: -2px;
+ 	
+ 	padding-left: 10px;
+ 	display: block;
+}
+
+
+
+
+#featured ul.ui-tabs-nav li .thumbnail-slika-1 {
+	background: url(../img/ico-slider-tabs.png) 0px 0px no-repeat;
+}
+
+
+#featured ul.ui-tabs-nav li .thumbnail-slika-2 {
+	background: url(../img/ico-slider-tabs.png)  0 -45px  no-repeat;
+}
+
+
+#featured ul.ui-tabs-nav li .thumbnail-slika-3 {
+	background: url(../img/ico-slider-tabs.png)  0px -90px no-repeat;
+}
+
+
+#featured ul.ui-tabs-nav,
+#featured ul.ui-tabs-nav p
+ {
+	margin: 0;
+	padding-top: 3px;
+}
+
+
+
+#featured ul.ui-tabs-nav li span {  
+float: left;
+padding-top: 11px;
+margin-left: 8px;
+width: 100%;
+display: block;
+
+} 	
+
+/* fixes padding of last list item - inženiring*/
+#featured ul.ui-tabs-nav li .padfix {
+
+
+}
+
+
+/*ui-tabs-hide class is essential to working of this script. 
+Decides which content panels are hidden and which is displayed.*/
+
+#featured .ui-tabs-panel{  
+width:940px;
+height:249px !important;  
+
+padding: 0;
+
+color: #fff;
+position: absolute;
+z-index: 1;
+
+}  	
+
+
+
+#featured .ui-tabs-panel .feat-img-slika {
+	position: absolute;
+	height: 249px;
+	width: 940px;
+	
+	z-index: 2;
+}
+
+
+.slider-panel-links {
+    position: absolute;
+    bottom: 20px;
+}
+
+/*
+#featured .ui-tabs-panel .feat-img-slika-1 {
+	background: url(../img/vs-vecja-preglednost.jpg) 0 0 no-repeat;
+}
+
+#featured .ui-tabs-panel .feat-img-slika-2 {
+	background: url(../img/vs-arhiviranje.jpg) 0 0 no-repeat;
+}
+
+#featured .ui-tabs-panel .feat-img-slika-3 {
+	background: url(../img/vs-akreditiran.jpg) 0 0 no-repeat;
+}
+
+
+*/
+#featured .ui-tabs-panel .slider-text-wrap {
+	position: absolute;
+	width: 890px;
+	z-index: 3;
+	height:214px;
+	padding-top: 35px;
+	padding-left: 50px;
+	background:  url(../img/gradient-slider-bg.png) 0 0 repeat-y;		
+}
+
+
+#featured li.ui-tabs-nav-item {
+	background: #333333;
+}
+
+
+
+/*And the selected tab is given a background image with a left arrow. 
+Here are the styles for selected tab.*/
+#featured li.ui-tabs-nav-item a { /*On Hover Style*/  
+display:block;  
+
+
+
+text-decoration: none;		
+
+outline:none;  
+
+}  
+
+.flex-control-thumbs li a {
+	padding: 1px 0 0 1px;
+}
+
+.flex-control-thumbs .flex-active a {
+padding: 0 !important;
+	
+} 
+
+
+
+ li.flex-active {         
+/*background:url('../images/selected.png') top right no-repeat;  */
+background: url(../img/ui-tab-nav-hover.png) 0 0 repeat-x !important;
+
+
+}  
+/*************************************************************************/
+/* styles of .flexslider */
+
+
+
+
+
+
+
+
