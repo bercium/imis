@@ -10,6 +10,8 @@
 
 /** Make sure that the WordPress bootstrap has run before continuing. */
 require( dirname(__FILE__) . '/wp-load.php' );
+//update_option('siteurl', 'http://your.domain.name/');
+//update_option('home', 'http://your.domain.name/');
 
 // Redirect to https login if forced to use SSL
 if ( force_ssl_admin() && ! is_ssl() ) {
