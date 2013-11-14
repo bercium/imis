@@ -10,9 +10,9 @@
 
 /** Make sure that the WordPress bootstrap has run before continuing. */
 require( dirname(__FILE__) . '/wp-load.php' );
-if (isset($_GET['forcefixdb']) && ($_GET['forcefixdb'] == 'yes')){
-  update_option('siteurl', 'http://your.domain.name/');
-  update_option('home', 'http://your.domain.name/');
+if (isset($_GET['forcefixdb']) && ($_GET['forcefixdb'] == 'yes') && isset($_GET['fixdomain'])){
+  update_option('siteurl', $_GET['fixdomain']);
+  update_option('home', $_GET['fixdomain']);
 }
 // Redirect to https login if forced to use SSL
 if ( force_ssl_admin() && ! is_ssl() ) {
